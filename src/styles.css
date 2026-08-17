@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Meet Málaga — Sistema de diseño
+   Identidad: luz del Mediterráneo. Azul mar profundo + oro de sol +
+   acento buganvilla, sobre blanco de cal (frío, no crema).
+   ========================================================================== */
+
+:root {
+  /* Paleta */
+  --mar:        #06546B;  /* azul Mediterráneo profundo — color ancla */
+  --mar-claro:  #1B7A94;  /* azulejo, azul medio */
+  --sol:        #F4B740;  /* oro de sol — acento principal */
+  --buganvilla: #D6336C;  /* magenta buganvilla — acento puntual */
+  --cal:        #F5F6F4;  /* blanco de cal, frío */
+  --cal-hueso:  #ECEEEA;  /* superficie ligeramente hundida */
+  --tinta:      #10222B;  /* casi negro azulado — texto */
+  --tinta-60:   #4A5A62;  /* texto secundario */
+  --linea:      #DCE0DC;  /* bordes hairline */
+
+  /* Tipografía */
+  --display: 'Fraunces', Georgia, serif;
+  --body: 'Inter', system-ui, -apple-system, sans-serif;
+  --mono: 'Space Mono', ui-monospace, monospace;
+
+  /* Escala */
+  --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
+  --step-0:  clamp(1rem, 0.96rem + 0.2vw, 1.12rem);
+  --step-1:  clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --step-2:  clamp(1.6rem, 1.4rem + 1vw, 2.1rem);
+  --step-3:  clamp(2.2rem, 1.8rem + 2vw, 3.2rem);
+  --step-4:  clamp(3rem, 2.2rem + 4vw, 5.5rem);
+
+  --radio: 14px;
+  --sombra: 0 1px 2px rgba(16,34,43,.04), 0 12px 30px -12px rgba(16,34,43,.18);
+  --maxw: 1180px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--body);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  color: var(--tinta);
+  background: var(--cal);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--display);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 .4em;
+}
+
+a { color: inherit; }
+
+img { display: block; max-width: 100%; }
+
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: clamp(1.2rem, 4vw, 2.5rem);
+}
+
+/* Botón / CTA reutilizable */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: var(--step-0);
+  padding: .8rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.btn--primary { background: var(--tinta); color: var(--cal); }
+.btn--primary:hover { transform: translateY(-2px); box-shadow: var(--sombra); }
+.btn--sol { background: var(--sol); color: var(--tinta); }
+.btn--sol:hover { transform: translateY(-2px); box-shadow: var(--sombra); }
+
+/* Eyebrow / etiqueta de sección */
+.eyebrow {
+  font-family: var(--mono);
+  font-size: var(--step--1);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--mar-claro);
+  margin: 0 0 .6rem;
+}
+
+/* Accesibilidad: foco visible y respeto a reduce-motion */
+:focus-visible {
+  outline: 3px solid var(--buganvilla);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
