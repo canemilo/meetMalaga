@@ -45,6 +45,10 @@ import { SeoService } from '../../core/services/seo.service';
 export class PrivacidadComponent implements OnInit {
   private seo = inject(SeoService);
   ngOnInit() {
-    this.seo.update({ title: 'Política de privacidad', description: 'Cómo tratamos tus datos en Meet Málaga.', path: '/privacidad' });
+    this.seo.update({
+      title: 'Política de privacidad',
+      description: 'Política de privacidad de Meet Málaga: qué datos recogemos, con qué finalidad los tratamos conforme al RGPD y cómo ejercer tus derechos de acceso y supresión.',
+      path: '/privacidad',
+    });
   }
 }

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { SeoService } from '../../core/services/seo.service';
 
 @Component({
   selector: 'app-not-found',
@@ -20,4 +21,14 @@ import { RouterLink } from '@angular/router';
     .eyebrow { display: inline-block; }
   `],
 })
-export class NotFoundComponent {}
+export class NotFoundComponent implements OnInit {
+  private readonly seo = inject(SeoService);
+
+  ngOnInit(): void {
+    this.seo.update({
+      title: 'Página no encontrada',
+      description: 'La página que buscas no existe o se ha movido. Descubre tours, coches, restaurantes y ocio en Meet Málaga.',
+      noindex: true,
+    });
+  }
+}

@@ -7,6 +7,7 @@ export interface SeoData {
   description: string;
   path?: string;     // ruta relativa, p.ej. "/tours"
   image?: string;    // URL absoluta de imagen social
+  noindex?: boolean; // true en páginas que no deben indexarse (p.ej. 404)
 }
 
 /**
@@ -24,12 +25,12 @@ export class SeoService {
 
     this.title.setTitle(fullTitle);
     this.meta.updateTag({ name: 'description', content: data.description });
+    this.meta.updateTag({ name: 'robots', content: data.noindex ? 'noindex, nofollow' : 'index, follow' });
 
     // Open Graph (Facebook, WhatsApp, etc.)
     this.meta.updateTag({ property: 'og:title', content: fullTitle });
     this.meta.updateTag({ property: 'og:description', content: data.description });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
-    this.meta.updateTag({ property: 'og:url', content: url });
     if (data.image) {
       this.meta.updateTag({ property: 'og:image', content: data.image });
     }
@@ -37,7 +38,14 @@ export class SeoService {
     // Twitter
     this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
 
-    // Canonical
-    this.meta.updateTag({ rel: 'canonical', href: url }, "rel='canonical'");
+    // Canonical y og:url: una página noindex (p.ej. 404) no debe declarar
+    // una URL canónica real, para no confundir a Google sobre qué URL indexar.
+    if (data.noindex) {
+      this.meta.removeTag("rel='canonical'");
+      this.meta.removeTag("property='og:url'");
+    } else {
+      this.meta.updateTag({ property: 'og:url', content: url });
+      this.meta.updateTag({ rel: 'canonical', href: url }, "rel='canonical'");
+    }
   }
 }

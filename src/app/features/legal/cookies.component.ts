@@ -31,6 +31,10 @@ import { SeoService } from '../../core/services/seo.service';
 export class CookiesComponent implements OnInit {
   private seo = inject(SeoService);
   ngOnInit() {
-    this.seo.update({ title: 'Política de cookies', description: 'Uso de cookies en Meet Málaga.', path: '/cookies' });
+    this.seo.update({
+      title: 'Política de cookies',
+      description: 'Política de cookies de Meet Málaga: qué cookies técnicas, analíticas y de afiliación usamos, para qué sirven y cómo aceptarlas, rechazarlas o eliminarlas.',
+      path: '/cookies',
+    });
   }
 }

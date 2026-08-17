@@ -36,6 +36,10 @@ import { SeoService } from '../../core/services/seo.service';
 export class AfiliadosComponent implements OnInit {
   private seo = inject(SeoService);
   ngOnInit() {
-    this.seo.update({ title: 'Aviso de afiliados', description: 'Cómo funcionan los enlaces de afiliado en Meet Málaga.', path: '/afiliados' });
+    this.seo.update({
+      title: 'Aviso de afiliados',
+      description: 'Aviso de afiliados de Meet Málaga: cómo funcionan los enlaces con Civitatis, GetYourGuide, DiscoverCars y otras plataformas, sin coste adicional para ti.',
+      path: '/afiliados',
+    });
   }
 }

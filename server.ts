@@ -17,6 +17,15 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
 
+  // Rutas públicas reales del sitio. Debe reflejar las mismas rutas que
+  // scripts/generate-sitemap.mjs. Cualquier URL fuera de esta lista devuelve
+  // la página 404 de Angular pero con status HTTP 404 real, para que Google
+  // no la trate como contenido válido (evita un soft 404).
+  const PUBLIC_PATHS = new Set([
+    '/', '/tours', '/coches', '/restaurantes', '/ocio',
+    '/aviso-legal', '/privacidad', '/cookies', '/afiliados',
+  ]);
+
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
@@ -27,6 +36,7 @@ export function app(): express.Express {
   // All regular routes use the Angular engine
   server.get('*', (req, res, next) => {
     const { protocol, originalUrl, baseUrl, headers } = req;
+    const pathname = originalUrl.split('?')[0].replace(/\/$/, '') || '/';
 
     commonEngine
       .render({
@@ -36,7 +46,12 @@ export function app(): express.Express {
         publicPath: browserDistFolder,
         providers: [{ provide: APP_BASE_HREF, useValue: baseUrl }],
       })
-      .then((html) => res.send(html))
+      .then((html) => {
+        if (!PUBLIC_PATHS.has(pathname)) {
+          res.status(404);
+        }
+        res.send(html);
+      })
       .catch((err) => next(err));
   });
 

@@ -42,6 +42,10 @@ import { SeoService } from '../../core/services/seo.service';
 export class AvisoLegalComponent implements OnInit {
   private seo = inject(SeoService);
   ngOnInit() {
-    this.seo.update({ title: 'Aviso legal', description: 'Aviso legal de Meet Málaga.', path: '/aviso-legal' });
+    this.seo.update({
+      title: 'Aviso legal',
+      description: 'Aviso legal de Meet Málaga: titularidad del sitio, condiciones de uso, responsabilidad como intermediario informativo y propiedad intelectual de los contenidos.',
+      path: '/aviso-legal',
+    });
   }
 }

@@ -4,7 +4,9 @@ import { RouterLink } from '@angular/router';
 import { Offer } from '../../core/models/offer.model';
 import { CatalogService } from '../../core/services/catalog.service';
 import { SeoService } from '../../core/services/seo.service';
+import { JsonLdService } from '../../core/services/json-ld.service';
 import { OfferCardComponent } from '../../shared/components/offer-card/offer-card.component';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -32,27 +34,30 @@ import { OfferCardComponent } from '../../shared/components/offer-card/offer-car
     </section>
 
     <!-- VERTICALES -->
-    <section class="container verticals">
-      <a routerLink="/tours" class="vertical vertical--mar">
-        <span class="vertical__icon">🏛️</span>
-        <h3>Tours y experiencias</h3>
-        <p>Alcazaba, Caminito del Rey, catamarán y mucho más.</p>
-      </a>
-      <a routerLink="/coches" class="vertical vertical--sol">
-        <span class="vertical__icon">🚗</span>
-        <h3>Alquiler de coches</h3>
-        <p>Compara precios con recogida en aeropuerto o centro.</p>
-      </a>
-      <a routerLink="/restaurantes" class="vertical vertical--bug">
-        <span class="vertical__icon">🍽️</span>
-        <h3>Mejores restaurantes</h3>
-        <p>Del pescaíto a la estrella Michelin, reserva mesa.</p>
-      </a>
-      <a routerLink="/ocio" class="vertical vertical--mar2">
-        <span class="vertical__icon">🎭</span>
-        <h3>Ocio y planes</h3>
-        <p>Flamenco, baños árabes, kayak y actividades.</p>
-      </a>
+    <section class="container verticals-wrap">
+      <h2 class="verticals-wrap__title">Explora Málaga por categorías</h2>
+      <div class="verticals">
+        <a routerLink="/tours" class="vertical vertical--mar">
+          <span class="vertical__icon">🏛️</span>
+          <h3>Tours y experiencias</h3>
+          <p>Alcazaba, Caminito del Rey, catamarán y mucho más.</p>
+        </a>
+        <a routerLink="/coches" class="vertical vertical--sol">
+          <span class="vertical__icon">🚗</span>
+          <h3>Alquiler de coches</h3>
+          <p>Compara precios con recogida en aeropuerto o centro.</p>
+        </a>
+        <a routerLink="/restaurantes" class="vertical vertical--bug">
+          <span class="vertical__icon">🍽️</span>
+          <h3>Mejores restaurantes</h3>
+          <p>Del pescaíto a la estrella Michelin, reserva mesa.</p>
+        </a>
+        <a routerLink="/ocio" class="vertical vertical--mar2">
+          <span class="vertical__icon">🎭</span>
+          <h3>Ocio y planes</h3>
+          <p>Flamenco, baños árabes, kayak y actividades.</p>
+        </a>
+      </div>
     </section>
 
     <!-- DESTACADOS -->
@@ -82,8 +87,10 @@ import { OfferCardComponent } from '../../shared/components/offer-card/offer-car
     }
 
     /* VERTICALES */
+    .verticals-wrap { margin-top: 1rem; }
+    .verticals-wrap__title { font-size: var(--step-2); margin: 0 0 1.2rem; }
     .verticals {
-      display: grid; gap: 1.2rem; margin-top: 1rem;
+      display: grid; gap: 1.2rem;
       grid-template-columns: repeat(4, 1fr);
     }
     .vertical {
@@ -118,6 +125,7 @@ import { OfferCardComponent } from '../../shared/components/offer-card/offer-car
 export class HomeComponent implements OnInit {
   private readonly catalog = inject(CatalogService);
   private readonly seo = inject(SeoService);
+  private readonly jsonLd = inject(JsonLdService);
 
   featured: Offer[] = [];
 
@@ -130,5 +138,20 @@ export class HomeComponent implements OnInit {
       path: '/',
       image: this.featured[0]?.imageUrl,
     });
+
+    this.jsonLd.set([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: environment.siteName,
+        url: environment.siteUrl,
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: environment.siteName,
+        url: environment.siteUrl,
+      },
+    ]);
   }
 }
