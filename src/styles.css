@@ -6,10 +6,11 @@
 
 :root {
   /* Paleta */
-  --mar:        #06546B;  /* azul Mediterráneo profundo — color ancla */
+  --mar:        #0B5566;  /* azul Mediterráneo profundo — color ancla */
   --mar-claro:  #1B7A94;  /* azulejo, azul medio */
-  --sol:        #F4B740;  /* oro de sol — acento principal */
-  --buganvilla: #D6336C;  /* magenta buganvilla — acento puntual */
+  --sol:        #E3A63C;  /* oro de cerámica vidriada — acento principal */
+  --sol-oscuro: #C98F2E;  /* --sol en interacción (hover/activo) */
+  --buganvilla: #C62E63;  /* magenta buganvilla — acento puntual, uso mínimo */
   --cal:        #F5F6F4;  /* blanco de cal, frío */
   --cal-hueso:  #ECEEEA;  /* superficie ligeramente hundida */
   --tinta:      #10222B;  /* casi negro azulado — texto */
@@ -17,7 +18,7 @@
   --linea:      #DCE0DC;  /* bordes hairline */
 
   /* Tipografía */
-  --display: 'Fraunces', Georgia, serif;
+  --display: 'Fraunces', Georgia, serif;   /* solo h1 y marca */
   --body: 'Inter', system-ui, -apple-system, sans-serif;
   --mono: 'Space Mono', ui-monospace, monospace;
 
@@ -29,8 +30,22 @@
   --step-3:  clamp(2.2rem, 1.8rem + 2vw, 3.2rem);
   --step-4:  clamp(3rem, 2.2rem + 4vw, 5.5rem);
 
+  /* Forma — firma de la esquina cortada */
   --radio: 14px;
+  --radio-sm: 4px;
+  --chamfer: 18px;      /* corte de esquina en imágenes de card / hero */
+  --chamfer-sm: 10px;   /* mismo corte a escala de botón / etiqueta */
+
+  /* Sombra */
   --sombra: 0 1px 2px rgba(16,34,43,.04), 0 12px 30px -12px rgba(16,34,43,.18);
+  --sombra-hover: 0 10px 24px -14px rgba(16,34,43,.22);
+
+  /* Movimiento */
+  --dur-rapida: 150ms;
+  --dur-media: 300ms;
+  --dur-orquestada: 500ms;
+  --ease: cubic-bezier(.4, 0, .2, 1);
+
   --maxw: 1180px;
 }
 
@@ -48,11 +63,21 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 {
+/* Jerarquía: el display (Fraunces) es un gesto reservado al h1 de cada
+   página. h2/h3 son Inter en negrita — jerarquía real por tamaño y peso,
+   no por repetir la misma serif en todo. */
+h1 {
   font-family: var(--display);
   font-weight: 900;
   line-height: 1.05;
   letter-spacing: -0.02em;
+  margin: 0 0 .4em;
+}
+h2, h3 {
+  font-family: var(--body);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
   margin: 0 0 .4em;
 }
 
@@ -67,25 +92,38 @@ img { display: block; max-width: 100%; }
   padding-inline: clamp(1.2rem, 4vw, 2.5rem);
 }
 
-/* Botón / CTA reutilizable */
+/* Botón / CTA reutilizable — esquina cortada, firma del sitio.
+   Deliberadamente sin border-radius adicional en el resto de esquinas:
+   combinar radio + clip-path da resultados inconsistentes entre
+   navegadores, así que el chamfer se resuelve solo con clip-path. */
 .btn {
   display: inline-flex;
   align-items: center;
   gap: .5rem;
+  min-height: 44px;
   font-family: var(--body);
   font-weight: 600;
   font-size: var(--step-0);
   padding: .8rem 1.4rem;
-  border-radius: 999px;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  clip-path: polygon(0 0, calc(100% - var(--chamfer-sm)) 0, 100% var(--chamfer-sm), 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, calc(100% - var(--chamfer-sm)) 0, 100% var(--chamfer-sm), 100% 100%, 0 100%);
+  transition: transform var(--dur-rapida) var(--ease), box-shadow var(--dur-rapida) var(--ease), background var(--dur-rapida) var(--ease);
 }
 .btn--primary { background: var(--tinta); color: var(--cal); }
-.btn--primary:hover { transform: translateY(-2px); box-shadow: var(--sombra); }
+.btn--primary:hover { transform: translateY(-2px); box-shadow: var(--sombra-hover); }
 .btn--sol { background: var(--sol); color: var(--tinta); }
-.btn--sol:hover { transform: translateY(-2px); box-shadow: var(--sombra); }
+.btn--sol:hover { background: var(--sol-oscuro); transform: translateY(-2px); box-shadow: var(--sombra-hover); }
+.btn--sol:active { background: var(--sol-oscuro); }
+/* Activo: el corte crece — feedback táctil sin más artificio */
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+}
 
 /* Eyebrow / etiqueta de sección */
 .eyebrow {

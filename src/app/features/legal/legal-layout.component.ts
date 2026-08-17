@@ -18,8 +18,8 @@ import { BreadcrumbComponent } from '../../shared/components/breadcrumb/breadcru
         <ng-content />
       </div>
       <p class="legal__note">
-        ⚠️ Plantilla orientativa. Sustituye los datos entre corchetes por los
-        tuyos y revísala con un profesional antes de publicar.
+        <strong>Aviso:</strong> plantilla orientativa. Sustituye los datos entre
+        corchetes por los tuyos y revísala con un profesional antes de publicar.
       </p>
     </section>
   `,

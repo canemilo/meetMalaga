@@ -36,7 +36,14 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
       position: sticky; top: 0; z-index: 50;
       background: rgba(245,246,244,.85);
       backdrop-filter: saturate(180%) blur(12px);
-      border-bottom: 1px solid var(--linea);
+    }
+    /* Línea de horizonte: separa cabecera de contenido en toda la web,
+       sustituye cualquier decoración de fondo suelta en el héroe. */
+    .site-header::after {
+      content: '';
+      display: block;
+      height: 3px;
+      background: linear-gradient(90deg, var(--mar), var(--sol));
     }
     .site-header__inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
 
@@ -64,7 +71,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     @media (max-width: 820px) {
       .burger { display: flex; }
       .nav {
-        position: absolute; top: 68px; left: 0; right: 0;
+        position: absolute; top: 71px; left: 0; right: 0;
         flex-direction: column; gap: 0;
         background: var(--cal); border-bottom: 1px solid var(--linea);
         max-height: 0; overflow: hidden; transition: max-height .25s ease;

@@ -55,9 +55,27 @@ const VERTICAL_LINKS: Record<Vertical, { path: string; label: string }> = {
 
     <section class="container grid-wrap">
       <h2 class="grid-wrap__title">{{ config.offersHeading }}</h2>
-      <div class="grid">
+
+      <div class="grid" *ngIf="offers.length; else sinResultados">
         <app-offer-card *ngFor="let offer of offers" [offer]="offer" />
       </div>
+
+      <ng-template #sinResultados>
+        <div class="empty">
+          <p class="eyebrow">Sin resultados</p>
+          <p class="empty__text">
+            todavía no hay ofertas publicadas en {{ config.title | lowercase }}.
+            mira las demás categorías mientras tanto.
+          </p>
+          <div class="empty__links">
+            <a
+              *ngFor="let link of otherVerticals"
+              [routerLink]="link.path"
+              class="btn btn--primary"
+            >{{ link.label }}</a>
+          </div>
+        </div>
+      </ng-template>
     </section>
 
     <section class="container related">
@@ -79,12 +97,30 @@ const VERTICAL_LINKS: Record<Vertical, { path: string; label: string }> = {
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
 
+    /* Estado vacío: invitación a actuar, no un hueco. Mismo chamfer y
+       superficie que el resto de módulos, para que no se sienta como un
+       error sino como una parada más del recorrido. */
+    .empty {
+      background: var(--cal-hueso);
+      border: 1px solid var(--linea);
+      padding: 2.2rem clamp(1.4rem, 4vw, 2.4rem);
+      max-width: 42rem;
+      clip-path: polygon(0 0, calc(100% - var(--chamfer)) 0, 100% var(--chamfer), 100% 100%, 0 100%);
+      -webkit-clip-path: polygon(0 0, calc(100% - var(--chamfer)) 0, 100% var(--chamfer), 100% 100%, 0 100%);
+    }
+    .empty__text { margin: 0 0 1.4rem; font-size: var(--step-0); color: var(--tinta-60); max-width: 48ch; }
+    .empty__links { display: flex; flex-wrap: wrap; gap: .8rem; }
+
     .related { padding: 3rem 0 4rem; border-top: 1px solid var(--linea); margin-top: 3rem; }
     .related__title { font-size: var(--step-1); margin: 0 0 1rem; }
     .related__links { display: flex; flex-wrap: wrap; gap: .8rem; }
     .related__link {
-      padding: .5rem 1rem; border-radius: 999px; border: 1px solid var(--linea);
+      padding: .6rem 1.1rem; min-height: 44px; display: inline-flex; align-items: center;
+      border: 1px solid var(--linea);
       text-decoration: none; color: var(--tinta); font-size: var(--step--1);
+      clip-path: polygon(0 0, calc(100% - var(--chamfer-sm)) 0, 100% var(--chamfer-sm), 100% 100%, 0 100%);
+      -webkit-clip-path: polygon(0 0, calc(100% - var(--chamfer-sm)) 0, 100% var(--chamfer-sm), 100% 100%, 0 100%);
+      transition: border-color var(--dur-rapida) var(--ease), color var(--dur-rapida) var(--ease);
     }
     .related__link:hover { border-color: var(--mar); color: var(--mar); }
   `],
