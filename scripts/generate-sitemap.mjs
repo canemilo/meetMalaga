@@ -24,16 +24,16 @@ const SITE_URL = readSiteUrl();
 const today = new Date().toISOString().split('T')[0];
 
 // Rutas públicas: [ruta, prioridad, frecuencia de cambio]
+// Las páginas legales (aviso-legal, privacidad, cookies, afiliados) se
+// excluyen a propósito: son de bajo valor SEO y siguen siendo accesibles
+// (enlazadas desde el footer, sin noindex), pero no aportan nada al
+// crawl budget que sí merecen las páginas comerciales.
 const ROUTES = [
   ['/', '1.0', 'weekly'],
   ['/tours', '0.9', 'weekly'],
   ['/coches', '0.9', 'weekly'],
   ['/restaurantes', '0.9', 'weekly'],
   ['/ocio', '0.9', 'weekly'],
-  ['/aviso-legal', '0.3', 'yearly'],
-  ['/privacidad', '0.3', 'yearly'],
-  ['/cookies', '0.3', 'yearly'],
-  ['/afiliados', '0.3', 'yearly'],
 ];
 
 // --- sitemap.xml ---

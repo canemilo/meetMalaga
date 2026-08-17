@@ -4,8 +4,9 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Offer, Vertical } from '../../core/models/offer.model';
 import { CatalogService } from '../../core/services/catalog.service';
 import { SeoService } from '../../core/services/seo.service';
-import { JsonLdService } from '../../core/services/json-ld.service';
+import { JsonLdService, breadcrumbList } from '../../core/services/json-ld.service';
 import { OfferCardComponent } from '../../shared/components/offer-card/offer-card.component';
+import { BreadcrumbComponent, BreadcrumbItem } from '../../shared/components/breadcrumb/breadcrumb.component';
 import { environment } from '../../../environments/environment';
 
 interface VerticalConfig {
@@ -41,10 +42,11 @@ const VERTICAL_LINKS: Record<Vertical, { path: string; label: string }> = {
 @Component({
   selector: 'app-vertical-page',
   standalone: true,
-  imports: [CommonModule, RouterLink, OfferCardComponent],
+  imports: [CommonModule, RouterLink, OfferCardComponent, BreadcrumbComponent],
   template: `
     <section class="hero-mini">
       <div class="container">
+        <app-breadcrumb [items]="breadcrumbItems" />
         <p class="eyebrow">{{ config.eyebrow }}</p>
         <h1>{{ config.title }}</h1>
         <p class="hero-mini__sub">{{ config.subtitle }}</p>
@@ -96,6 +98,7 @@ export class VerticalPageComponent implements OnInit {
   config!: VerticalConfig;
   offers: Offer[] = [];
   otherVerticals: Array<{ path: string; label: string }> = [];
+  breadcrumbItems: BreadcrumbItem[] = [];
 
   ngOnInit(): void {
     // La config puede cambiar al navegar entre verticales sin recargar.
@@ -106,6 +109,7 @@ export class VerticalPageComponent implements OnInit {
         .filter((v) => v !== this.config.vertical)
         .map((v) => VERTICAL_LINKS[v]);
       const path = '/' + this.config.vertical;
+      this.breadcrumbItems = [{ label: 'Inicio', path: '/' }, { label: this.config.title }];
 
       this.seo.update({
         title: this.config.title,
@@ -115,14 +119,10 @@ export class VerticalPageComponent implements OnInit {
       });
 
       this.jsonLd.set([
-        {
-          '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          itemListElement: [
-            { '@type': 'ListItem', position: 1, name: environment.siteName, item: environment.siteUrl },
-            { '@type': 'ListItem', position: 2, name: this.config.title, item: environment.siteUrl + path },
-          ],
-        },
+        breadcrumbList([
+          { name: environment.siteName, path: '' },
+          { name: this.config.title, path },
+        ]),
         {
           '@context': 'https://schema.org',
           '@type': 'ItemList',

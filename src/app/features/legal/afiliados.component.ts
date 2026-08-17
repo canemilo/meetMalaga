@@ -1,6 +1,8 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { LegalLayoutComponent } from './legal-layout.component';
 import { SeoService } from '../../core/services/seo.service';
+import { JsonLdService, breadcrumbList } from '../../core/services/json-ld.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-afiliados',
@@ -35,11 +37,16 @@ import { SeoService } from '../../core/services/seo.service';
 })
 export class AfiliadosComponent implements OnInit {
   private seo = inject(SeoService);
+  private jsonLd = inject(JsonLdService);
   ngOnInit() {
     this.seo.update({
       title: 'Aviso de afiliados',
       description: 'Aviso de afiliados de Meet Málaga: cómo funcionan los enlaces con Civitatis, GetYourGuide, DiscoverCars y otras plataformas, sin coste adicional para ti.',
       path: '/afiliados',
     });
+    this.jsonLd.set(breadcrumbList([
+      { name: environment.siteName, path: '' },
+      { name: 'Aviso de afiliados', path: '/afiliados' },
+    ]));
   }
 }

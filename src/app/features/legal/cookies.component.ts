@@ -1,6 +1,8 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { LegalLayoutComponent } from './legal-layout.component';
 import { SeoService } from '../../core/services/seo.service';
+import { JsonLdService, breadcrumbList } from '../../core/services/json-ld.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-cookies',
@@ -30,11 +32,16 @@ import { SeoService } from '../../core/services/seo.service';
 })
 export class CookiesComponent implements OnInit {
   private seo = inject(SeoService);
+  private jsonLd = inject(JsonLdService);
   ngOnInit() {
     this.seo.update({
       title: 'Política de cookies',
       description: 'Política de cookies de Meet Málaga: qué cookies técnicas, analíticas y de afiliación usamos, para qué sirven y cómo aceptarlas, rechazarlas o eliminarlas.',
       path: '/cookies',
     });
+    this.jsonLd.set(breadcrumbList([
+      { name: environment.siteName, path: '' },
+      { name: 'Política de cookies', path: '/cookies' },
+    ]));
   }
 }

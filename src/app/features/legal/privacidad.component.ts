@@ -1,6 +1,8 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { LegalLayoutComponent } from './legal-layout.component';
 import { SeoService } from '../../core/services/seo.service';
+import { JsonLdService, breadcrumbList } from '../../core/services/json-ld.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-privacidad',
@@ -44,11 +46,16 @@ import { SeoService } from '../../core/services/seo.service';
 })
 export class PrivacidadComponent implements OnInit {
   private seo = inject(SeoService);
+  private jsonLd = inject(JsonLdService);
   ngOnInit() {
     this.seo.update({
       title: 'Política de privacidad',
       description: 'Política de privacidad de Meet Málaga: qué datos recogemos, con qué finalidad los tratamos conforme al RGPD y cómo ejercer tus derechos de acceso y supresión.',
       path: '/privacidad',
     });
+    this.jsonLd.set(breadcrumbList([
+      { name: environment.siteName, path: '' },
+      { name: 'Política de privacidad', path: '/privacidad' },
+    ]));
   }
 }

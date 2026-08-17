@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { BreadcrumbComponent } from '../../shared/components/breadcrumb/breadcrumb.component';
 
 /**
  * Marco visual compartido por todas las páginas legales.
@@ -7,8 +8,10 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-legal-layout',
   standalone: true,
+  imports: [BreadcrumbComponent],
   template: `
     <section class="legal container">
+      <app-breadcrumb [items]="[{ label: 'Inicio', path: '/' }, { label: title }]" />
       <p class="eyebrow">Información legal</p>
       <h1>{{ title }}</h1>
       <div class="legal__body">

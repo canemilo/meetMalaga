@@ -1,6 +1,8 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { LegalLayoutComponent } from './legal-layout.component';
 import { SeoService } from '../../core/services/seo.service';
+import { JsonLdService, breadcrumbList } from '../../core/services/json-ld.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-aviso-legal',
@@ -41,11 +43,16 @@ import { SeoService } from '../../core/services/seo.service';
 })
 export class AvisoLegalComponent implements OnInit {
   private seo = inject(SeoService);
+  private jsonLd = inject(JsonLdService);
   ngOnInit() {
     this.seo.update({
       title: 'Aviso legal',
       description: 'Aviso legal de Meet Málaga: titularidad del sitio, condiciones de uso, responsabilidad como intermediario informativo y propiedad intelectual de los contenidos.',
       path: '/aviso-legal',
     });
+    this.jsonLd.set(breadcrumbList([
+      { name: environment.siteName, path: '' },
+      { name: 'Aviso legal', path: '/aviso-legal' },
+    ]));
   }
 }
