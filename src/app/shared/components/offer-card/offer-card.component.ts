@@ -21,7 +21,7 @@ import { AffiliateService } from '../../../core/services/affiliate.service';
         (click)="onClick()"
         [attr.aria-label]="'Reservar: ' + offer.title"
       >
-        <img [src]="offer.imageUrl" [alt]="offer.imageAlt" loading="lazy" />
+        <img [src]="offer.imageUrl" [alt]="offer.imageAlt" width="800" height="600" loading="lazy" />
         <span class="card__provider">{{ providerLabel }}</span>
       </a>
 

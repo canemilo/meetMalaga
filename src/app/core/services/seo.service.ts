@@ -31,12 +31,19 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:title', content: fullTitle });
     this.meta.updateTag({ property: 'og:description', content: data.description });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
+    this.meta.updateTag({ property: 'og:site_name', content: environment.siteName });
+    this.meta.updateTag({ property: 'og:locale', content: 'es_ES' });
     if (data.image) {
       this.meta.updateTag({ property: 'og:image', content: data.image });
     }
 
     // Twitter
     this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
+    this.meta.updateTag({ name: 'twitter:title', content: fullTitle });
+    this.meta.updateTag({ name: 'twitter:description', content: data.description });
+    if (data.image) {
+      this.meta.updateTag({ name: 'twitter:image', content: data.image });
+    }
 
     // Canonical y og:url: una página noindex (p.ej. 404) no debe declarar
     // una URL canónica real, para no confundir a Google sobre qué URL indexar.

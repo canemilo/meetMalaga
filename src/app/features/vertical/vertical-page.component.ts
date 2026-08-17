@@ -1,6 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Offer, Vertical } from '../../core/models/offer.model';
 import { CatalogService } from '../../core/services/catalog.service';
 import { SeoService } from '../../core/services/seo.service';
@@ -25,6 +25,14 @@ const SCHEMA_TYPE_BY_VERTICAL: Record<Vertical, string> = {
   ocio: 'TouristAttraction',
 };
 
+// Enlazado interno: cada vertical enlaza a las otras tres.
+const VERTICAL_LINKS: Record<Vertical, { path: string; label: string }> = {
+  tours: { path: '/tours', label: 'Tours y visitas guiadas' },
+  coches: { path: '/coches', label: 'Alquiler de coches' },
+  restaurantes: { path: '/restaurantes', label: 'Restaurantes' },
+  ocio: { path: '/ocio', label: 'Ocio y actividades' },
+};
+
 /**
  * Una sola plantilla para las cuatro verticales. La configuración (título,
  * subtítulo, qué vertical mostrar) llega desde `data` en app.routes.ts, así
@@ -33,7 +41,7 @@ const SCHEMA_TYPE_BY_VERTICAL: Record<Vertical, string> = {
 @Component({
   selector: 'app-vertical-page',
   standalone: true,
-  imports: [CommonModule, OfferCardComponent],
+  imports: [CommonModule, RouterLink, OfferCardComponent],
   template: `
     <section class="hero-mini">
       <div class="container">
@@ -49,6 +57,13 @@ const SCHEMA_TYPE_BY_VERTICAL: Record<Vertical, string> = {
         <app-offer-card *ngFor="let offer of offers" [offer]="offer" />
       </div>
     </section>
+
+    <section class="container related">
+      <h2 class="related__title">Explora también en Málaga</h2>
+      <div class="related__links">
+        <a *ngFor="let link of otherVerticals" [routerLink]="link.path" class="related__link">{{ link.label }}</a>
+      </div>
+    </section>
   `,
   styles: [`
     .hero-mini { padding: 3.5rem 0 1rem; }
@@ -61,6 +76,15 @@ const SCHEMA_TYPE_BY_VERTICAL: Record<Vertical, string> = {
       display: grid; gap: 1.6rem;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
+
+    .related { padding: 3rem 0 4rem; border-top: 1px solid var(--linea); margin-top: 3rem; }
+    .related__title { font-size: var(--step-1); margin: 0 0 1rem; }
+    .related__links { display: flex; flex-wrap: wrap; gap: .8rem; }
+    .related__link {
+      padding: .5rem 1rem; border-radius: 999px; border: 1px solid var(--linea);
+      text-decoration: none; color: var(--tinta); font-size: var(--step--1);
+    }
+    .related__link:hover { border-color: var(--mar); color: var(--mar); }
   `],
 })
 export class VerticalPageComponent implements OnInit {
@@ -71,12 +95,16 @@ export class VerticalPageComponent implements OnInit {
 
   config!: VerticalConfig;
   offers: Offer[] = [];
+  otherVerticals: Array<{ path: string; label: string }> = [];
 
   ngOnInit(): void {
     // La config puede cambiar al navegar entre verticales sin recargar.
     this.route.data.subscribe((data) => {
       this.config = data['config'] as VerticalConfig;
       this.offers = this.catalog.getByVertical(this.config.vertical);
+      this.otherVerticals = (Object.keys(VERTICAL_LINKS) as Vertical[])
+        .filter((v) => v !== this.config.vertical)
+        .map((v) => VERTICAL_LINKS[v]);
       const path = '/' + this.config.vertical;
 
       this.seo.update({
