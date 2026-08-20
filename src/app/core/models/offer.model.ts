@@ -2,7 +2,7 @@
  * Categorías (verticales) del sitio. Cada una corresponde a un programa
  * de afiliados distinto y a una ruta /tours, /coches, etc.
  */
-export type Vertical = 'tours' | 'coches' | 'restaurantes' | 'ocio';
+export type Vertical = 'tours' | 'coches' | 'restaurantes' | 'ocio' | 'hoteles';
 
 /**
  * Proveedores de afiliación soportados. Añade aquí los que vayas
@@ -16,6 +16,7 @@ export type AffiliateProvider =
   | 'localrent'
   | 'thefork'
   | 'booking'
+  | 'tripcom'
   | 'directo'; // enlace propio sin comisión (por si quieres mezclar)
 
 /**

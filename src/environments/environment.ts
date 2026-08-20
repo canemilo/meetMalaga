@@ -26,4 +26,16 @@ export const environment = {
 
   // ID de medición de analítica (GA4), opcional.
   analyticsId: '',
+
+  // --- Contacto y cobro para TUS rutas propias ---
+  // El WhatsApp va en formato internacional SIN "+" ni espacios.
+  // Ejemplo España: 34600112233. Déjalo vacío hasta que lo tengas.
+  contacto: {
+    whatsapp: '',                 // p.ej. '34600112233'
+    // Formas de cobro (rellena las que uses):
+    stripePaymentLink: '',        // enlace de Stripe Payment Link (https://buy.stripe.com/...)
+    paypalLink: '',               // https://paypal.me/tuusuario
+    bizum: '',                    // teléfono o alias de Bizum, p.ej. '600112233'
+    iban: '',                     // para transferencia, si la ofreces
+  },
 };

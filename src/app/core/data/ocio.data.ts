@@ -1,4 +1,4 @@
-import {Offer} from '../models/offer.model';
+import { Offer } from '../models/offer.model';
 
 /**
  * OCIO: parques, espectáculos, actividades y experiencias. Mezcla de
@@ -65,5 +65,34 @@ export const OCIO: Offer[] = [
     duration: '3 horas',
     providerUrl: 'https://www.getyourguide.es/nerja-l2534/kayak-maro/',
     tags: ['aventura', 'mar', 'verano'],
+  },
+  {
+    id: 'ocio-tripcom-entradas',
+    vertical: 'ocio',
+    provider: 'tripcom',
+    title: 'Entradas a atracciones (Trip.com)',
+    summary:
+      'Museos, acuarios y experiencias de Málaga y alrededores reservables al instante.',
+    imageUrl: 'https://picsum.photos/seed/tripentradas/800/600',
+    imageAlt: 'Entrada a una atracción turística de Málaga',
+    priceFrom: 12,
+    rating: 4.5,
+    // Marcador: sustituye por tu enlace del Link Builder de Trip.com
+    providerUrl: 'https://es.trip.com/things-to-do/malaga/',
+    tags: ['atracciones', 'entradas', 'familia'],
+  },
+  {
+    id: 'ocio-tripcom-transfer',
+    vertical: 'ocio',
+    provider: 'tripcom',
+    title: 'Traslado aeropuerto - hotel (Trip.com)',
+    summary:
+      'Transfer privado desde el aeropuerto de Málaga a tu alojamiento, sin esperas ni sorpresas.',
+    imageUrl: 'https://picsum.photos/seed/triptransfer/800/600',
+    imageAlt: 'Vehículo de traslado privado esperando en el aeropuerto',
+    priceFrom: 30,
+    rating: 4.6,
+    providerUrl: 'https://es.trip.com/things-to-do/malaga/',
+    tags: ['aeropuerto', 'traslado', 'comodidad'],
   },
 ];

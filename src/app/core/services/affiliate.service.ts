@@ -1,7 +1,7 @@
-import {Injectable, inject, PLATFORM_ID} from '@angular/core';
-import {isPlatformBrowser} from '@angular/common';
-import {environment} from '../../../environments/environment';
-import {AffiliateProvider, Offer} from '../models/offer.model';
+import { Injectable, inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { environment } from '../../../environments/environment';
+import { AffiliateProvider, Offer } from '../models/offer.model';
 
 /**
  * Corazón del modelo de negocio.
@@ -24,10 +24,13 @@ const PROVIDER_PARAM: Record<AffiliateProvider, string | null> = {
   localrent: 'ref',
   thefork: 'utm_source', // TheFork suele ir por red (Awin/CJ); ajústalo.
   booking: 'aid',
+  // Trip.com genera el enlace ya rastreable con su Link Builder: el seguimiento
+  // va incrustado, así que NO le añadimos parámetros (lo dejamos tal cual).
+  tripcom: null,
   directo: null, // enlace propio, sin ID de afiliado
 };
 
-@Injectable({providedIn: 'root'})
+@Injectable({ providedIn: 'root' })
 export class AffiliateService {
   private readonly platformId = inject(PLATFORM_ID);
   private readonly ids = environment.affiliate;
@@ -81,22 +84,14 @@ export class AffiliateService {
 
   private idFor(provider: AffiliateProvider): string | null {
     switch (provider) {
-      case 'civitatis':
-        return this.ids.civitatis;
-      case 'getyourguide':
-        return this.ids.getyourguide;
-      case 'tiqets':
-        return this.ids.tiqets;
-      case 'discovercars':
-        return this.ids.discovercars;
-      case 'localrent':
-        return this.ids.localrent;
-      case 'thefork':
-        return this.ids.thefork;
-      case 'booking':
-        return this.ids.booking;
-      default:
-        return null;
+      case 'civitatis': return this.ids.civitatis;
+      case 'getyourguide': return this.ids.getyourguide;
+      case 'tiqets': return this.ids.tiqets;
+      case 'discovercars': return this.ids.discovercars;
+      case 'localrent': return this.ids.localrent;
+      case 'thefork': return this.ids.thefork;
+      case 'booking': return this.ids.booking;
+      default: return null;
     }
   }
 }

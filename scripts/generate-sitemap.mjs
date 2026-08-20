@@ -6,9 +6,9 @@
  *
  * Cuando añadas una vertical nueva, agrégala al array ROUTES de abajo.
  */
-import {readFileSync, writeFileSync} from 'node:fs';
-import {fileURLToPath} from 'node:url';
-import {dirname, join} from 'node:path';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
@@ -26,10 +26,13 @@ const today = new Date().toISOString().split('T')[0];
 // Rutas públicas: [ruta, prioridad, frecuencia de cambio]
 const ROUTES = [
   ['/', '1.0', 'weekly'],
+  ['/free-tours', '0.9', 'weekly'],
+  ['/rutas', '0.9', 'weekly'],
   ['/tours', '0.9', 'weekly'],
   ['/coches', '0.9', 'weekly'],
   ['/restaurantes', '0.9', 'weekly'],
   ['/ocio', '0.9', 'weekly'],
+  ['/hoteles', '0.9', 'weekly'],
   ['/aviso-legal', '0.3', 'yearly'],
   ['/privacidad', '0.3', 'yearly'],
   ['/cookies', '0.3', 'yearly'],

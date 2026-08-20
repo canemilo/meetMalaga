@@ -19,4 +19,12 @@ export const environment = {
   },
 
   analyticsId: '',
+
+  contacto: {
+    whatsapp: '',
+    stripePaymentLink: '',
+    paypalLink: '',
+    bizum: '',
+    iban: '',
+  },
 };

@@ -1,4 +1,4 @@
-import {Routes} from '@angular/router';
+import { Routes } from '@angular/router';
 
 /**
  * Todas las páginas se cargan con lazy loading (loadComponent) para que el
@@ -10,6 +10,16 @@ export const routes: Routes = [
     path: '',
     loadComponent: () =>
       import('./features/home/home.component').then((m) => m.HomeComponent),
+  },
+  {
+    path: 'free-tours',
+    loadComponent: () =>
+      import('./features/free-tours/free-tours.component').then((m) => m.FreeToursComponent),
+  },
+  {
+    path: 'rutas',
+    loadComponent: () =>
+      import('./features/rutas/rutas.component').then((m) => m.RutasComponent),
   },
   {
     path: 'tours',
@@ -64,24 +74,26 @@ export const routes: Routes = [
     },
   },
 
-  // Legales
   {
-    path: 'aviso-legal',
-    loadComponent: () => import('./features/legal/aviso-legal.component').then((m) => m.AvisoLegalComponent)
-  },
-  {
-    path: 'privacidad',
-    loadComponent: () => import('./features/legal/privacidad.component').then((m) => m.PrivacidadComponent)
-  },
-  {path: 'cookies', loadComponent: () => import('./features/legal/cookies.component').then((m) => m.CookiesComponent)},
-  {
-    path: 'afiliados',
-    loadComponent: () => import('./features/legal/afiliados.component').then((m) => m.AfiliadosComponent)
+    path: 'hoteles',
+    loadComponent: () =>
+      import('./features/vertical/vertical-page.component').then((m) => m.VerticalPageComponent),
+    data: {
+      config: {
+        vertical: 'hoteles',
+        eyebrow: 'Alojamiento',
+        title: 'Hoteles en Málaga',
+        subtitle: 'Del centro histórico a la playa: compara y reserva tu alojamiento con Trip.com, con cancelación gratuita en la mayoría.',
+      },
+    },
   },
 
+  // Legales
+  { path: 'aviso-legal', loadComponent: () => import('./features/legal/aviso-legal.component').then((m) => m.AvisoLegalComponent) },
+  { path: 'privacidad', loadComponent: () => import('./features/legal/privacidad.component').then((m) => m.PrivacidadComponent) },
+  { path: 'cookies', loadComponent: () => import('./features/legal/cookies.component').then((m) => m.CookiesComponent) },
+  { path: 'afiliados', loadComponent: () => import('./features/legal/afiliados.component').then((m) => m.AfiliadosComponent) },
+
   // 404
-  {
-    path: '**',
-    loadComponent: () => import('./features/not-found/not-found.component').then((m) => m.NotFoundComponent)
-  },
+  { path: '**', loadComponent: () => import('./features/not-found/not-found.component').then((m) => m.NotFoundComponent) },
 ];

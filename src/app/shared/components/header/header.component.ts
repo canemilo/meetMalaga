@@ -1,6 +1,6 @@
-import {Component, signal} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {RouterLink, RouterLinkActive} from '@angular/router';
+import { Component, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -23,10 +23,13 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
         ><span></span><span></span><span></span></button>
 
         <nav class="nav" [class.nav--open]="open()">
+          <a routerLink="/free-tours" routerLinkActive="active" (click)="close()">Free tours</a>
+          <a routerLink="/rutas" routerLinkActive="active" (click)="close()">Rutas privadas</a>
           <a routerLink="/tours" routerLinkActive="active" (click)="close()">Tours</a>
           <a routerLink="/coches" routerLinkActive="active" (click)="close()">Alquiler de coches</a>
           <a routerLink="/restaurantes" routerLinkActive="active" (click)="close()">Restaurantes</a>
           <a routerLink="/ocio" routerLinkActive="active" (click)="close()">Ocio</a>
+          <a routerLink="/hoteles" routerLinkActive="active" (click)="close()">Hoteles</a>
         </nav>
       </div>
     </header>
@@ -77,12 +80,6 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
 })
 export class HeaderComponent {
   open = signal(false);
-
-  toggle() {
-    this.open.update((v) => !v);
-  }
-
-  close() {
-    this.open.set(false);
-  }
+  toggle() { this.open.update((v) => !v); }
+  close() { this.open.set(false); }
 }

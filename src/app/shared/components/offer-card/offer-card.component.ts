@@ -1,7 +1,7 @@
-import {Component, Input, inject} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {Offer} from '../../../core/models/offer.model';
-import {AffiliateService} from '../../../core/services/affiliate.service';
+import { Component, Input, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Offer } from '../../../core/models/offer.model';
+import { AffiliateService } from '../../../core/services/affiliate.service';
 
 /**
  * Tarjeta única para CUALQUIER vertical. Recibe una Offer y pinta imagen,
@@ -93,7 +93,7 @@ import {AffiliateService} from '../../../core/services/affiliate.service';
   `],
 })
 export class OfferCardComponent {
-  @Input({required: true}) offer!: Offer;
+  @Input({ required: true }) offer!: Offer;
 
   private readonly affiliate = inject(AffiliateService);
 
@@ -110,6 +110,7 @@ export class OfferCardComponent {
       localrent: 'Localrent',
       thefork: 'TheFork',
       booking: 'Booking',
+      tripcom: 'Trip.com',
       directo: '',
     };
     return map[this.offer.provider] ?? '';
