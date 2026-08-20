@@ -1,4 +1,4 @@
-import {Offer} from '../models/offer.model';
+import { Offer } from '../models/offer.model';
 
 /**
  * Catálogo de TOURS. Sustituye `providerUrl` por la URL real del producto

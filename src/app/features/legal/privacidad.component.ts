@@ -1,6 +1,6 @@
-import {Component, OnInit, inject} from '@angular/core';
-import {LegalLayoutComponent} from './legal-layout.component';
-import {SeoService} from '../../core/services/seo.service';
+import { Component, OnInit, inject } from '@angular/core';
+import { LegalLayoutComponent } from './legal-layout.component';
+import { SeoService } from '../../core/services/seo.service';
 
 @Component({
   selector: 'app-privacidad',
@@ -44,12 +44,7 @@ import {SeoService} from '../../core/services/seo.service';
 })
 export class PrivacidadComponent implements OnInit {
   private seo = inject(SeoService);
-
   ngOnInit() {
-    this.seo.update({
-      title: 'Política de privacidad',
-      description: 'Cómo tratamos tus datos en Meet Málaga.',
-      path: '/privacidad'
-    });
+    this.seo.update({ title: 'Política de privacidad', description: 'Cómo tratamos tus datos en Meet Málaga.', path: '/privacidad' });
   }
 }

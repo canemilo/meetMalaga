@@ -1,4 +1,4 @@
-import {Offer} from '../models/offer.model';
+import { Offer } from '../models/offer.model';
 
 /**
  * RESTAURANTES. Con TheFork ganas comisión por comensal sentado a través de

@@ -19,15 +19,15 @@ Todo el mapa de parámetros está en `src/app/core/services/affiliate.service.ts
 
 ## Programas recomendados para Málaga
 
-| Vertical     | Programa         | Dónde darte de alta                   | Comisión orientativa*   |
-|--------------|------------------|---------------------------------------|-------------------------|
-| Tours y ocio | **Civitatis**    | civitatis.com (programa de afiliados) | ~6–8 %                  |
-| Tours y ocio | **GetYourGuide** | partner.getyourguide.com              | ~8 %                    |
-| Atracciones  | **Tiqets**       | tiqets.com/partners                   | ~6–8 %                  |
-| Coches       | **DiscoverCars** | discovercars.com/affiliate            | ~ hasta 70 % del margen |
-| Coches       | **Localrent**    | localrent.com (partners)              | variable                |
-| Restaurantes | **TheFork**      | vía redes Awin / CJ                   | por comensal / CPA      |
-| Alojamiento  | **Booking.com**  | Booking Affiliate Partner             | ~25–40 % de su comisión |
+| Vertical | Programa | Dónde darte de alta | Comisión orientativa* |
+|----------|----------|---------------------|-----------------------|
+| Tours y ocio | **Civitatis** | civitatis.com (programa de afiliados) | ~6–8 % |
+| Tours y ocio | **GetYourGuide** | partner.getyourguide.com | ~8 % |
+| Atracciones | **Tiqets** | tiqets.com/partners | ~6–8 % |
+| Coches | **DiscoverCars** | discovercars.com/affiliate | ~ hasta 70 % del margen |
+| Coches | **Localrent** | localrent.com (partners) | variable |
+| Restaurantes | **TheFork** | vía redes Awin / CJ | por comensal / CPA |
+| Alojamiento | **Booking.com** | Booking Affiliate Partner | ~25–40 % de su comisión |
 
 \* Las comisiones cambian; confírmalas en cada panel. No las publiques como fijas.
 

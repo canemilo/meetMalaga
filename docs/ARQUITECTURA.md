@@ -18,34 +18,28 @@ de UI. Así el día que cambies el origen de datos no tocas los componentes.
 ## Piezas clave
 
 ### `Offer` (core/models/offer.model.ts)
-
 El tipo que describe cualquier servicio: título, imagen, precio, proveedor y la
 `providerUrl`. Todo el sitio gira en torno a este modelo.
 
 ### `AffiliateService` (core/services)
-
 Construye el enlace final con tu ID de afiliado y registra los clics de salida.
 Es el corazón del modelo de negocio. Ver `docs/AFILIADOS.md`.
 
 ### `CatalogService` (core/services)
-
 Fuente única del catálogo. Hoy lee de arrays locales (`core/data/*.data.ts`). Para
 migrar a un CMS solo cambias la implementación de sus tres métodos (por ejemplo, que
 hagan `fetch` a la API de WordPress) — los componentes no se enteran.
 
 ### `SeoService` (core/services)
-
 Fija `<title>`, `description` y Open Graph por página. Como hay SSR, estas etiquetas
 se renderizan en el HTML del servidor y Google las indexa.
 
 ### `VerticalPageComponent` (features/vertical)
-
 **Una sola plantilla para las cuatro verticales.** La diferencia (título, subtítulo,
 qué vertical mostrar) llega desde `data.config` en `app.routes.ts`. Añadir una
 sección nueva es añadir una ruta, no un componente.
 
 ### `OfferCardComponent` (shared)
-
 La tarjeta que se repite en toda la web. Recibe una `Offer` y pinta imagen, datos y
 el CTA de afiliado. Cámbiala una vez y cambia en todas partes.
 

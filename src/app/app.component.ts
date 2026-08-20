@@ -1,10 +1,10 @@
-import {Component, OnInit, inject} from '@angular/core';
-import {Router, RouterOutlet, NavigationEnd} from '@angular/router';
-import {filter} from 'rxjs';
-import {HeaderComponent} from './shared/components/header/header.component';
-import {FooterComponent} from './shared/components/footer/footer.component';
-import {CookieBannerComponent} from './shared/components/cookie-banner/cookie-banner.component';
-import {AnalyticsService} from './core/services/analytics.service';
+import { Component, OnInit, inject } from '@angular/core';
+import { Router, RouterOutlet, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { CookieBannerComponent } from './shared/components/cookie-banner/cookie-banner.component';
+import { AnalyticsService } from './core/services/analytics.service';
 
 @Component({
   selector: 'app-root',

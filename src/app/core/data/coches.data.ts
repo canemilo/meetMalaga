@@ -1,4 +1,4 @@
-import {Offer} from '../models/offer.model';
+import { Offer } from '../models/offer.model';
 
 /**
  * ALQUILER DE COCHES. DiscoverCars y Localrent son metabuscadores: lo normal

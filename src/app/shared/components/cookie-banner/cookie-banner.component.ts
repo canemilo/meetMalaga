@@ -1,7 +1,7 @@
-import {Component, OnInit, PLATFORM_ID, inject, signal} from '@angular/core';
-import {CommonModule, isPlatformBrowser} from '@angular/common';
-import {RouterLink} from '@angular/router';
-import {AnalyticsService} from '../../../core/services/analytics.service';
+import { Component, OnInit, PLATFORM_ID, inject, signal } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { RouterLink } from '@angular/router';
+import { AnalyticsService } from '../../../core/services/analytics.service';
 
 const STORAGE_KEY = 'mm_cookie_consent';
 

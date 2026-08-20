@@ -1,10 +1,10 @@
-import {Component, OnInit, inject} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {ActivatedRoute} from '@angular/router';
-import {Offer, Vertical} from '../../core/models/offer.model';
-import {CatalogService} from '../../core/services/catalog.service';
-import {SeoService} from '../../core/services/seo.service';
-import {OfferCardComponent} from '../../shared/components/offer-card/offer-card.component';
+import { Component, OnInit, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
+import { Offer, Vertical } from '../../core/models/offer.model';
+import { CatalogService } from '../../core/services/catalog.service';
+import { SeoService } from '../../core/services/seo.service';
+import { OfferCardComponent } from '../../shared/components/offer-card/offer-card.component';
 
 interface VerticalConfig {
   vertical: Vertical;

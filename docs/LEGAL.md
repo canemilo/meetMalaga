@@ -7,15 +7,15 @@
 ## Obligatorio antes de publicar
 
 - [ ] **Aviso legal** (`/aviso-legal`): identifica al titular (nombre/razón social,
-  NIF, domicilio, email). Lo exige la **LSSI-CE** para webs con actividad económica.
+      NIF, domicilio, email). Lo exige la **LSSI-CE** para webs con actividad económica.
 - [ ] **Política de privacidad** (`/privacidad`): qué datos tratas y por qué (**RGPD**).
 - [ ] **Política de cookies** (`/cookies`): tipos de cookies y cómo gestionarlas.
 - [ ] **Banner de cookies**: no cargues analítica ni cookies no esenciales hasta que el
-  usuario acepte. El proyecto ya trae `CookieBannerComponent`; conecta la carga de
-  GA4 a la aceptación (ver `docs/DESPLIEGUE.md`).
+      usuario acepte. El proyecto ya trae `CookieBannerComponent`; conecta la carga de
+      GA4 a la aceptación (ver `docs/DESPLIEGUE.md`).
 - [ ] **Divulgación de afiliados** (`/afiliados` + aviso en el pie): informa de que
-  ganas comisión por los enlaces. Lo exigen las normas de consumo, la buena praxis
-  y las propias condiciones de los programas.
+      ganas comisión por los enlaces. Lo exigen las normas de consumo, la buena praxis
+      y las propias condiciones de los programas.
 
 ## Sobre tu responsabilidad
 

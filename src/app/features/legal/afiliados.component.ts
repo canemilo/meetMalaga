@@ -1,6 +1,6 @@
-import {Component, OnInit, inject} from '@angular/core';
-import {LegalLayoutComponent} from './legal-layout.component';
-import {SeoService} from '../../core/services/seo.service';
+import { Component, OnInit, inject } from '@angular/core';
+import { LegalLayoutComponent } from './legal-layout.component';
+import { SeoService } from '../../core/services/seo.service';
 
 @Component({
   selector: 'app-afiliados',
@@ -35,12 +35,7 @@ import {SeoService} from '../../core/services/seo.service';
 })
 export class AfiliadosComponent implements OnInit {
   private seo = inject(SeoService);
-
   ngOnInit() {
-    this.seo.update({
-      title: 'Aviso de afiliados',
-      description: 'Cómo funcionan los enlaces de afiliado en Meet Málaga.',
-      path: '/afiliados'
-    });
+    this.seo.update({ title: 'Aviso de afiliados', description: 'Cómo funcionan los enlaces de afiliado en Meet Málaga.', path: '/afiliados' });
   }
 }

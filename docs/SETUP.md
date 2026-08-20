@@ -13,12 +13,12 @@ npm install
 
 ## Comandos
 
-| Comando                        | Qué hace                                                                   |
-|--------------------------------|----------------------------------------------------------------------------|
-| `npm start`                    | Servidor de desarrollo en `http://localhost:4200` con recarga en caliente. |
-| `npm run build`                | Build de producción con SSR + prerender en `dist/meetmalaga/`.             |
-| `npm run serve:ssr:meetmalaga` | Sirve la versión SSR ya construida (Node/Express) en el puerto 4000.       |
-| `npm run watch`                | Build en modo desarrollo que recompila al guardar.                         |
+| Comando | Qué hace |
+|---------|----------|
+| `npm start` | Servidor de desarrollo en `http://localhost:4200` con recarga en caliente. |
+| `npm run build` | Build de producción con SSR + prerender en `dist/meetmalaga/`. |
+| `npm run serve:ssr:meetmalaga` | Sirve la versión SSR ya construida (Node/Express) en el puerto 4000. |
+| `npm run watch` | Build en modo desarrollo que recompila al guardar. |
 
 ## Estructura de salida del build
 

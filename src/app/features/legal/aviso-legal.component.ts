@@ -1,6 +1,6 @@
-import {Component, OnInit, inject} from '@angular/core';
-import {LegalLayoutComponent} from './legal-layout.component';
-import {SeoService} from '../../core/services/seo.service';
+import { Component, OnInit, inject } from '@angular/core';
+import { LegalLayoutComponent } from './legal-layout.component';
+import { SeoService } from '../../core/services/seo.service';
 
 @Component({
   selector: 'app-aviso-legal',
@@ -41,8 +41,7 @@ import {SeoService} from '../../core/services/seo.service';
 })
 export class AvisoLegalComponent implements OnInit {
   private seo = inject(SeoService);
-
   ngOnInit() {
-    this.seo.update({title: 'Aviso legal', description: 'Aviso legal de Meet Málaga.', path: '/aviso-legal'});
+    this.seo.update({ title: 'Aviso legal', description: 'Aviso legal de Meet Málaga.', path: '/aviso-legal' });
   }
 }

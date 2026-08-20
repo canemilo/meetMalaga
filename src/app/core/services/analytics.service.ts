@@ -1,13 +1,13 @@
-import {Injectable, PLATFORM_ID, inject} from '@angular/core';
-import {isPlatformBrowser} from '@angular/common';
-import {environment} from '../../../environments/environment';
+import { Injectable, PLATFORM_ID, inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { environment } from '../../../environments/environment';
 
 /**
  * Carga Google Analytics (GA4) SOLO cuando el usuario ha aceptado las cookies
  * analíticas, cumpliendo el RGPD. Es seguro para SSR: no hace nada en servidor
  * ni si no hay `analyticsId` configurado.
  */
-@Injectable({providedIn: 'root'})
+@Injectable({ providedIn: 'root' })
 export class AnalyticsService {
   private readonly platformId = inject(PLATFORM_ID);
   private loaded = false;
@@ -28,11 +28,9 @@ export class AnalyticsService {
 
     const w = window as any;
     w.dataLayer = w.dataLayer || [];
-    w.gtag = function () {
-      w.dataLayer.push(arguments);
-    };
+    w.gtag = function () { w.dataLayer.push(arguments); };
     w.gtag('js', new Date());
-    w.gtag('config', id, {anonymize_ip: true});
+    w.gtag('config', id, { anonymize_ip: true });
 
     this.loaded = true;
   }
@@ -42,7 +40,7 @@ export class AnalyticsService {
     if (!this.loaded) return;
     const gtag = (window as any).gtag;
     if (typeof gtag === 'function') {
-      gtag('event', 'page_view', {page_path: path});
+      gtag('event', 'page_view', { page_path: path });
     }
   }
 }

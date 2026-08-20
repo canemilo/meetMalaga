@@ -1,6 +1,6 @@
-import {Component, OnInit, inject} from '@angular/core';
-import {LegalLayoutComponent} from './legal-layout.component';
-import {SeoService} from '../../core/services/seo.service';
+import { Component, OnInit, inject } from '@angular/core';
+import { LegalLayoutComponent } from './legal-layout.component';
+import { SeoService } from '../../core/services/seo.service';
 
 @Component({
   selector: 'app-cookies',
@@ -30,8 +30,7 @@ import {SeoService} from '../../core/services/seo.service';
 })
 export class CookiesComponent implements OnInit {
   private seo = inject(SeoService);
-
   ngOnInit() {
-    this.seo.update({title: 'Política de cookies', description: 'Uso de cookies en Meet Málaga.', path: '/cookies'});
+    this.seo.update({ title: 'Política de cookies', description: 'Uso de cookies en Meet Málaga.', path: '/cookies' });
   }
 }

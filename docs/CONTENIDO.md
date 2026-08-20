@@ -54,12 +54,10 @@ No hace falta crear un componente nuevo: la plantilla `VerticalPageComponent` si
 Tienes tres caminos, de más rápido a más potente:
 
 ### A) Copiar a mano (lo más simple para empezar)
-
 Coge los textos y fotos de tu WordPress actual y vuélcalos en los `*.data.ts`. Para
 pocas decenas de servicios es lo más rápido.
 
 ### B) WordPress como *headless CMS* (recomendado si ya tienes mucho contenido)
-
 Tu WordPress expone una API REST en `https://tudominio.com/wp-json/wp/v2/`. Puedes
 seguir editando en el panel de WordPress que ya conoces y que Angular consuma esos
 datos. Cambia `CatalogService` para que haga `fetch` en lugar de leer arrays:
@@ -77,7 +75,6 @@ Tendrías que mapear los campos de WordPress a tu modelo `Offer` (una función
 `toOffer`). Los componentes no cambian.
 
 ### C) Un CMS headless nuevo (Strapi, Contentful)
-
 Si quieres separarte de WordPress. Más trabajo inicial, más control. Igualmente solo
 tocas `CatalogService`.
 

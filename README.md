@@ -1,56 +1,76 @@
-# Meet Málaga 🌞
+# Meet Málaga
 
 Portal turístico de Málaga construido en **Angular 17 + SSR**. Recomienda tours,
 alquiler de coches, restaurantes y ocio, y monetiza mediante **enlaces de
-afiliado**: ganas una comisión cada vez que un visitante reserva a través del sitio.
+afiliado**: se genera una comisión cada vez que un visitante reserva un servicio
+a través del sitio. El proveedor (Civitatis, DiscoverCars, TheFork…) cobra,
+gestiona la reserva y paga la comisión; el sitio no procesa pagos.
 
-El proveedor (Civitatis, DiscoverCars, TheFork...) cobra, gestiona la reserva y
-te paga la comisión. Tú no procesas pagos.
+## Requisitos
+
+- Node.js 22 (ver `.nvmrc`)
+- npm 9+
 
 ## Arranque rápido
 
 ```bash
 npm install
-npm start            # desarrollo en http://localhost:4200
+npm start                       # desarrollo: http://localhost:4200
 ```
 
 ```bash
-npm run build        # build de producción con SSR + prerender
-npm run serve:ssr:meetmalaga   # sirve la versión SSR en el puerto 4000
+npm run build                   # producción con SSR + prerender
+npm run serve:ssr:meetmalaga    # sirve la versión SSR: http://localhost:4000
 ```
 
-## Lo primero que debes hacer
+## Estructura del proyecto
 
-1. **Pon tus IDs de afiliado** en `src/environments/environment.ts`
-   (ver [`docs/AFILIADOS.md`](docs/AFILIADOS.md)).
-2. **Cambia el contenido** de ejemplo en `src/app/core/data/*.data.ts`
-   (ver [`docs/CONTENIDO.md`](docs/CONTENIDO.md)).
-3. **Completa las páginas legales** con tus datos (ver [`docs/LEGAL.md`](docs/LEGAL.md)).
-4. **Despliega** en Vercel/Netlify (ver [`docs/DESPLIEGUE.md`](docs/DESPLIEGUE.md)).
+```
+meetmalaga/
+├── src/
+│   ├── app/
+│   │   ├── core/               # lógica sin UI
+│   │   │   ├── models/         # tipos (Offer, Vertical, AffiliateProvider)
+│   │   │   ├── data/           # catálogo por vertical
+│   │   │   └── services/       # AffiliateService, CatalogService, SeoService, AnalyticsService
+│   │   ├── shared/components/  # OfferCard, Header, Footer, CookieBanner
+│   │   └── features/           # home, vertical (plantilla común), legal, not-found
+│   └── environments/           # IDs de afiliado (prod / dev)
+├── scripts/
+│   └── generate-sitemap.mjs    # genera sitemap.xml y robots.txt en cada build
+├── docs/                       # documentación (ver abajo)
+├── preview/
+│   └── index.html              # vista previa estática del diseño (un solo archivo)
+├── server.ts                   # servidor SSR (Express)
+└── angular.json
+```
+
+## Configuración inicial
+
+1. IDs de afiliado en `src/environments/environment.ts` (ver `docs/AFILIADOS.md`).
+2. `siteUrl` con tu dominio real en `environment.ts`.
+3. Contenido real en `src/app/core/data/*.data.ts`.
+4. Datos reales en las páginas legales (`src/app/features/legal/`).
+5. `analyticsId` de GA4 si vas a medir (ver `docs/DESPLIEGUE.md`).
 
 ## Documentación
 
-| Documento                               | Contenido                                                  |
-|-----------------------------------------|------------------------------------------------------------|
-| [ARQUITECTURA.md](docs/ARQUITECTURA.md) | Cómo está organizado el código                             |
-| [AFILIADOS.md](docs/AFILIADOS.md)       | Alta en programas y configuración de comisiones            |
-| [CONTENIDO.md](docs/CONTENIDO.md)       | Añadir ofertas, nuevas verticales y migrar desde WordPress |
-| [SETUP.md](docs/SETUP.md)               | Instalación detallada y comandos                           |
-| [DESPLIEGUE.md](docs/DESPLIEGUE.md)     | Publicar con SSR, dominio y analítica                      |
-| [LEGAL.md](docs/LEGAL.md)               | Checklist legal (RGPD, cookies, afiliados)                 |
+| Documento | Contenido |
+|-----------|-----------|
+| [docs/ARQUITECTURA.md](docs/ARQUITECTURA.md) | Cómo está organizado el código |
+| [docs/AFILIADOS.md](docs/AFILIADOS.md) | Alta en programas y configuración de comisiones |
+| [docs/CONTENIDO.md](docs/CONTENIDO.md) | Añadir ofertas, verticales y migrar desde WordPress |
+| [docs/SETUP.md](docs/SETUP.md) | Instalación detallada y comandos |
+| [docs/DESPLIEGUE.md](docs/DESPLIEGUE.md) | Publicar con SSR, dominio y analítica |
+| [docs/LEGAL.md](docs/LEGAL.md) | Checklist legal (RGPD, cookies, afiliados) |
+| [docs/afiliacion.pdf](docs/afiliacion.pdf) | Guía completa de afiliación (PDF) |
 
-## Estructura
+## Vista previa del diseño
 
-```
-src/app/
-├── core/
-│   ├── models/         → tipos (Offer, Vertical, AffiliateProvider)
-│   ├── data/           → catálogo por vertical (tours, coches, restaurantes, ocio)
-│   └── services/       → AffiliateService, CatalogService, SeoService
-├── shared/components/  → OfferCard, Header, Footer, CookieBanner
-└── features/
-    ├── home/           → portada
-    ├── vertical/       → plantilla común de las 4 verticales
-    ├── legal/          → aviso legal, privacidad, cookies, afiliados
-    └── not-found/      → 404
-```
+`preview/index.html` es una maqueta estática de un solo archivo para enseñar el
+diseño sin levantar el proyecto. Ábrela en cualquier navegador o publícala en un
+hosting estático. No es la app real (no tiene SSR, SEO ni reservas).
+
+## Licencia
+
+MIT — ver [LICENSE](LICENSE).

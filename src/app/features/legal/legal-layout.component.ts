@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 /**
  * Marco visual compartido por todas las páginas legales.
@@ -34,5 +34,5 @@ import {Component, Input} from '@angular/core';
   `],
 })
 export class LegalLayoutComponent {
-  @Input({required: true}) title!: string;
+  @Input({ required: true }) title!: string;
 }
