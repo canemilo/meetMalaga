@@ -59,11 +59,14 @@ Piezas clave:
 - **GuiaBioComponent** (`shared/components/guia-bio`): bio de Samuel (el guía), hoy
   solo se usa en `/rutas`.
 - **HeaderComponent**: nav en dos niveles a propósito. `.nav__primary` (Free tours,
-  Rutas privadas) son botones `.btn`, mismo tratamiento que el CTA del hero — es lo
-  principal. Las 5 verticales de afiliación viven agrupadas en `.nav__catalog`, un
-  `<details>/<summary>` nativo (accesible por teclado sin JS de apertura/cierre) con
-  el rótulo "Catálogo" — secundario pero a un clic, en toda página. Si añades un
-  enlace de nav nuevo, decide primero a qué grupo pertenece.
+  Rutas privadas) usa `.nav__primary-link` — texto en negrita, **sin fondo de color**
+  (se probó con `.btn.btn--sol`/`.btn.btn--primary`, el dueño lo quitó explícitamente:
+  el peso visual en el header se marca por tipografía/color de texto, el relleno de
+  color se reserva a los CTA del hero). Las 5 verticales de afiliación viven
+  agrupadas en `.nav__catalog`, un `<details>/<summary>` nativo (accesible por
+  teclado sin JS de apertura/cierre) con el rótulo "Catálogo" — secundario pero a un
+  clic, en toda página. Si añades un enlace de nav nuevo, decide primero a qué grupo
+  pertenece, y no le pongas fondo de color a `.nav__primary`.
 - **Home ya NO tiene** sección de "Destacados" (ofertas de afiliación en portada) —
   se quitó a propósito para no competir con free tours/rutas. No la reintroduzcas
   sin que te lo pidan. En su lugar hay una sección **"historia"** (`home.historia.*`,
@@ -78,6 +81,19 @@ Piezas clave:
 - Las dos tarjetas de "guía local" (Free tours / Rutas privadas) usan **el mismo
   tratamiento visual** (fondo blanco, mismo borde/hover) — no le devuelvas a la de
   Free tours un fondo de color aparte sin que te lo pidan, fue un cambio explícito.
+- **Hero de la home**: layout editorial a dos columnas (texto siempre primero, foto
+  4:5 con `.corte` como apoyo, no protagonista; en móvil la foto pasa a 4:3 igual que
+  "historia"). H1 "Un guía *de aquí*, no una guía turística." (juega con guía-persona
+  vs. guía-objeto) — evita a propósito "descubre"/"vive"/"los mejores" aunque un
+  brief los sugiera, sigue siendo la norma de copy del sitio. Los CTA del hero
+  reutilizan los mismos ids que "guia"/"historia" (`home.guia.freeTours.link` /
+  `home.guia.rutas.link`) — un mismo destino, un mismo texto de botón en todo el
+  sitio, no lo dupliques con textos distintos. Bajo el CTA hay un elemento de
+  confianza real y verificable ("Guía local · titulado en Turismo", del propio
+  `GuiaBioComponent`) — no pongas "guías oficiales" ni ninguna certificación que no
+  se haya confirmado. El acento vibrante que pedía un brief anterior ya existe:
+  `--buganvilla`; no añadas un color de acento nuevo sin comprobar primero si ese
+  token ya cumple la función.
 
 ## Convenciones
 

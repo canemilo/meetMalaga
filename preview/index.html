@@ -74,12 +74,22 @@ a{color:inherit;text-decoration:none}
 .nav-catalog__panel button:hover{background:var(--cal-hueso)}
 .nav-catalog__panel button.on{color:var(--mar)}
 
-/* hero — la audacia tipográfica se gasta aquí, en ningún otro sitio */
-.hero{padding:clamp(3rem,8vw,6rem) 0 clamp(2.5rem,6vw,4rem)}
+/* hero — la audacia tipográfica se gasta aquí, en ningún otro sitio. Dos
+   columnas: el texto manda, la foto (con la firma .corte) es apoyo, no
+   protagonista — nada de foto de fondo a sangre con degradado genérico. */
+.hero{position:relative;overflow:hidden;padding:clamp(3rem,8vw,6rem) 0 clamp(2.5rem,6vw,4rem)}
+.hero__inner{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,380px);gap:clamp(2rem,5vw,3.5rem);align-items:center}
+.hero__copy{max-width:46rem}
 .hero h1{font-size:clamp(3.4rem,2rem + 7vw,7rem);margin:.3rem 0 1rem}
 .hero h1 em{font-style:normal;color:var(--mar)}
 .hero p{font-family:var(--body);font-size:clamp(1.25rem,1.15rem + .5vw,1.5rem);color:var(--tinta-60);max-width:44ch;margin:0}
 .hero__cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.hero__trust{display:flex;align-items:center;gap:.6rem;margin:1.3rem 0 0;font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--tinta-60)}
+.hero__trust::before{content:'';width:1.4rem;height:2px;background:var(--buganvilla);flex:none}
+.hero__media{align-self:stretch;aspect-ratio:4/5;overflow:hidden;box-shadow:var(--sombra)}
+.hero__media img{width:100%;height:100%;object-fit:cover}
+.hero__glow{position:absolute;z-index:1;top:-30%;left:-12%;width:46vw;height:46vw;max-width:560px;max-height:560px;background:radial-gradient(circle,rgba(244,183,64,.32),transparent 60%);pointer-events:none}
+@media(max-width:720px){.hero__inner{grid-template-columns:1fr}.hero__media{order:2;aspect-ratio:4/3;max-width:26rem;margin-inline:auto}}
 
 /* lo que ofrezco yo — free tours y rutas privadas, lo principal del negocio */
 .guia{margin-top:var(--space-section)}
@@ -253,13 +263,22 @@ function home(){
     `<img class="historia__img${f.cls}" src="https://picsum.photos/seed/${f.img}/800/600" alt="${f.alt}" loading="lazy" width="800" height="600">`
   ).join('');
   return `<section class="hero">
-      <p class="eyebrow">Costa del Sol · Andalucía</p>
-      <h1>Un guía de aquí<br>para <em>Málaga</em>.</h1>
-      <p>Empieza con un free tour por el centro o resérvame una ruta privada a tu ritmo. Si quieres completar el viaje, también comparo tours, coches, restaurantes y ocio de confianza.</p>
-      <div class="hero__cta">
-        <button class="btn btn--sol" onclick="go('free-tours')">Free tours por Málaga</button>
-        <button class="btn btn--primary" onclick="go('rutas')">Rutas privadas</button>
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Costa del Sol · Andalucía</p>
+          <h1>Un guía <em>de aquí</em>,<br>no una guía turística.</h1>
+          <p>Empieza gratis con un free tour por el centro o reserva una ruta privada a tu ritmo.</p>
+          <div class="hero__cta">
+            <button class="btn btn--sol" onclick="go('free-tours')">Ver free tours</button>
+            <button class="btn btn--primary" onclick="go('rutas')">Ver rutas privadas</button>
+          </div>
+          <p class="hero__trust">Guía local · titulado en Turismo</p>
+        </div>
+        <div class="hero__media corte">
+          <img src="https://picsum.photos/seed/malaga-soho-alcazaba-luz-dorada/900/1125" alt="Mural de arte urbano del Soho de Málaga fundiéndose con la Alcazaba y la Catedral al fondo, luz dorada de atardecer y gente paseando junto al mar" fetchpriority="high" width="900" height="1125">
+        </div>
       </div>
+      <div class="hero__glow" aria-hidden="true"></div>
     </section>
     <section class="guia">
       <p class="eyebrow">Conmigo, guía local</p>

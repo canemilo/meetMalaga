@@ -7,21 +7,36 @@ import { SeoService } from '../../core/services/seo.service';
   standalone: true,
   imports: [RouterLink, RouterLinkActive],
   template: `
-    <!-- HERO -->
+    <!-- HERO: columna de texto (mensaje + CTA, lo que manda) y una única
+         foto con la firma .corte (lo que ya anticipaba el comentario de esa
+         clase en styles.css) como apoyo, no protagonista. Sin foto de postal
+         genérica: el seed/alt describen la composición real que debe ir aquí
+         — Soho urbano fundiéndose con Alcazaba/Catedral, luz de atardecer,
+         gente en la calle — a la espera de que Samuel ponga su propia foto,
+         igual que el resto del catálogo y de "historia". -->
     <section class="hero">
       <div class="container hero__inner">
-        <p class="eyebrow" i18n="@@home.hero.eyebrow">Costa del Sol · Andalucía</p>
-        <h1 class="hero__title" i18n="@@home.hero.title2">
-          Un guía de aquí<br />para <em>Málaga</em>.
-        </h1>
-        <p class="hero__lead" i18n="@@home.hero.lead2">
-          Empieza con un free tour por el centro o resérvame una ruta privada
-          a tu ritmo. Si quieres completar el viaje, también comparo tours,
-          coches, restaurantes, ocio y hoteles de confianza.
-        </p>
-        <div class="hero__cta">
-          <a routerLink="/free-tours" class="btn btn--sol" i18n="@@home.hero.ctaFreeTours">Free tours por Málaga</a>
-          <a routerLink="/rutas" class="btn btn--primary" i18n="@@home.hero.ctaRutas">Rutas privadas</a>
+        <div class="hero__copy">
+          <p class="eyebrow" i18n="@@home.hero.eyebrow">Costa del Sol · Andalucía</p>
+          <h1 class="hero__title" i18n="@@home.hero.title2">
+            Un guía <em>de aquí</em>,<br />no una guía turística.
+          </h1>
+          <p class="hero__lead" i18n="@@home.hero.lead2">
+            Empieza gratis con un free tour por el centro o reserva una ruta
+            privada a tu ritmo.
+          </p>
+          <div class="hero__cta">
+            <a routerLink="/free-tours" class="btn btn--sol" i18n="@@home.guia.freeTours.link">Ver free tours</a>
+            <a routerLink="/rutas" class="btn btn--primary" i18n="@@home.guia.rutas.link">Ver rutas privadas</a>
+          </div>
+          <p class="hero__trust" i18n="@@home.hero.trust">Guía local · titulado en Turismo</p>
+        </div>
+        <div class="hero__media corte">
+          <img
+            src="https://picsum.photos/seed/malaga-soho-alcazaba-luz-dorada/900/1125"
+            alt="Mural de arte urbano del Soho de Málaga fundiéndose con la Alcazaba y la Catedral al fondo, luz dorada de atardecer y gente paseando junto al mar"
+            i18n-alt="@@home.hero.imgAlt"
+            fetchpriority="high" width="900" height="1125" />
         </div>
       </div>
       <div class="hero__glow" aria-hidden="true"></div>
@@ -138,18 +153,60 @@ import { SeoService } from '../../core/services/seo.service';
     </section>
   `,
   styles: [`
-    /* HERO — la audacia tipográfica se gasta aquí y solo aquí */
+    /* HERO — la audacia tipográfica se gasta aquí y solo aquí. Dos columnas:
+       el texto manda (ratio mayor, siempre primero en el DOM y en móvil);
+       la foto es apoyo, con la misma firma .corte que las tarjetas — no una
+       foto de fondo a sangre con degradado, que es la solución de plantilla
+       que cualquier web turística ya usa. */
     .hero { position: relative; overflow: hidden; padding: clamp(3rem, 8vw, 6rem) 0 clamp(2.5rem, 6vw, 4rem); }
-    .hero__inner { position: relative; z-index: 2; max-width: 46rem; }
+    .hero__inner {
+      position: relative; z-index: 2;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(220px, 380px);
+      gap: clamp(2rem, 5vw, 3.5rem);
+      align-items: center;
+    }
+    .hero__copy { max-width: 46rem; }
     .hero__title { font-size: var(--step-5); margin: .3rem 0 1rem; }
     .hero__title em { font-style: normal; color: var(--mar); }
     .hero__lead { font-size: var(--step-1); color: var(--tinta-60); max-width: 44ch; }
     .hero__cta { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.8rem; }
+    /* Elemento de confianza: dato real (ver GuiaBioComponent), no un sello
+       inventado de "guías oficiales". El trazo usa la buganvilla — el
+       acento vibrante que ya tiene el sistema, sin sumar un color nuevo. */
+    .hero__trust {
+      display: flex; align-items: center; gap: .6rem;
+      margin: 1.3rem 0 0;
+      font-family: var(--mono); font-size: .72rem; letter-spacing: .06em;
+      text-transform: uppercase; color: var(--tinta-60);
+    }
+    .hero__trust::before { content: ''; width: 1.4rem; height: 2px; background: var(--buganvilla); flex: none; }
+    .hero__media { align-self: stretch; aspect-ratio: 4 / 5; overflow: hidden; box-shadow: var(--sombra); }
+    .hero__media img { width: 100%; height: 100%; object-fit: cover; }
     .hero__glow {
-      position: absolute; z-index: 1; top: -30%; right: -10%;
-      width: 60vw; height: 60vw; max-width: 720px; max-height: 720px;
-      background: radial-gradient(circle, rgba(244,183,64,.35), transparent 60%);
+      position: absolute; z-index: 1; top: -30%; left: -12%;
+      width: 46vw; height: 46vw; max-width: 560px; max-height: 560px;
+      background: radial-gradient(circle, rgba(244,183,64,.32), transparent 60%);
       pointer-events: none;
+    }
+
+    /* Entrada orquestada, una sola vez: la columna de texto se revela en
+       cascada y la foto la sigue. Nada de scroll-reveal disperso en el
+       resto de la página — la audacia de movimiento se gasta aquí.
+       prefers-reduced-motion ya se resuelve de forma global en styles.css
+       (acorta la duración a ~0, sin dejar nada oculto). */
+    @keyframes hero-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .hero__copy > * { opacity: 0; animation: hero-in .6s ease forwards; }
+    .hero__copy > .eyebrow { animation-delay: .05s; }
+    .hero__copy > .hero__title { animation-delay: .16s; }
+    .hero__copy > .hero__lead { animation-delay: .28s; }
+    .hero__copy > .hero__cta { animation-delay: .4s; }
+    .hero__copy > .hero__trust { animation-delay: .5s; }
+    .hero__media { opacity: 0; animation: hero-in .7s ease .22s forwards; }
+
+    @media (max-width: 720px) {
+      .hero__inner { grid-template-columns: 1fr; }
+      .hero__media { order: 2; aspect-ratio: 4 / 3; max-width: 26rem; margin-inline: auto; }
     }
 
     /* CATÁLOGO: franja compacta, deliberadamente secundaria. Se lee como un
@@ -254,7 +311,7 @@ export class HomeComponent implements OnInit {
       description:
         'Descubre Málaga con las mejores experiencias: tours guiados, alquiler de coches, restaurantes y planes de ocio, reservados con plataformas de confianza.',
       path: '/',
-      image: 'https://picsum.photos/seed/malaga-gibralfaro-atardecer/800/600',
+      image: 'https://picsum.photos/seed/malaga-soho-alcazaba-luz-dorada/900/1125',
     });
   }
 }

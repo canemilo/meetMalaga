@@ -32,8 +32,8 @@ const LABEL: Record<Locale, string> = { es: 'ES', en: 'EN', fr: 'FR', de: 'DE' }
 
         <nav class="nav" [class.nav--open]="open()">
           <div class="nav__primary">
-            <a routerLink="/free-tours" routerLinkActive="active" (click)="close()" class="btn btn--sol btn--nav" i18n="@@header.nav.freeTours">Free tours</a>
-            <a routerLink="/rutas" routerLinkActive="active" (click)="close()" class="btn btn--primary btn--nav" i18n="@@header.nav.rutas">Rutas privadas</a>
+            <a routerLink="/free-tours" routerLinkActive="active" (click)="close()" class="nav__primary-link" i18n="@@header.nav.freeTours">Free tours</a>
+            <a routerLink="/rutas" routerLinkActive="active" (click)="close()" class="nav__primary-link" i18n="@@header.nav.rutas">Rutas privadas</a>
           </div>
 
           <!-- Catálogo: afiliación (tours/coches/restaurantes/ocio/hoteles), agrupada
@@ -86,15 +86,18 @@ const LABEL: Record<Locale, string> = { es: 'ES', en: 'EN', fr: 'FR', de: 'DE' }
     }
     .nav a:hover, .nav a.active { color: var(--tinta); }
 
-    /* Free tours / Rutas privadas: lo principal del negocio. Mismos botones
-       que el hero de la home — la continuidad visual dice "esto es lo que
-       importa" antes de leer una sola palabra. */
-    .nav__primary { display: flex; gap: .6rem; }
-    .btn--nav { position: relative; padding: .5rem 1.1rem; font-size: var(--step--1); }
+    /* Free tours / Rutas privadas: lo principal del negocio. Sin relleno de
+       color (queda para los CTA del hero) — aquí se marcan por peso y color
+       de texto, como el resto del nav pero más firmes. */
+    .nav__primary { display: flex; gap: 1.4rem; }
+    .nav__primary-link {
+      font-weight: 700; color: var(--tinta);
+    }
+    .nav__primary-link:hover, .nav__primary-link.active { color: var(--mar); }
     .nav__primary a.active::after {
       content: ''; position: absolute; left: 50%; bottom: -7px;
       width: 5px; height: 5px; border-radius: 50%;
-      background: var(--tinta); transform: translateX(-50%);
+      background: var(--mar); transform: translateX(-50%);
     }
 
     /* Catálogo: afiliación agrupada, secundaria, a un clic. Tipografía y
@@ -168,7 +171,6 @@ const LABEL: Record<Locale, string> = { es: 'ES', en: 'EN', fr: 'FR', de: 'DE' }
         flex-direction: column; gap: .7rem;
         padding: 1.1rem clamp(1.2rem,4vw,2.5rem);
       }
-      .nav__primary .btn { justify-content: center; width: 100%; }
 
       .nav__catalog { border-top: 1px solid var(--linea); }
       .nav__catalog summary { padding: 1rem clamp(1.2rem,4vw,2.5rem); justify-content: space-between; }

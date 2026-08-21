@@ -1618,22 +1618,6 @@
           <context context-type="linenumber">17,18</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="home.hero.ctaFreeTours" datatype="html">
-        <source>Free tours por Málaga</source>
-      <target>Free tours à Málaga</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">27,28</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.hero.ctaRutas" datatype="html">
-        <source>Rutas privadas</source>
-      <target>Circuits privés</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">28,31</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="home.guia.eyebrow" datatype="html">
         <source>Conmigo, guía local</source>
       <target>Avec moi, guide local</target>
@@ -2970,14 +2954,6 @@
         <source>Dos formas de recorrer Málaga conmigo</source>
         <target>Deux façons de découvrir Málaga avec moi</target>
       </trans-unit>
-      <trans-unit id="home.hero.lead2" datatype="html">
-        <source> Empieza con un free tour por el centro o resérvame una ruta privada a tu ritmo. Si quieres completar el viaje, también comparo tours, coches, restaurantes, ocio y hoteles de confianza. </source>
-        <target> Commence par un free tour du centre, ou réserve-moi pour un circuit privé à ton rythme. Si tu veux compléter ton séjour, je compare aussi des tours, locations de voiture, restaurants, activités et hôtels de confiance. </target>
-      </trans-unit>
-      <trans-unit id="home.hero.title2" datatype="html">
-        <source> Un guía de aquí<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>para <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Málaga<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. </source>
-        <target> Un guide d’ici<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>pour <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Málaga<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. </target>
-      </trans-unit>
       <trans-unit id="home.historia.eyebrow" datatype="html">
         <source>Antes de la ruta</source>
         <target>Avant la visite</target>
@@ -3021,6 +2997,22 @@
       <trans-unit id="home.historia.foto3.imgAlt" datatype="html">
         <source>Skyline de Málaga con la Catedral y el Mediterráneo al fondo</source>
         <target>Silhouette de Málaga avec la Cathédrale et la Méditerranée en arrière-plan</target>
+      </trans-unit>
+      <trans-unit id="home.hero.title2" datatype="html">
+        <source> Un guía <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>de aquí<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>,<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>no una guía turística. </source>
+        <target> Un guide <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>d’ici<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>,<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>pas un guide touristique. </target>
+      </trans-unit>
+      <trans-unit id="home.hero.lead2" datatype="html">
+        <source> Empieza gratis con un free tour por el centro o reserva una ruta privada a tu ritmo. </source>
+        <target> Commence gratuitement avec un free tour du centre, ou réserve un circuit privé à ton rythme. </target>
+      </trans-unit>
+      <trans-unit id="home.hero.trust" datatype="html">
+        <source>Guía local · titulado en Turismo</source>
+        <target>Guide local · diplômé en Tourisme</target>
+      </trans-unit>
+      <trans-unit id="home.hero.imgAlt" datatype="html">
+        <source>Mural de arte urbano del Soho de Málaga fundiéndose con la Alcazaba y la Catedral al fondo, luz dorada de atardecer y gente paseando junto al mar</source>
+        <target>Fresque d'art urbain du Soho de Málaga se fondant avec l'Alcazaba et la Cathédrale en arrière-plan, lumière dorée du coucher de soleil et promeneurs au bord de la mer</target>
       </trans-unit>
     </body>
   </file>

@@ -1413,232 +1413,240 @@
         <source>Costa del Sol · Andalucía</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">13,14</context>
+          <context context-type="linenumber">20,21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.title2" datatype="html">
-        <source> Un guía de aquí<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>para <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Málaga<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. </source>
+        <source> Un guía <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>de aquí<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>,<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>no una guía turística. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">15,17</context>
+          <context context-type="linenumber">22,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.lead2" datatype="html">
-        <source> Empieza con un free tour por el centro o resérvame una ruta privada a tu ritmo. Si quieres completar el viaje, también comparo tours, coches, restaurantes, ocio y hoteles de confianza. </source>
+        <source> Empieza gratis con un free tour por el centro o reserva una ruta privada a tu ritmo. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">18,21</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.hero.ctaFreeTours" datatype="html">
-        <source>Free tours por Málaga</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">23,24</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.hero.ctaRutas" datatype="html">
-        <source>Rutas privadas</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">24,27</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.guia.eyebrow" datatype="html">
-        <source>Conmigo, guía local</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">32,33</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.guia.title2" datatype="html">
-        <source>Dos formas de recorrer Málaga conmigo</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">33,34</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.guia.freeTours.tag" datatype="html">
-        <source>Empieza por aquí</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">36,37</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.guia.freeTours.title" datatype="html">
-        <source>Free tours</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">37,38</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.guia.freeTours.text" datatype="html">
-        <source>Reserva gratis y paga al final lo que quieras. La mejor forma de conocerme y de descubrir la ciudad.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">38,39</context>
+          <context context-type="linenumber">25,27</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.guia.freeTours.link" datatype="html">
         <source>Ver free tours</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">39,41</context>
+          <context context-type="linenumber">29,30</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">119,120</context>
+          <context context-type="linenumber">54,56</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="home.guia.rutas.tag" datatype="html">
-        <source>A tu medida</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">42,43</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.guia.rutas.title" datatype="html">
-        <source>Rutas privadas</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">43,44</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.guia.rutas.text" datatype="html">
-        <source>Tu grupo, tu ritmo y una experiencia personalizada. Reserva directa, sin intermediarios.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">44,45</context>
+          <context context-type="linenumber">134,135</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.guia.rutas.link" datatype="html">
         <source>Ver rutas privadas</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">45,48</context>
+          <context context-type="linenumber">30,32</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">120,123</context>
+          <context context-type="linenumber">60,63</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">135,138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.hero.trust" datatype="html">
+        <source>Guía local · titulado en Turismo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.hero.imgAlt" datatype="html">
+        <source>Mural de arte urbano del Soho de Málaga fundiéndose con la Alcazaba y la Catedral al fondo, luz dorada de atardecer y gente paseando junto al mar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.eyebrow" datatype="html">
+        <source>Conmigo, guía local</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.title2" datatype="html">
+        <source>Dos formas de recorrer Málaga conmigo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.freeTours.tag" datatype="html">
+        <source>Empieza por aquí</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.freeTours.title" datatype="html">
+        <source>Free tours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.freeTours.text" datatype="html">
+        <source>Reserva gratis y paga al final lo que quieras. La mejor forma de conocerme y de descubrir la ciudad.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.rutas.tag" datatype="html">
+        <source>A tu medida</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.rutas.title" datatype="html">
+        <source>Rutas privadas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.rutas.text" datatype="html">
+        <source>Tu grupo, tu ritmo y una experiencia personalizada. Reserva directa, sin intermediarios.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">59,60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.eyebrow" datatype="html">
         <source>Antes de la ruta</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">59,60</context>
+          <context context-type="linenumber">74,75</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.title" datatype="html">
         <source>Una ciudad fenicia, romana y andalusí antes de ser turística</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">60,62</context>
+          <context context-type="linenumber">75,77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.p1" datatype="html">
         <source> Los fenicios fundaron Malaka en el siglo VIII antes de Cristo, junto a la desembocadura del Guadalmedina, como puesto comercial en la ruta del Mediterráneo. El nombre apenas ha cambiado en más de 2.700 años. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">65,67</context>
+          <context context-type="linenumber">80,82</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.p2" datatype="html">
         <source> Con los romanos, la ciudad ganó estatus de municipio y un teatro que hoy sigue asomando a los pies de la Alcazaba. Restos de aquella época continúan apareciendo bajo el centro cada vez que se abre una zanja. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">70,72</context>
+          <context context-type="linenumber">85,87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.p3" datatype="html">
         <source> Durante casi 800 años formó parte de al-Ándalus. La Alcazaba, construida en el siglo XI, y el trazado estrecho del casco antiguo son la huella más visible de esa etapa, que terminó con la conquista de los Reyes Católicos en 1487. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">75,78</context>
+          <context context-type="linenumber">90,93</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.p4" datatype="html">
         <source> En el siglo XIX vivió una revolución industrial impulsada por el comercio del vino y la industria del hierro. La nueva burguesía abrió la Calle Larios en 1891 como su gran bulevar, y en ese mismo ambiente nació Pablo Picasso en 1881, en una casa de la Plaza de la Merced. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">81,84</context>
+          <context context-type="linenumber">96,99</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.p5" datatype="html">
         <source> Aquella Málaga industrial dio paso, ya en el siglo XX, a la que recibe hoy a millones de visitantes: puerta de la Costa del Sol, con un puerto renovado y un casco histórico que se recorre en una tarde. Es el resultado de todas las etapas anteriores, no solo de la última. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">87,90</context>
+          <context context-type="linenumber">102,105</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.foto1.imgAlt" datatype="html">
         <source>Vista de Málaga desde el mirador de Gibralfaro al atardecer</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">98,99</context>
+          <context context-type="linenumber">113,114</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.foto2.imgAlt" datatype="html">
         <source>Bahía y puerto de Málaga desde el mar</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">104,105</context>
+          <context context-type="linenumber">119,120</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.foto3.imgAlt" datatype="html">
         <source>Skyline de Málaga con la Catedral y el Mediterráneo al fondo</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">110,111</context>
+          <context context-type="linenumber">125,126</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.ctaLead" datatype="html">
         <source>Esta es la Málaga que recorremos juntos, a pie y con guía local.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">117,118</context>
+          <context context-type="linenumber">132,133</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.verticals.eyebrow" datatype="html">
         <source>Para completar tu viaje</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">130,131</context>
+          <context context-type="linenumber">145,146</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.vertical.tours.title" datatype="html">
         <source>Tours y experiencias</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">132,133</context>
+          <context context-type="linenumber">147,148</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.vertical.coches.title" datatype="html">
         <source>Alquiler de coches</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">133,134</context>
+          <context context-type="linenumber">148,149</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.vertical.restaurantes.title" datatype="html">
         <source>Mejores restaurantes</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">134,135</context>
+          <context context-type="linenumber">149,150</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.vertical.ocio.title" datatype="html">
         <source>Ocio y planes</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">135,136</context>
+          <context context-type="linenumber">150,151</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.vertical.hoteles.title" datatype="html">
         <source>Hoteles</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">136,138</context>
+          <context context-type="linenumber">151,153</context>
         </context-group>
       </trans-unit>
       <trans-unit id="legal.afiliados.title" datatype="html">
