@@ -18,14 +18,14 @@ const STORAGE_KEY = 'mm_cookie_consent';
   standalone: true,
   imports: [CommonModule, RouterLink],
   template: `
-    <div class="cookie" *ngIf="visible()" role="dialog" aria-label="Consentimiento de cookies">
-      <p class="cookie__text">
+    <div class="cookie" *ngIf="visible()" role="dialog" aria-label="Consentimiento de cookies" i18n-aria-label="@@cookieBanner.ariaLabel">
+      <p class="cookie__text" i18n="@@cookieBanner.text">
         Usamos cookies propias y de terceros para analítica y afiliación.
         <a routerLink="/cookies">Más información</a>.
       </p>
       <div class="cookie__actions">
-        <button class="btn btn--ghost" (click)="reject()">Solo esenciales</button>
-        <button class="btn btn--sol" (click)="accept()">Aceptar todas</button>
+        <button class="btn btn--ghost" (click)="reject()" i18n="@@cookieBanner.rejectBtn">Solo esenciales</button>
+        <button class="btn btn--sol" (click)="accept()" i18n="@@cookieBanner.acceptBtn">Aceptar todas</button>
       </div>
     </div>
   `,
@@ -37,12 +37,18 @@ const STORAGE_KEY = 'mm_cookie_consent';
       gap: 1rem; padding: 1rem 1.2rem;
       background: var(--tinta); color: var(--cal);
       border-radius: var(--radio); box-shadow: var(--sombra);
+      animation: cookie-in .3s ease;
+    }
+    @keyframes cookie-in {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .cookie__text { margin: 0; font-size: var(--step--1); }
     .cookie__text a { color: var(--sol); }
     .cookie__actions { display: flex; gap: .6rem; }
     .btn--ghost { background: transparent; color: var(--cal); border: 1px solid rgba(245,246,244,.4); }
     .btn--ghost:hover { background: rgba(245,246,244,.1); }
+    .btn--ghost:active { background: rgba(245,246,244,.18); }
   `],
 })
 export class CookieBannerComponent implements OnInit {

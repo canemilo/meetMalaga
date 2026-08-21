@@ -39,18 +39,33 @@ const ROUTES = [
   ['/afiliados', '0.3', 'yearly'],
 ];
 
-// --- sitemap.xml ---
-const urls = ROUTES.map(
-  ([path, priority, freq]) => `  <url>
-    <loc>${SITE_URL}${path}</loc>
+// Mismos locales y prefijos que angular.json (i18n.locales) y SeoService.
+// Las rutas no se traducen, solo se les antepone el prefijo del idioma.
+const LOCALES = ['es', 'en', 'fr', 'de'];
+const BASE_HREF = { es: '', en: '/en', fr: '/fr', de: '/de' };
+const urlFor = (locale, path) => `${SITE_URL}${BASE_HREF[locale]}${path}`;
+
+// --- sitemap.xml (48 URLs: 12 rutas × 4 idiomas, con hreflang cruzado) ---
+const urls = ROUTES.flatMap(([path, priority, freq]) =>
+  LOCALES.map((locale) => {
+    const alternates = LOCALES.map(
+      (l) => `    <xhtml:link rel="alternate" hreflang="${l}" href="${urlFor(l, path)}" />`
+    ).join('\n');
+    const xdefault = `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${path}" />`;
+    return `  <url>
+    <loc>${urlFor(locale, path)}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>${freq}</changefreq>
     <priority>${priority}</priority>
-  </url>`
+${alternates}
+${xdefault}
+  </url>`;
+  })
 ).join('\n');
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urls}
 </urlset>
 `;
@@ -65,4 +80,4 @@ Sitemap: ${SITE_URL}/sitemap.xml
 writeFileSync(join(root, 'src/sitemap.xml'), sitemap);
 writeFileSync(join(root, 'src/robots.txt'), robots);
 
-console.log(`✓ sitemap.xml (${ROUTES.length} URLs) y robots.txt generados para ${SITE_URL}`);
+console.log(`✓ sitemap.xml (${ROUTES.length * LOCALES.length} URLs, ${LOCALES.length} idiomas) y robots.txt generados para ${SITE_URL}`);

@@ -1,6 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Offer, Vertical } from '../../core/models/offer.model';
 import { CatalogService } from '../../core/services/catalog.service';
 import { SeoService } from '../../core/services/seo.service';
@@ -21,7 +21,7 @@ interface VerticalConfig {
 @Component({
   selector: 'app-vertical-page',
   standalone: true,
-  imports: [CommonModule, OfferCardComponent],
+  imports: [CommonModule, RouterLink, OfferCardComponent],
   template: `
     <section class="hero-mini">
       <div class="container">
@@ -32,9 +32,15 @@ interface VerticalConfig {
     </section>
 
     <section class="container grid-wrap">
-      <div class="grid">
+      <div class="grid" *ngIf="offers.length; else sinOfertas">
         <app-offer-card *ngFor="let offer of offers" [offer]="offer" />
       </div>
+      <ng-template #sinOfertas>
+        <p class="empty" i18n="@@vertical.vacio">
+          Todavía no hay ofertas publicadas en esta sección.
+          <a routerLink="/">Vuelve a la portada</a> mientras seguimos ampliando el catálogo.
+        </p>
+      </ng-template>
     </section>
   `,
   styles: [`
@@ -42,7 +48,7 @@ interface VerticalConfig {
     .hero-mini h1 { font-size: var(--step-3); max-width: 16ch; }
     .hero-mini__sub { color: var(--tinta-60); max-width: 52ch; font-size: var(--step-1); }
 
-    .grid-wrap { padding-top: 2.5rem; }
+    .grid-wrap { padding-top: var(--space-section); }
     .grid {
       display: grid; gap: 1.6rem;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

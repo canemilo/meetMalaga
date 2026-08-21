@@ -9,13 +9,13 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   template: `
     <section class="legal container">
-      <p class="eyebrow">Información legal</p>
+      <p class="eyebrow" i18n="@@legal.eyebrow">Información legal</p>
       <h1>{{ title }}</h1>
       <div class="legal__body">
         <ng-content />
       </div>
-      <p class="legal__note">
-        ⚠️ Plantilla orientativa. Sustituye los datos entre corchetes por los
+      <p class="legal__note" i18n="@@legal.nota">
+        <strong>Aviso.</strong> Plantilla orientativa. Sustituye los datos entre corchetes por los
         tuyos y revísala con un profesional antes de publicar.
       </p>
     </section>

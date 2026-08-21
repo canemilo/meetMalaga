@@ -1,0 +1,3055 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" target-language="de" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="routes.tours.eyebrow" datatype="html">
+        <source>Experiencias</source>
+        <target>Erlebnisse</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="routes.tours.title" datatype="html">
+        <source>Tours y visitas guiadas en Málaga</source>
+        <target>Touren und geführte Besichtigungen in Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="routes.tours.subtitle" datatype="html">
+        <source>Desde la Alcazaba hasta el Caminito del Rey, reserva las mejores experiencias con guías locales.</source>
+        <target>Von der Alcazaba bis zum Caminito del Rey: buche die besten Erlebnisse mit einheimischen Guides.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="routes.coches.eyebrow" datatype="html">
+        <source>Movilidad</source>
+        <target>Mobilität</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="routes.coches.title" datatype="html">
+        <source>Alquiler de coches en Málaga</source>
+        <target>Mietwagen in Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="routes.coches.subtitle" datatype="html">
+        <source>Compara compañías con recogida en el aeropuerto o en el centro. Cancelación gratuita y sin sorpresas.</source>
+        <target>Vergleiche Anbieter mit Abholung am Flughafen oder im Zentrum. Kostenlose Stornierung und keine Überraschungen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="routes.restaurantes.eyebrow" datatype="html">
+        <source>Gastronomía</source>
+        <target>Gastronomie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="routes.restaurantes.title" datatype="html">
+        <source>Los mejores restaurantes de Málaga</source>
+        <target>Die besten Restaurants in Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="routes.restaurantes.subtitle" datatype="html">
+        <source>Del pescaíto frito a la estrella Michelin. Reserva mesa en los sitios que de verdad merecen la pena.</source>
+        <target>Vom frittierten Fisch bis zum Michelin-Stern. Reserviere einen Tisch an den Orten, die es wirklich wert sind.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="routes.ocio.eyebrow" datatype="html">
+        <source>Planes</source>
+        <target>Pläne</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="routes.ocio.title" datatype="html">
+        <source>Ocio y actividades en Málaga</source>
+        <target>Freizeit und Aktivitäten in Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="routes.ocio.subtitle" datatype="html">
+        <source>Flamenco, baños árabes, kayak y planes para todos los gustos. Llena tus días de experiencias.</source>
+        <target>Flamenco, arabische Bäder, Kajak und Pläne für jeden Geschmack. Fülle deine Tage mit Erlebnissen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="routes.hoteles.eyebrow" datatype="html">
+        <source>Alojamiento</source>
+        <target>Unterkunft</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="routes.hoteles.title" datatype="html">
+        <source>Hoteles en Málaga</source>
+        <target>Hotels in Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="routes.hoteles.subtitle" datatype="html">
+        <source>Del centro histórico a la playa: compara y reserva tu alojamiento con Trip.com, con cancelación gratuita en la mayoría.</source>
+        <target>Von der Altstadt bis zum Strand: Vergleiche und buche deine Unterkunft mit Trip.com, bei den meisten mit kostenloser Stornierung.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-aeropuerto-economico.title" datatype="html">
+        <source>Coche económico · Aeropuerto de Málaga</source>
+        <target>Economy-Auto · Flughafen Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-aeropuerto-economico.summary" datatype="html">
+        <source>Compara decenas de compañías con recogida en la T3. Cancelación gratuita y sin cargos ocultos.</source>
+        <target>Vergleiche Dutzende Anbieter mit Abholung am Terminal T3. Kostenlose Stornierung, keine versteckten Gebühren.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-aeropuerto-economico.imageAlt" datatype="html">
+        <source>Coche de alquiler en el aeropuerto de Málaga</source>
+        <target>Mietwagen am Flughafen Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-aeropuerto-economico.duration" datatype="html">
+        <source>Por día</source>
+        <target>Pro Tag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-centro-ciudad.title" datatype="html">
+        <source>Coche compacto · Centro de Málaga</source>
+        <target>Kompaktwagen · Zentrum von Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-centro-ciudad.summary" datatype="html">
+        <source>Recogida en la ciudad, ideal si llegas en tren o en crucero. Kilometraje ilimitado disponible.</source>
+        <target>Abholung in der Stadt, ideal bei Anreise mit Zug oder Kreuzfahrtschiff. Unbegrenzte Kilometer verfügbar.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-centro-ciudad.imageAlt" datatype="html">
+        <source>Coche compacto aparcado en el centro de Málaga</source>
+        <target>Kompaktwagen geparkt im Zentrum von Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-centro-ciudad.duration" datatype="html">
+        <source>Por día</source>
+        <target>Pro Tag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-localrent-suv.title" datatype="html">
+        <source>SUV para la Costa del Sol</source>
+        <target>SUV für die Costa del Sol</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-localrent-suv.summary" datatype="html">
+        <source>Compañías locales con buen trato y depósito bajo, perfectas para recorrer Marbella, Ronda o la Axarquía.</source>
+        <target>Lokale Anbieter mit gutem Service und niedriger Kaution, perfekt um Marbella, Ronda oder die Axarquía zu erkunden.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-localrent-suv.imageAlt" datatype="html">
+        <source>SUV en una carretera de la Costa del Sol</source>
+        <target>SUV auf einer Straße an der Costa del Sol</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-localrent-suv.duration" datatype="html">
+        <source>Por día</source>
+        <target>Pro Tag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-familiar-7plazas.title" datatype="html">
+        <source>Monovolumen 7 plazas · Aeropuerto</source>
+        <target>Van mit 7 Sitzen · Flughafen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-familiar-7plazas.summary" datatype="html">
+        <source>Para grupos y familias grandes. Espacio de sobra para maletas y sillas infantiles.</source>
+        <target>Für Gruppen und große Familien. Reichlich Platz für Koffer und Kindersitze.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-familiar-7plazas.imageAlt" datatype="html">
+        <source>Monovolumen familiar de siete plazas</source>
+        <target>Familien-Van mit sieben Sitzen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.coche-familiar-7plazas.duration" datatype="html">
+        <source>Por día</source>
+        <target>Pro Tag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/coches.data.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-centro-historico.title" datatype="html">
+        <source>Free Tour por el centro histórico</source>
+        <target>Free Tour durch die Altstadt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-centro-historico.tagline" datatype="html">
+        <source>La mejor forma de conocer Málaga nada más llegar.</source>
+        <target>Der beste Weg, Málaga gleich nach der Ankunft kennenzulernen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-centro-historico.description" datatype="html">
+        <source>El recorrido imprescindible: en un par de horas te cuento la historia, las plazas y los rincones con más encanto del casco antiguo. Ideal para tu primer día.</source>
+        <target>Die unverzichtbare Tour: In ein paar Stunden erzähle ich dir die Geschichte, zeige dir die Plätze und die charmantesten Ecken der Altstadt. Ideal für deinen ersten Tag.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-centro-historico.highlight.0" datatype="html">
+        <source>Catedral y Calle Larios</source>
+        <target>Kathedrale und Calle Larios</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-centro-historico.highlight.1" datatype="html">
+        <source>Plaza de la Constitución</source>
+        <target>Plaza de la Constitución</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-centro-historico.highlight.2" datatype="html">
+        <source>Teatro Romano y exterior de la Alcazaba</source>
+        <target>Römisches Theater und Außenbereich der Alcazaba</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-centro-historico.highlight.3" datatype="html">
+        <source>Plaza de la Merced y Picasso</source>
+        <target>Plaza de la Merced und Picasso</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-centro-historico.duration" datatype="html">
+        <source>2,5 horas</source>
+        <target>2,5 Stunden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-centro-historico.meetingPoint" datatype="html">
+        <source>Plaza de la Marina, junto a la fuente</source>
+        <target>Plaza de la Marina, neben dem Brunnen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-centro-historico.language.0" datatype="html">
+        <source>Español</source>
+        <target>Spanisch</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-centro-historico.language.1" datatype="html">
+        <source>English</source>
+        <target>English</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-centro-historico.schedule" datatype="html">
+        <source>Todos los días, 10:00 y 17:00</source>
+        <target>Täglich, 10:00 und 17:00 Uhr</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-centro-historico.imageAlt" datatype="html">
+        <source>Grupo de free tour en el centro histórico de Málaga</source>
+        <target>Free-Tour-Gruppe in der Altstadt von Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-alcazaba-gibralfaro.title" datatype="html">
+        <source>Free Tour de la Málaga musulmana</source>
+        <target>Free Tour durch das maurische Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-alcazaba-gibralfaro.tagline" datatype="html">
+        <source>Alcazaba, Gibralfaro y ocho siglos de historia.</source>
+        <target>Alcazaba, Gibralfaro und acht Jahrhunderte Geschichte.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-alcazaba-gibralfaro.description" datatype="html">
+        <source>Recorremos el entorno de la Alcazaba y subimos hacia Gibralfaro para descubrir la Málaga andalusí y sus mejores vistas de la bahía.</source>
+        <target>Wir erkunden die Umgebung der Alcazaba und steigen hinauf nach Gibralfaro, um das andalusische Málaga und die schönsten Ausblicke auf die Bucht zu entdecken.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-alcazaba-gibralfaro.highlight.0" datatype="html">
+        <source>Exterior de la Alcazaba</source>
+        <target>Außenbereich der Alcazaba</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-alcazaba-gibralfaro.highlight.1" datatype="html">
+        <source>Camino hacia Gibralfaro</source>
+        <target>Weg hinauf nach Gibralfaro</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-alcazaba-gibralfaro.highlight.2" datatype="html">
+        <source>Mirador sobre el puerto</source>
+        <target>Aussichtspunkt über den Hafen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-alcazaba-gibralfaro.highlight.3" datatype="html">
+        <source>Historia nazarí de la ciudad</source>
+        <target>Nasridische Geschichte der Stadt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-alcazaba-gibralfaro.duration" datatype="html">
+        <source>2 horas</source>
+        <target>2 Stunden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-alcazaba-gibralfaro.meetingPoint" datatype="html">
+        <source>Junto al Teatro Romano</source>
+        <target>Neben dem Römischen Theater</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-alcazaba-gibralfaro.language.0" datatype="html">
+        <source>Español</source>
+        <target>Spanisch</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-alcazaba-gibralfaro.language.1" datatype="html">
+        <source>English</source>
+        <target>English</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-alcazaba-gibralfaro.schedule" datatype="html">
+        <source>Lunes, miércoles y viernes, 11:00</source>
+        <target>Montags, mittwochs und freitags, 11:00 Uhr</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-alcazaba-gibralfaro.imageAlt" datatype="html">
+        <source>Vistas de Málaga desde el entorno de la Alcazaba</source>
+        <target>Ausblick auf Málaga von der Alcazaba aus</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-picasso.title" datatype="html">
+        <source>Free Tour de Picasso</source>
+        <target>Free Tour zu Picasso</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-picasso.tagline" datatype="html">
+        <source>La Málaga que vio nacer al genio.</source>
+        <target>Das Málaga, in dem das Genie geboren wurde.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-picasso.description" datatype="html">
+        <source>Un paseo por la Málaga de Picasso: las plazas de su infancia, el contexto de la ciudad y las anécdotas que marcaron sus primeros años.</source>
+        <target>Ein Spaziergang durch das Málaga von Picasso: die Plätze seiner Kindheit, der Kontext der Stadt und die Anekdoten, die seine ersten Jahre geprägt haben.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-picasso.highlight.0" datatype="html">
+        <source>Plaza de la Merced y casa natal</source>
+        <target>Plaza de la Merced und Geburtshaus</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-picasso.highlight.1" datatype="html">
+        <source>Entorno del Museo Picasso</source>
+        <target>Umgebung des Museo Picasso</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-picasso.highlight.2" datatype="html">
+        <source>Iglesia de Santiago</source>
+        <target>Santiago-Kirche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-picasso.highlight.3" datatype="html">
+        <source>Anécdotas de su niñez</source>
+        <target>Anekdoten aus seiner Kindheit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-picasso.duration" datatype="html">
+        <source>1,5 horas</source>
+        <target>1,5 Stunden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-picasso.meetingPoint" datatype="html">
+        <source>Plaza de la Merced, junto al monumento a Picasso</source>
+        <target>Plaza de la Merced, neben dem Picasso-Denkmal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-picasso.language.0" datatype="html">
+        <source>Español</source>
+        <target>Spanisch</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-picasso.language.1" datatype="html">
+        <source>English</source>
+        <target>English</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-picasso.schedule" datatype="html">
+        <source>Martes y jueves, 17:00</source>
+        <target>Dienstags und donnerstags, 17:00 Uhr</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-picasso.imageAlt" datatype="html">
+        <source>Plaza de la Merced, cuna de Picasso, en Málaga</source>
+        <target>Plaza de la Merced, Geburtsort von Picasso, in Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-leyendas-noche.title" datatype="html">
+        <source>Free Tour de leyendas y misterios</source>
+        <target>Free Tour zu Legenden und Geheimnissen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-leyendas-noche.tagline" datatype="html">
+        <source>El casco antiguo cambia cuando cae la noche.</source>
+        <target>Die Altstadt verändert sich, wenn die Nacht hereinbricht.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-leyendas-noche.description" datatype="html">
+        <source>Historias, leyendas y misterios del Málaga antiguo en un paseo nocturno por sus calles más evocadoras. Para quien quiere una cara distinta de la ciudad.</source>
+        <target>Geschichten, Legenden und Geheimnisse des alten Málaga bei einem nächtlichen Spaziergang durch die stimmungsvollsten Gassen. Für alle, die eine andere Seite der Stadt erleben wollen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-leyendas-noche.highlight.0" datatype="html">
+        <source>Calles y plazas del casco antiguo de noche</source>
+        <target>Gassen und Plätze der Altstadt bei Nacht</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-leyendas-noche.highlight.1" datatype="html">
+        <source>Leyendas y sucesos históricos</source>
+        <target>Legenden und historische Ereignisse</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-leyendas-noche.highlight.2" datatype="html">
+        <source>Rincones poco conocidos</source>
+        <target>Wenig bekannte Ecken</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-leyendas-noche.highlight.3" datatype="html">
+        <source>Ambiente único al anochecer</source>
+        <target>Einzigartige Atmosphäre in der Abenddämmerung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-leyendas-noche.duration" datatype="html">
+        <source>1,5 horas</source>
+        <target>1,5 Stunden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-leyendas-noche.meetingPoint" datatype="html">
+        <source>Plaza del Obispo, frente a la Catedral</source>
+        <target>Plaza del Obispo, gegenüber der Kathedrale</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-leyendas-noche.language.0" datatype="html">
+        <source>Español</source>
+        <target>Spanisch</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-leyendas-noche.schedule" datatype="html">
+        <source>Viernes y sábados, 21:00</source>
+        <target>Freitags und samstags, 21:00 Uhr</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freetour.free-leyendas-noche.imageAlt" datatype="html">
+        <source>Calle del casco antiguo de Málaga iluminada de noche</source>
+        <target>Beleuchtete Gasse der Altstadt von Málaga bei Nacht</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/free-tours.data.ts</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.hotel-centro-malaga.title" datatype="html">
+        <source>Hoteles en el centro de Málaga</source>
+        <target>Hotels im Zentrum von Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/hoteles.data.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.hotel-centro-malaga.summary" datatype="html">
+        <source>Alojamientos a un paseo de la Catedral, Larios y el Soho. Compara precios y cancela gratis en la mayoría.</source>
+        <target>Unterkünfte nur einen Spaziergang von Kathedrale, Larios und Soho entfernt. Vergleiche Preise und storniere bei den meisten kostenlos.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/hoteles.data.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.hotel-centro-malaga.imageAlt" datatype="html">
+        <source>Habitación de hotel con vistas al centro de Málaga</source>
+        <target>Hotelzimmer mit Blick auf das Zentrum von Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/hoteles.data.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.hotel-playa-malagueta.title" datatype="html">
+        <source>Hoteles junto a la playa (La Malagueta)</source>
+        <target>Hotels am Strand (La Malagueta)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/hoteles.data.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.hotel-playa-malagueta.summary" datatype="html">
+        <source>Para despertarte a un paso del mar, cerca del puerto y del paseo marítimo.</source>
+        <target>Um direkt am Meer aufzuwachen, nahe dem Hafen und der Strandpromenade.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/hoteles.data.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.hotel-playa-malagueta.imageAlt" datatype="html">
+        <source>Hotel frente a la playa de La Malagueta en Málaga</source>
+        <target>Hotel gegenüber dem Strand La Malagueta in Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/hoteles.data.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.hotel-lujo-malaga.title" datatype="html">
+        <source>Hoteles boutique y de lujo</source>
+        <target>Boutique- und Luxushotels</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/hoteles.data.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.hotel-lujo-malaga.summary" datatype="html">
+        <source>Terrazas con vistas, spa y diseño. Lo mejor para una escapada especial en Málaga.</source>
+        <target>Terrassen mit Ausblick, Spa und Design. Das Beste für einen besonderen Kurzurlaub in Málaga.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/hoteles.data.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.hotel-lujo-malaga.imageAlt" datatype="html">
+        <source>Terraza de un hotel de lujo con vistas a Málaga</source>
+        <target>Terrasse eines Luxushotels mit Blick auf Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/hoteles.data.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.hotel-economico-malaga.title" datatype="html">
+        <source>Alojamientos económicos</source>
+        <target>Günstige Unterkünfte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/hoteles.data.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.hotel-economico-malaga.summary" datatype="html">
+        <source>Hostales y hoteles con buena relación calidad-precio, bien conectados con el centro.</source>
+        <target>Hostels und Hotels mit gutem Preis-Leistungs-Verhältnis, gut angebunden ans Zentrum.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/hoteles.data.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.hotel-economico-malaga.imageAlt" datatype="html">
+        <source>Habitación sencilla y luminosa de un hotel económico</source>
+        <target>Einfaches, helles Zimmer in einem günstigen Hotel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/hoteles.data.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-flamenco.title" datatype="html">
+        <source>Espectáculo flamenco en tablao</source>
+        <target>Flamenco-Show im Tablao</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-flamenco.summary" datatype="html">
+        <source>Una hora de cante, guitarra y baile en directo en un tablao del centro histórico. Copa incluida.</source>
+        <target>Eine Stunde Gesang, Gitarre und Tanz live in einem Tablao der Altstadt. Getränk inklusive.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-flamenco.imageAlt" datatype="html">
+        <source>Bailaora de flamenco en un tablao</source>
+        <target>Flamenco-Tänzerin in einem Tablao</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-flamenco.duration" datatype="html">
+        <source>1 hora</source>
+        <target>1 Stunde</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-hammam.title" datatype="html">
+        <source>Baños árabes Hammam Al Ándalus</source>
+        <target>Arabisches Bad Hammam Al Ándalus</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-hammam.summary" datatype="html">
+        <source>Circuito termal y masaje en unos baños de inspiración andalusí. Puro relax tras un día de turismo.</source>
+        <target>Thermalrundgang und Massage in einem Bad im andalusischen Stil. Pure Entspannung nach einem Tag voller Sightseeing.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-hammam.imageAlt" datatype="html">
+        <source>Sala de baños árabes con arcos y agua</source>
+        <target>Saal eines arabischen Bades mit Bögen und Wasser</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-hammam.duration" datatype="html">
+        <source>1,5 horas</source>
+        <target>1,5 Stunden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-bioparc.title" datatype="html">
+        <source>Bioparc Fuengirola</source>
+        <target>Bioparc Fuengirola</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-bioparc.summary" datatype="html">
+        <source>Zoo inmersivo a 30 minutos de Málaga, con hábitats recreados de selva tropical. Ideal en familia.</source>
+        <target>Immersiver Zoo 30 Minuten von Málaga entfernt, mit nachgebildeten Lebensräumen des tropischen Regenwalds. Ideal für die ganze Familie.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-bioparc.imageAlt" datatype="html">
+        <source>Vegetación tropical del Bioparc de Fuengirola</source>
+        <target>Tropische Vegetation im Bioparc von Fuengirola</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-bioparc.duration" datatype="html">
+        <source>Medio día</source>
+        <target>Halber Tag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-kayak-nerja.title" datatype="html">
+        <source>Kayak y snorkel en los acantilados de Maro</source>
+        <target>Kajak und Schnorcheln an den Klippen von Maro</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-kayak-nerja.summary" datatype="html">
+        <source>Ruta guiada en kayak por las calas de Maro-Cerro Gordo con parada para snorkel en cuevas marinas.</source>
+        <target>Geführte Kajaktour entlang der Buchten von Maro-Cerro Gordo mit Zwischenstopp zum Schnorcheln in Meereshöhlen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-kayak-nerja.imageAlt" datatype="html">
+        <source>Kayaks junto a acantilados y agua turquesa</source>
+        <target>Kajaks neben Klippen und türkisfarbenem Wasser</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-kayak-nerja.duration" datatype="html">
+        <source>3 horas</source>
+        <target>3 Stunden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-tripcom-entradas.title" datatype="html">
+        <source>Entradas a atracciones (Trip.com)</source>
+        <target>Eintrittskarten für Attraktionen (Trip.com)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-tripcom-entradas.summary" datatype="html">
+        <source>Museos, acuarios y experiencias de Málaga y alrededores reservables al instante.</source>
+        <target>Museen, Aquarien und Erlebnisse in Málaga und Umgebung, sofort buchbar.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-tripcom-entradas.imageAlt" datatype="html">
+        <source>Entrada a una atracción turística de Málaga</source>
+        <target>Eingang zu einer touristischen Attraktion in Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-tripcom-transfer.title" datatype="html">
+        <source>Traslado aeropuerto - hotel (Trip.com)</source>
+        <target>Transfer Flughafen - Hotel (Trip.com)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-tripcom-transfer.summary" datatype="html">
+        <source>Transfer privado desde el aeropuerto de Málaga a tu alojamiento, sin esperas ni sorpresas.</source>
+        <target>Privater Transfer vom Flughafen Málaga zu deiner Unterkunft, ohne Wartezeiten oder Überraschungen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.ocio-tripcom-transfer.imageAlt" datatype="html">
+        <source>Vehículo de traslado privado esperando en el aeropuerto</source>
+        <target>Privates Transferfahrzeug wartet am Flughafen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/ocio.data.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.resto-el-pimpi.title" datatype="html">
+        <source>El Pimpi</source>
+        <target>El Pimpi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/restaurantes.data.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.resto-el-pimpi.summary" datatype="html">
+        <source>La bodega más emblemática de Málaga, entre barricas firmadas y vistas al Teatro Romano. Cocina andaluza.</source>
+        <target>Die bekannteste Bodega Málagas, zwischen signierten Weinfässern und Blick auf das Römische Theater. Andalusische Küche.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/restaurantes.data.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.resto-el-pimpi.imageAlt" datatype="html">
+        <source>Interior de una bodega tradicional malagueña</source>
+        <target>Innenraum einer traditionellen malagenischen Bodega</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/restaurantes.data.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.resto-jose-carlos-garcia.title" datatype="html">
+        <source>José Carlos García</source>
+        <target>José Carlos García</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/restaurantes.data.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.resto-jose-carlos-garcia.summary" datatype="html">
+        <source>Estrella Michelin en el puerto. Alta cocina malagueña con producto de mercado y menú degustación.</source>
+        <target>Michelin-Stern im Hafen. Gehobene malagenische Küche mit Marktprodukten und Degustationsmenü.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/restaurantes.data.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.resto-jose-carlos-garcia.imageAlt" datatype="html">
+        <source>Plato de alta cocina emplatado con detalle</source>
+        <target>Detailliert angerichteter Teller der gehobenen Küche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/restaurantes.data.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.resto-los-mellizos.title" datatype="html">
+        <source>Marisquería Los Mellizos</source>
+        <target>Marisquería Los Mellizos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/restaurantes.data.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.resto-los-mellizos.summary" datatype="html">
+        <source>Pescaíto frito y marisco fresco junto a la playa. Un clásico para probar el sabor del Mediterráneo.</source>
+        <target>Frittierter Fisch und frische Meeresfrüchte direkt am Strand. Ein Klassiker, um den Geschmack des Mittelmeers zu probieren.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/restaurantes.data.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.resto-los-mellizos.imageAlt" datatype="html">
+        <source>Fuente de pescaíto frito malagueño</source>
+        <target>Platte mit malagenischem frittiertem Fisch</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/restaurantes.data.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.resto-uvedoble.title" datatype="html">
+        <source>Uvedoble Taberna</source>
+        <target>Uvedoble Taberna</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/restaurantes.data.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.resto-uvedoble.summary" datatype="html">
+        <source>Tapas de autor en el centro: producto local con un giro creativo. Reserva recomendada.</source>
+        <target>Autoren-Tapas im Zentrum: lokale Produkte mit kreativer Note. Reservierung empfohlen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/restaurantes.data.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.resto-uvedoble.imageAlt" datatype="html">
+        <source>Tapas de autor sobre una mesa de madera</source>
+        <target>Autoren-Tapas auf einem Holztisch</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/restaurantes.data.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.teatro-romano-alcazaba.title" datatype="html">
+        <source>Teatro Romano y Alcazaba</source>
+        <target>Römisches Theater und Alcazaba</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.teatro-romano-alcazaba.tagline" datatype="html">
+        <source>Dos siglos de historia en apenas unos pasos.</source>
+        <target>Zwei Jahrhunderte Geschichte in nur wenigen Schritten.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.teatro-romano-alcazaba.description" datatype="html">
+        <source>Un recorrido corto por dos de los enclaves más importantes del centro: el Teatro Romano y, justo encima, la Alcazaba. En un mismo paseo se ve cómo la ciudad pasó de romana a musulmana, con sus murallas, patios y miradores sobre el casco antiguo.</source>
+        <target>Ein kurzer Rundgang zu zwei der wichtigsten Orte im Zentrum: dem Römischen Theater und, direkt darüber, der Alcazaba. Bei diesem einen Spaziergang siehst du, wie die Stadt von der Römerzeit zur maurischen Zeit überging, mit ihren Mauern, Innenhöfen und Aussichtspunkten über die Altstadt.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.teatro-romano-alcazaba.highlight.0" datatype="html">
+        <source>Teatro Romano de Málaga</source>
+        <target>Römisches Theater von Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.teatro-romano-alcazaba.highlight.1" datatype="html">
+        <source>Puerta de entrada y murallas de la Alcazaba</source>
+        <target>Eingangstor und Mauern der Alcazaba</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.teatro-romano-alcazaba.highlight.2" datatype="html">
+        <source>Patios y jardines interiores</source>
+        <target>Innenhöfe und Gärten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.teatro-romano-alcazaba.highlight.3" datatype="html">
+        <source>De la Málaga romana a la andalusí, en un solo recorrido</source>
+        <target>Vom römischen zum maurischen Málaga, in einem einzigen Rundgang</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.teatro-romano-alcazaba.duration" datatype="html">
+        <source>45-60 min</source>
+        <target>45-60 Min.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.teatro-romano-alcazaba.meetingPoint" datatype="html">
+        <source>Entrada del Teatro Romano, junto a la Alcazaba</source>
+        <target>Eingang des Römischen Theaters, neben der Alcazaba</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.teatro-romano-alcazaba.imageAlt" datatype="html">
+        <source>Teatro Romano de Málaga con la Alcazaba al fondo</source>
+        <target>Römisches Theater von Málaga mit der Alcazaba im Hintergrund</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.catedral-malaga.title" datatype="html">
+        <source>Catedral de Málaga</source>
+        <target>Kathedrale von Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.catedral-malaga.tagline" datatype="html">
+        <source>La &quot;Manquita&quot; contada por dentro y por fuera.</source>
+        <target>Die &quot;Manquita&quot; von innen und außen erklärt.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.catedral-malaga.description" datatype="html">
+        <source>Un paseo por la Catedral de Málaga, conocida como &quot;la Manquita&quot; por su torre inacabada, para entender su historia y por qué es uno de los símbolos con los que más se identifican los malagueños.</source>
+        <target>Ein Spaziergang durch die Kathedrale von Málaga, bekannt als &quot;la Manquita&quot; (die Einarmige, wegen ihres unvollendeten Turms), um ihre Geschichte zu verstehen und warum sie eines der Symbole ist, mit denen sich die Malagueños am meisten identifizieren.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.catedral-malaga.highlight.0" datatype="html">
+        <source>Fachada y torre inacabada, &quot;la Manquita&quot;</source>
+        <target>Fassade und unvollendeter Turm, &quot;la Manquita&quot;</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.catedral-malaga.highlight.1" datatype="html">
+        <source>Interior y capillas de la Catedral</source>
+        <target>Innenraum und Kapellen der Kathedrale</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.catedral-malaga.highlight.2" datatype="html">
+        <source>Siglos de obras: por qué quedó a medias</source>
+        <target>Jahrhunderte der Bauarbeiten: warum sie unvollendet blieb</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.catedral-malaga.highlight.3" datatype="html">
+        <source>Su lugar como símbolo de la ciudad</source>
+        <target>Ihre Bedeutung als Symbol der Stadt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.catedral-malaga.duration" datatype="html">
+        <source>45-60 min</source>
+        <target>45-60 Min.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.catedral-malaga.meetingPoint" datatype="html">
+        <source>Puerta principal de la Catedral, Plaza del Obispo</source>
+        <target>Haupteingang der Kathedrale, Plaza del Obispo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.catedral-malaga.imageAlt" datatype="html">
+        <source>Fachada de la Catedral de Málaga, la Manquita</source>
+        <target>Fassade der Kathedrale von Málaga, la Manquita</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.museo-picasso.title" datatype="html">
+        <source>Museo Picasso</source>
+        <target>Museo Picasso</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.museo-picasso.tagline" datatype="html">
+        <source>La obra del genio malagueño. Próximamente.</source>
+        <target>Das Werk des malagenischen Genies. Demnächst.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.museo-picasso.description" datatype="html">
+        <source>Una ruta centrada en la obra de Pablo Picasso, con parada en el Museo Picasso Málaga. Todavía la estoy preparando: en breve estará disponible para reservar.</source>
+        <target>Eine Route rund um das Werk von Pablo Picasso, mit Halt im Museo Picasso Málaga. Ich arbeite noch daran: Bald wird sie buchbar sein.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.museo-picasso.highlight.0" datatype="html">
+        <source>Obras del Museo Picasso Málaga</source>
+        <target>Werke des Museo Picasso Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.museo-picasso.highlight.1" datatype="html">
+        <source>Contexto de su etapa y estilo</source>
+        <target>Kontext seiner Schaffensperiode und seines Stils</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.museo-picasso.highlight.2" datatype="html">
+        <source>Vínculo del pintor con su ciudad natal</source>
+        <target>Verbindung des Malers zu seiner Heimatstadt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.museo-picasso.duration" datatype="html">
+        <source>Por confirmar</source>
+        <target>Wird noch bestätigt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.museo-picasso.meetingPoint" datatype="html">
+        <source>Por confirmar</source>
+        <target>Wird noch bestätigt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ruta.museo-picasso.imageAlt" datatype="html">
+        <source>Entrada del Museo Picasso Málaga</source>
+        <target>Eingang des Museo Picasso Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/rutas.data.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-alcazaba-gibralfaro.title" datatype="html">
+        <source>Alcazaba y Castillo de Gibralfaro</source>
+        <target>Alcazaba und Burg Gibralfaro</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-alcazaba-gibralfaro.summary" datatype="html">
+        <source>Recorre la fortaleza musulmana mejor conservada de España y sube al mirador con las mejores vistas de la bahía.</source>
+        <target>Erkunde die am besten erhaltene maurische Festung Spaniens und steig hinauf zum Aussichtspunkt mit dem besten Blick auf die Bucht.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-alcazaba-gibralfaro.imageAlt" datatype="html">
+        <source>Murallas de la Alcazaba de Málaga al atardecer</source>
+        <target>Mauern der Alcazaba von Málaga bei Sonnenuntergang</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-alcazaba-gibralfaro.duration" datatype="html">
+        <source>2,5 horas</source>
+        <target>2,5 Stunden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-caminito-del-rey.title" datatype="html">
+        <source>Caminito del Rey desde Málaga</source>
+        <target>Caminito del Rey ab Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-caminito-del-rey.summary" datatype="html">
+        <source>La pasarela colgada sobre el desfiladero de los Gaitanes, con transporte de ida y vuelta incluido.</source>
+        <target>Der Steg, der über der Schlucht der Gaitanes hängt, inklusive Hin- und Rücktransport.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-caminito-del-rey.imageAlt" datatype="html">
+        <source>Pasarela del Caminito del Rey sobre el desfiladero</source>
+        <target>Steg des Caminito del Rey über der Schlucht</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-caminito-del-rey.duration" datatype="html">
+        <source>Día completo</source>
+        <target>Ganzer Tag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-tapas-centro.title" datatype="html">
+        <source>Ruta de tapas por el centro histórico</source>
+        <target>Tapas-Route durch die Altstadt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-tapas-centro.summary" datatype="html">
+        <source>Cinco paradas gastronómicas con vino y especialidades malagueñas guiadas por un local.</source>
+        <target>Fünf kulinarische Stopps mit Wein und malagenischen Spezialitäten, geführt von einem Einheimischen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-tapas-centro.imageAlt" datatype="html">
+        <source>Tapas y vino en una taberna del centro de Málaga</source>
+        <target>Tapas und Wein in einer Taverne im Zentrum von Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-tapas-centro.duration" datatype="html">
+        <source>3 horas</source>
+        <target>3 Stunden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-picasso.title" datatype="html">
+        <source>Museo Picasso Málaga</source>
+        <target>Museo Picasso Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-picasso.summary" datatype="html">
+        <source>Entrada a la colección permanente en la ciudad natal del pintor, en el Palacio de Buenavista.</source>
+        <target>Eintritt zur Dauerausstellung in der Geburtsstadt des Malers, im Palacio de Buenavista.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-picasso.imageAlt" datatype="html">
+        <source>Fachada del Museo Picasso de Málaga</source>
+        <target>Fassade des Museo Picasso von Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-picasso.duration" datatype="html">
+        <source>1,5 horas</source>
+        <target>1,5 Stunden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-catamaran.title" datatype="html">
+        <source>Paseo en catamarán por la bahía</source>
+        <target>Katamaranfahrt durch die Bucht</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-catamaran.summary" datatype="html">
+        <source>Navegación de una hora frente a la costa con baño opcional y vistas del skyline de Málaga.</source>
+        <target>Einstündige Fahrt entlang der Küste mit optionalem Bad und Blick auf die Skyline von Málaga.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-catamaran.imageAlt" datatype="html">
+        <source>Catamarán navegando frente a la costa de Málaga</source>
+        <target>Katamaran vor der Küste von Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-catamaran.duration" datatype="html">
+        <source>1 hora</source>
+        <target>1 Stunde</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-nerja-frigiliana.title" datatype="html">
+        <source>Nerja y Frigiliana con cuevas</source>
+        <target>Nerja und Frigiliana mit Höhlen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-nerja-frigiliana.summary" datatype="html">
+        <source>Excursión a los pueblos blancos de la Axarquía y a las famosas Cuevas de Nerja.</source>
+        <target>Ausflug zu den weißen Dörfern der Axarquía und zu den berühmten Höhlen von Nerja.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-nerja-frigiliana.imageAlt" datatype="html">
+        <source>Calles blancas de Frigiliana con flores</source>
+        <target>Weiße Gassen von Frigiliana mit Blumen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offer.tour-nerja-frigiliana.duration" datatype="html">
+        <source>Día completo</source>
+        <target>Ganzer Tag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/tours.data.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.hero.eyebrow" datatype="html">
+        <source>Tours gratuitos con guía local</source>
+        <target>Kostenlose Touren mit einheimischem Guide</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.hero.title" datatype="html">
+        <source>Free tours por Málaga</source>
+        <target>Free Tours durch Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.hero.sub" datatype="html">
+        <source> Reserva gratis y paga al final lo que consideres, según lo que hayas disfrutado. La mejor forma de conocer Málaga y mi manera de hacerlo. </source>
+        <target> Buche kostenlos und zahle am Ende, was du für angemessen hältst, je nachdem wie sehr es dir gefallen hat. Der beste Weg, Málaga kennenzulernen, und meine Art, es zu tun. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">23,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.paso1.title" datatype="html">
+        <source>Reservas gratis</source>
+        <target>Kostenlos buchen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.paso1.text" datatype="html">
+        <source>Eliges plaza en Freetour o GuruWalk sin pagar nada por adelantado.</source>
+        <target>Du wählst deinen Platz bei Freetour oder GuruWalk, ohne im Voraus zu bezahlen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.paso2.title" datatype="html">
+        <source>Disfrutas el tour</source>
+        <target>Du genießt die Tour</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.paso2.text" datatype="html">
+        <source>Nos vemos en el punto de encuentro a la hora indicada.</source>
+        <target>Wir treffen uns am Treffpunkt zur angegebenen Uhrzeit.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">37,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.paso3.title" datatype="html">
+        <source>Pagas lo que quieras</source>
+        <target>Du zahlst, was du möchtest</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.paso3.text" datatype="html">
+        <source>Al terminar, aportas lo que creas justo. Sin precio fijo.</source>
+        <target>Am Ende gibst du, was du für fair hältst. Kein Festpreis.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">41,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.badgeGratis" datatype="html">
+        <source>Gratis · propina voluntaria</source>
+        <target>Kostenlos · freiwilliges Trinkgeld</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">51,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.facts.duracion" datatype="html">
+        <source>Duración</source>
+        <target>Dauer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.facts.horario" datatype="html">
+        <source>Horario</source>
+        <target>Uhrzeit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.facts.puntoEncuentro" datatype="html">
+        <source>Punto de encuentro</source>
+        <target>Treffpunkt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.facts.idiomas" datatype="html">
+        <source>Idiomas</source>
+        <target>Sprachen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.reservarFreetour" datatype="html">
+        <source>Reservar en Freetour</source>
+        <target>Bei Freetour buchen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">77,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.reservarGuruwalk" datatype="html">
+        <source>Reservar en GuruWalk</source>
+        <target>Bei GuruWalk buchen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">85,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.vacio" datatype="html">
+        <source> Todavía no hay free tours publicados. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/rutas&quot;&gt;"/>Mira las rutas privadas<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> mientras tanto. </source>
+        <target> Es sind noch keine Free Tours veröffentlicht. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/rutas&quot;&gt;"/>Schau dir in der Zwischenzeit die privaten Touren an<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">92,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.upsell.title" datatype="html">
+        <source>¿Quieres algo más a medida?</source>
+        <target>Möchtest du etwas Maßgeschneidertes?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">102,103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.upsell.text" datatype="html">
+        <source> Si prefieres un tour privado, con tu grupo y a tu ritmo, echa un vistazo a mis rutas. Reserva directa, sin intermediarios. </source>
+        <target> Wenn du lieber eine private Tour mit deiner Gruppe und in deinem Tempo möchtest, wirf einen Blick auf meine Touren. Direkte Buchung, ohne Vermittler. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">104,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.upsell.cta" datatype="html">
+        <source>Ver rutas privadas</source>
+        <target>Private Touren ansehen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">108,111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.hero.eyebrow" datatype="html">
+        <source>Costa del Sol · Andalucía</source>
+        <target>Costa del Sol · Andalusien</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.hero.title" datatype="html">
+        <source> Vive <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Málaga<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>sin perderte nada. </source>
+        <target> Erlebe <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Málaga<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>und verpasse nichts. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.hero.lead" datatype="html">
+        <source> Reserva los mejores tours, alquila tu coche, encuentra dónde comer y llena tus días de ocio. Todo en un sitio, con las plataformas de confianza. </source>
+        <target> Buche die besten Touren, miete dein Auto, finde, wo du essen kannst, und fülle deine Tage mit Freizeitaktivitäten. Alles an einem Ort, mit vertrauenswürdigen Plattformen. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.hero.ctaFreeTours" datatype="html">
+        <source>Free tours por Málaga</source>
+        <target>Free Tours durch Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.hero.ctaRutas" datatype="html">
+        <source>Rutas privadas</source>
+        <target>Private Touren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">28,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.eyebrow" datatype="html">
+        <source>Conmigo, guía local</source>
+        <target>Mit mir, deinem lokalen Guide</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.title" datatype="html">
+        <source>Vive Málaga con un guía de aquí</source>
+        <target>Erlebe Málaga mit einem Guide von hier</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.freeTours.tag" datatype="html">
+        <source>Empieza por aquí</source>
+        <target>Hier anfangen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.freeTours.title" datatype="html">
+        <source>Free tours</source>
+        <target>Free Tours</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.freeTours.text" datatype="html">
+        <source>Reserva gratis y paga al final lo que quieras. La mejor forma de conocerme y de descubrir la ciudad.</source>
+        <target>Buche kostenlos und zahle am Ende, was du möchtest. Der beste Weg, mich kennenzulernen und die Stadt zu entdecken.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.freeTours.link" datatype="html">
+        <source>Ver free tours</source>
+        <target>Free Tours ansehen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">43,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.rutas.tag" datatype="html">
+        <source>A tu medida</source>
+        <target>Maßgeschneidert für dich</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.rutas.title" datatype="html">
+        <source>Rutas privadas</source>
+        <target>Private Touren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.rutas.text" datatype="html">
+        <source>Tu grupo, tu ritmo y una experiencia personalizada. Reserva directa, sin intermediarios.</source>
+        <target>Deine Gruppe, dein Tempo und ein persönliches Erlebnis. Direkte Buchung, ohne Vermittler.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.rutas.link" datatype="html">
+        <source>Ver rutas privadas</source>
+        <target>Private Touren ansehen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">49,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.verticals.eyebrow" datatype="html">
+        <source>Para completar tu viaje</source>
+        <target>Um deine Reise zu vervollständigen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.vertical.tours.title" datatype="html">
+        <source>Tours y experiencias</source>
+        <target>Touren und Erlebnisse</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.vertical.tours.text" datatype="html">
+        <source>Alcazaba, Caminito del Rey, catamarán y mucho más.</source>
+        <target>Alcazaba, Caminito del Rey, Katamaran und vieles mehr.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">61,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.vertical.coches.title" datatype="html">
+        <source>Alquiler de coches</source>
+        <target>Mietwagen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.vertical.coches.text" datatype="html">
+        <source>Compara precios con recogida en aeropuerto o centro.</source>
+        <target>Vergleiche Preise mit Abholung am Flughafen oder im Zentrum.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.vertical.restaurantes.title" datatype="html">
+        <source>Mejores restaurantes</source>
+        <target>Beste Restaurants</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.vertical.restaurantes.text" datatype="html">
+        <source>Del pescaíto a la estrella Michelin, reserva mesa.</source>
+        <target>Vom frittierten Fisch bis zum Michelin-Stern, reserviere einen Tisch.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">71,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.vertical.ocio.title" datatype="html">
+        <source>Ocio y planes</source>
+        <target>Freizeit und Pläne</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.vertical.ocio.text" datatype="html">
+        <source>Flamenco, baños árabes, kayak y actividades.</source>
+        <target>Flamenco, arabische Bäder, Kajak und Aktivitäten.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">76,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.vertical.hoteles.title" datatype="html">
+        <source>Hoteles</source>
+        <target>Hotels</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.vertical.hoteles.text" datatype="html">
+        <source>Del centro a la playa, compara y reserva con Trip.com.</source>
+        <target>Vom Zentrum bis zum Strand, vergleiche und buche mit Trip.com.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">81,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.destacados.eyebrow" datatype="html">
+        <source>Lo más reservado</source>
+        <target>Am häufigsten gebucht</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">88,89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.destacados.title" datatype="html">
+        <source>Destacados de la semana</source>
+        <target>Highlights der Woche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">89,91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.destacados.vacio" datatype="html">
+        <source> Todavía no hay destacados esta semana. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/tours&quot;&gt;"/>Mira los tours disponibles<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
+        <target> Diese Woche gibt es noch keine Highlights. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/tours&quot;&gt;"/>Schau dir die verfügbaren Touren an<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">96,99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.afiliados.title" datatype="html">
+        <source>Aviso de afiliados</source>
+        <target>Affiliate-Hinweis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/afiliados.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.afiliados.intro" datatype="html">
+        <source> Meet Málaga es un sitio web independiente que participa en programas de afiliación de terceros como Civitatis, GetYourGuide, Tiqets, DiscoverCars, Localrent, TheFork y Booking, entre otros. </source>
+        <target> Meet Málaga ist eine unabhängige Website, die an Affiliate-Programmen von Drittanbietern wie Civitatis, GetYourGuide, Tiqets, DiscoverCars, Localrent, TheFork und Booking teilnimmt, unter anderem. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/afiliados.component.ts</context>
+          <context context-type="linenumber">12,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.afiliados.significado.title" datatype="html">
+        <source>¿Qué significa esto?</source>
+        <target>Was bedeutet das?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/afiliados.component.ts</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.afiliados.significado.text" datatype="html">
+        <source> Algunos enlaces de esta web son enlaces de afiliado. Si reservas o compras un servicio a través de ellos, Meet Málaga puede recibir una comisión de la plataforma correspondiente, <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>sin ningún coste adicional para ti<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>: pagas exactamente el mismo precio. </source>
+        <target> Einige Links auf dieser Website sind Affiliate-Links. Wenn du darüber einen Service buchst oder kaufst, kann Meet Málaga eine Provision von der jeweiligen Plattform erhalten, <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>ohne zusätzliche Kosten für dich<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>: Du zahlst genau denselben Preis. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/afiliados.component.ts</context>
+          <context context-type="linenumber">18,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.afiliados.compromiso.title" datatype="html">
+        <source>Nuestro compromiso</source>
+        <target>Unser Engagement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/afiliados.component.ts</context>
+          <context context-type="linenumber">23,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.afiliados.compromiso.item1" datatype="html">
+        <source>Recomendamos servicios por su interés, no por la comisión.</source>
+        <target>Wir empfehlen Services aufgrund ihres Werts, nicht wegen der Provision.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/afiliados.component.ts</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.afiliados.compromiso.item2" datatype="html">
+        <source>Los precios mostrados son orientativos; el precio final lo fija cada plataforma.</source>
+        <target>Die angezeigten Preise sind Richtwerte; den Endpreis legt jede Plattform selbst fest.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/afiliados.component.ts</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.afiliados.compromiso.item3" datatype="html">
+        <source>No gestionamos pagos ni reservas: eso lo hace directamente el proveedor.</source>
+        <target>Wir wickeln weder Zahlungen noch Buchungen ab: Das übernimmt direkt der Anbieter.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/afiliados.component.ts</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.afiliados.duda" datatype="html">
+        <source> Cualquier duda sobre una reserva concreta debe dirigirse a la plataforma en la que la realizaste, que es quien presta el servicio. </source>
+        <target> Bei Fragen zu einer konkreten Buchung wende dich bitte an die Plattform, über die du gebucht hast, da sie den Service erbringt. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/afiliados.component.ts</context>
+          <context context-type="linenumber">30,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.avisoLegal.title" datatype="html">
+        <source>Aviso legal</source>
+        <target>Rechtlicher Hinweis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/aviso-legal.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.avisoLegal.titular.title" datatype="html">
+        <source>Titular del sitio</source>
+        <target>Inhaber der Website</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/aviso-legal.component.ts</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.avisoLegal.titular.item1" datatype="html">
+        <source>Titular: [Tu nombre o razón social]</source>
+        <target>Inhaber: [Dein Name oder Firmenname]</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/aviso-legal.component.ts</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.avisoLegal.titular.item2" datatype="html">
+        <source>NIF/CIF: [Tu identificación fiscal]</source>
+        <target>Steuernummer (NIF/CIF): [Deine Steuernummer]</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/aviso-legal.component.ts</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.avisoLegal.titular.item3" datatype="html">
+        <source>Domicilio: [Tu dirección]</source>
+        <target>Adresse: [Deine Adresse]</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/aviso-legal.component.ts</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.avisoLegal.titular.item4" datatype="html">
+        <source>Email de contacto: [tu@email.com]</source>
+        <target>Kontakt-E-Mail: [deine@email.com]</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/aviso-legal.component.ts</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.avisoLegal.objeto.title" datatype="html">
+        <source>Objeto</source>
+        <target>Zweck</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/aviso-legal.component.ts</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.avisoLegal.objeto.text" datatype="html">
+        <source> Este sitio web tiene por objeto ofrecer información y recomendaciones sobre servicios turísticos en Málaga y su provincia, y redirigir a plataformas de terceros donde el usuario puede contratarlos. </source>
+        <target> Diese Website hat zum Zweck, Informationen und Empfehlungen zu touristischen Dienstleistungen in Málaga und der Provinz anzubieten und zu Plattformen von Drittanbietern weiterzuleiten, bei denen der Nutzer diese buchen kann. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/aviso-legal.component.ts</context>
+          <context context-type="linenumber">20,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.avisoLegal.responsabilidad.title" datatype="html">
+        <source>Responsabilidad</source>
+        <target>Haftung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/aviso-legal.component.ts</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.avisoLegal.responsabilidad.text" datatype="html">
+        <source> Meet Málaga no presta directamente los servicios (tours, alquiler de coches, restauración, ocio): actúa como intermediario informativo. La contratación, el pago, la ejecución y la atención al cliente corresponden a la plataforma o proveedor final. Meet Málaga no se responsabiliza de la disponibilidad, precios o condiciones de dichos terceros. </source>
+        <target> Meet Málaga erbringt die Dienstleistungen (Touren, Mietwagen, Gastronomie, Freizeit) nicht selbst: Die Seite fungiert als informativer Vermittler. Buchung, Zahlung, Durchführung und Kundenservice obliegen der jeweiligen Plattform oder dem Endanbieter. Meet Málaga übernimmt keine Verantwortung für Verfügbarkeit, Preise oder Bedingungen dieser Drittanbieter. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/aviso-legal.component.ts</context>
+          <context context-type="linenumber">26,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.avisoLegal.propiedad.title" datatype="html">
+        <source>Propiedad intelectual</source>
+        <target>Geistiges Eigentum</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/aviso-legal.component.ts</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.avisoLegal.propiedad.text" datatype="html">
+        <source> Los contenidos propios de este sitio pertenecen a su titular. Las marcas y logotipos de terceros pertenecen a sus respectivos propietarios. </source>
+        <target> Die eigenen Inhalte dieser Website gehören ihrem Inhaber. Marken und Logos Dritter gehören ihren jeweiligen Eigentümern. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/aviso-legal.component.ts</context>
+          <context context-type="linenumber">34,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.avisoLegal.legislacion.title" datatype="html">
+        <source>Legislación aplicable</source>
+        <target>Anwendbares Recht</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/aviso-legal.component.ts</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.avisoLegal.legislacion.text" datatype="html">
+        <source>Estas condiciones se rigen por la legislación española.</source>
+        <target>Diese Bedingungen unterliegen dem spanischen Recht.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/aviso-legal.component.ts</context>
+          <context context-type="linenumber">38,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookies.title" datatype="html">
+        <source>Política de cookies</source>
+        <target>Cookie-Richtlinie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/cookies.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookies.intro" datatype="html">
+        <source> Una cookie es un pequeño archivo que se guarda en tu dispositivo al visitar una web. Usamos cookies para que el sitio funcione y para entender cómo se utiliza. </source>
+        <target> Ein Cookie ist eine kleine Datei, die beim Besuch einer Website auf deinem Gerät gespeichert wird. Wir verwenden Cookies, damit die Website funktioniert und um zu verstehen, wie sie genutzt wird. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/cookies.component.ts</context>
+          <context context-type="linenumber">12,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookies.tipos.title" datatype="html">
+        <source>Tipos de cookies que usamos</source>
+        <target>Arten von Cookies, die wir verwenden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/cookies.component.ts</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookies.tipos.tecnicas" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Técnicas:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> necesarias para el funcionamiento del sitio.</source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Technische:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> notwendig für den Betrieb der Website.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/cookies.component.ts</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookies.tipos.analiticas" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Analíticas:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> nos ayudan a medir visitas (p. ej. Google Analytics). Requieren tu consentimiento.</source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Analytische:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> helfen uns, Besuche zu messen (z. B. Google Analytics). Erfordern deine Zustimmung.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/cookies.component.ts</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookies.tipos.afiliacion" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>De afiliación:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> algunos proveedores instalan cookies al pulsar sus enlaces para atribuir la reserva.</source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Affiliate-Cookies:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Einige Anbieter setzen beim Klick auf ihre Links Cookies, um die Buchung zuzuordnen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/cookies.component.ts</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookies.gestion.title" datatype="html">
+        <source>Gestión</source>
+        <target>Verwaltung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/cookies.component.ts</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.cookies.gestion.text" datatype="html">
+        <source> Puedes aceptar o rechazar las cookies no esenciales desde el banner de cookies y cambiar tu elección en cualquier momento. También puedes eliminarlas desde la configuración de tu navegador. </source>
+        <target> Du kannst nicht notwendige Cookies über das Cookie-Banner akzeptieren oder ablehnen und deine Wahl jederzeit ändern. Du kannst sie auch über die Einstellungen deines Browsers löschen. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/cookies.component.ts</context>
+          <context context-type="linenumber">24,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.eyebrow" datatype="html">
+        <source>Información legal</source>
+        <target>Rechtliche Informationen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-layout.component.ts</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.nota" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Aviso.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Plantilla orientativa. Sustituye los datos entre corchetes por los tuyos y revísala con un profesional antes de publicar. </source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Hinweis.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Unverbindliche Vorlage. Ersetze die Angaben in eckigen Klammern durch deine eigenen und lass sie vor der Veröffentlichung von einem Fachmann prüfen. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-layout.component.ts</context>
+          <context context-type="linenumber">18,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacidad.title" datatype="html">
+        <source>Política de privacidad</source>
+        <target>Datenschutzerklärung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/privacidad.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacidad.intro" datatype="html">
+        <source> En Meet Málaga respetamos tu privacidad conforme al Reglamento (UE) 2016/679 (RGPD) y a la LOPDGDD. </source>
+        <target> Bei Meet Málaga respektieren wir deine Privatsphäre gemäß der Verordnung (EU) 2016/679 (DSGVO) und der LOPDGDD. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/privacidad.component.ts</context>
+          <context context-type="linenumber">12,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacidad.responsable.title" datatype="html">
+        <source>Responsable del tratamiento</source>
+        <target>Verantwortlicher für die Verarbeitung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/privacidad.component.ts</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacidad.responsable.text" datatype="html">
+        <source>[Tu nombre o razón social] · [tu@email.com]</source>
+        <target>[Dein Name oder Firmenname] · [deine@email.com]</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/privacidad.component.ts</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacidad.datos.title" datatype="html">
+        <source>Qué datos tratamos</source>
+        <target>Welche Daten wir verarbeiten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/privacidad.component.ts</context>
+          <context context-type="linenumber">17,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacidad.datos.item1" datatype="html">
+        <source>Datos de navegación y analítica (de forma agregada y anónima).</source>
+        <target>Navigations- und Analysedaten (aggregiert und anonym).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/privacidad.component.ts</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacidad.datos.item2" datatype="html">
+        <source>Datos que nos facilites voluntariamente en formularios de contacto, si los hay.</source>
+        <target>Daten, die du uns freiwillig über Kontaktformulare zur Verfügung stellst, sofern vorhanden.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/privacidad.component.ts</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacidad.sinPagos" datatype="html">
+        <source> No solicitamos datos de pago: las reservas se realizan en las plataformas de terceros, que aplican su propia política de privacidad. </source>
+        <target> Wir erfragen keine Zahlungsdaten: Die Buchungen erfolgen auf den Plattformen der Drittanbieter, die ihre eigene Datenschutzrichtlinie anwenden. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/privacidad.component.ts</context>
+          <context context-type="linenumber">23,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacidad.finalidad.title" datatype="html">
+        <source>Finalidad y base legal</source>
+        <target>Zweck und Rechtsgrundlage</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/privacidad.component.ts</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacidad.finalidad.text" datatype="html">
+        <source> Mejorar el sitio y medir su rendimiento (interés legítimo / consentimiento para cookies analíticas) y atender tus consultas (consentimiento). </source>
+        <target> Die Website zu verbessern und ihre Leistung zu messen (berechtigtes Interesse / Einwilligung für analytische Cookies) sowie deine Anfragen zu beantworten (Einwilligung). </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/privacidad.component.ts</context>
+          <context context-type="linenumber">28,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacidad.terceros.title" datatype="html">
+        <source>Terceros</source>
+        <target>Dritte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/privacidad.component.ts</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacidad.terceros.text" datatype="html">
+        <source> Utilizamos servicios como Google Analytics y plataformas de afiliación. Al pulsar sus enlaces, tus datos pasan a regirse por las políticas de dichos terceros. </source>
+        <target> Wir nutzen Dienste wie Google Analytics und Affiliate-Plattformen. Wenn du auf deren Links klickst, unterliegen deine Daten den Richtlinien dieser Drittanbieter. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/privacidad.component.ts</context>
+          <context context-type="linenumber">33,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacidad.derechos.title" datatype="html">
+        <source>Tus derechos</source>
+        <target>Deine Rechte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/privacidad.component.ts</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="legal.privacidad.derechos.text" datatype="html">
+        <source> Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a [tu@email.com]. </source>
+        <target> Du kannst deine Rechte auf Zugang, Berichtigung, Löschung, Widerspruch, Einschränkung und Übertragbarkeit ausüben, indem du an [deine@email.com] schreibst. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/privacidad.component.ts</context>
+          <context context-type="linenumber">39,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFound.eyebrow" datatype="html">
+        <source>Error 404</source>
+        <target>Error 404</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFound.title" datatype="html">
+        <source>Esta página se fue de tapas.</source>
+        <target>Diese Seite ist Tapas essen gegangen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFound.lead" datatype="html">
+        <source>No encontramos lo que buscabas, pero Málaga tiene mucho que ofrecer.</source>
+        <target>Wir haben nicht gefunden, wonach du gesucht hast, aber Málaga hat viel zu bieten.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFound.cta" datatype="html">
+        <source>Volver al inicio</source>
+        <target>Zurück zur Startseite</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">13,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.hero.eyebrow" datatype="html">
+        <source>Rutas guiadas por nosotros</source>
+        <target>Von uns geführte Touren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.hero.title" datatype="html">
+        <source>Nuestras rutas por Málaga</source>
+        <target>Unsere Touren durch Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.hero.sub" datatype="html">
+        <source> Estas son las rutas que guío personalmente: a tu ritmo si vienes solo o en pareja, o con tu grupo si preferís ir juntos. Escríbeme por WhatsApp, cerramos fecha y precio, y nos vemos en el punto de encuentro. </source>
+        <target> Das sind die Touren, die ich persönlich führe: in deinem Tempo, wenn du allein oder zu zweit kommst, oder mit deiner Gruppe, wenn ihr lieber zusammen unterwegs seid. Schreib mir auf WhatsApp, wir klären Termin und Preis, und wir sehen uns am Treffpunkt. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.cal.eyebrow" datatype="html">
+        <source>Disponibilidad</source>
+        <target>Verfügbarkeit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.cal.title" datatype="html">
+        <source>Calendario de mis tours</source>
+        <target>Kalender meiner Touren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.cal.sub" datatype="html">
+        <source> Consulta qué días tengo rutas disponibles y en qué franjas. Pulsa un día en amarillo y elige la hora para reservar tu plaza. </source>
+        <target> Sieh nach, an welchen Tagen ich Touren anbiete und zu welchen Zeiten. Klicke auf einen gelb markierten Tag und wähle die Uhrzeit, um deinen Platz zu reservieren. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">42,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.paso1.title" datatype="html">
+        <source>Elige tu ruta</source>
+        <target>Wähle deine Tour</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.paso1.text" datatype="html">
+        <source>Mira las opciones y su punto de encuentro.</source>
+        <target>Schau dir die Optionen und ihre Treffpunkte an.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.paso2.title" datatype="html">
+        <source>Escríbeme por WhatsApp</source>
+        <target>Schreib mir auf WhatsApp</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.paso2.text" datatype="html">
+        <source>Acordamos día, hora y número de personas.</source>
+        <target>Wir vereinbaren Tag, Uhrzeit und Personenzahl.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">57,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.paso3.title" datatype="html">
+        <source>Confirma el pago</source>
+        <target>Bestätige die Zahlung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.paso3.text" datatype="html">
+        <source>Con tarjeta (Stripe/PayPal) o por Bizum/transferencia.</source>
+        <target>Mit Karte (Stripe/PayPal) oder per Bizum/Überweisung.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">61,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.badge.proximamente" datatype="html">
+        <source>Próximamente</source>
+        <target>Demnächst</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.badge.bajoPeticion" datatype="html">
+        <source>Bajo petición</source>
+        <target>Auf Anfrage</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">73,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.facts.duracion" datatype="html">
+        <source>Duración</source>
+        <target>Dauer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.facts.puntoEncuentro" datatype="html">
+        <source>Punto de encuentro</source>
+        <target>Treffpunkt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">86,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.facts.grupoMax" datatype="html">
+        <source>Grupo máx.</source>
+        <target>Max. Gruppe</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.facts.personas" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ r.maxGroup }}"/> personas</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ r.maxGroup }}"/> Personen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">87,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.precio.porPersona" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ r.pricePerPerson }}"/> €<x id="START_SMALL_TEXT" ctype="x-small" equiv-text="&lt;small&gt;"/>por persona<x id="CLOSE_SMALL_TEXT" ctype="x-small" equiv-text="&lt;/small&gt;"/></source>
+        <target><x id="INTERPOLATION" equiv-text="{{ r.pricePerPerson }}"/> €<x id="START_SMALL_TEXT" ctype="x-small" equiv-text="&lt;small&gt;"/>pro Person<x id="CLOSE_SMALL_TEXT" ctype="x-small" equiv-text="&lt;/small&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">91,92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.precio.consultar" datatype="html">
+        <source>Precio a consultar</source>
+        <target>Preis auf Anfrage</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">92,94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.reservarWhatsapp" datatype="html">
+        <source>Reservar por WhatsApp</source>
+        <target>Über WhatsApp reservieren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">100,101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.configuraWhatsapp" datatype="html">
+        <source>Configura tu WhatsApp en environment.ts</source>
+        <target>Konfiguriere dein WhatsApp in environment.ts</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">102,104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.noDisponibleReserva" datatype="html">
+        <source>Todavía no está disponible para reservar.</source>
+        <target>Noch nicht buchbar.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">106,108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.vacio" datatype="html">
+        <source> Todavía no hay rutas publicadas. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/free-tours&quot;&gt;"/>Empieza por un free tour<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> mientras preparo nuevas fechas. </source>
+        <target> Es sind noch keine Touren veröffentlicht. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/free-tours&quot;&gt;"/>Fang mit einem Free Tour an<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, während ich neue Termine vorbereite. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">113,116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.pay.title" datatype="html">
+        <source>Cómo se paga</source>
+        <target>So wird bezahlt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">121,122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.pay.intro" datatype="html">
+        <source> Una vez acordada la fecha por WhatsApp, confirmas tu plaza con cualquiera de estas opciones. El precio es el mismo en todas. </source>
+        <target> Sobald der Termin per WhatsApp vereinbart ist, bestätigst du deinen Platz mit einer dieser Optionen. Der Preis ist bei allen gleich. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">123,126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.pay.efectivo.title" datatype="html">
+        <source>Efectivo</source>
+        <target>Bar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">136,137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.pay.efectivo.text" datatype="html">
+        <source>Pagas en persona el día de la ruta, antes o después del recorrido.</source>
+        <target>Du zahlst persönlich am Tag der Tour, vor oder nach dem Rundgang.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">137,140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.cross.title" datatype="html">
+        <source>¿Todavía no me conoces?</source>
+        <target>Kennst du mich noch nicht?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">146,147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.cross.text" datatype="html">
+        <source> Empieza por un free tour: reservas gratis y pagas al final lo que quieras. Es la mejor forma de conocerme antes de una ruta privada. </source>
+        <target> Fang mit einem Free Tour an: kostenlos buchen und am Ende zahlen, was du möchtest. Das ist der beste Weg, mich vor einer privaten Tour kennenzulernen. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">148,150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.cross.cta" datatype="html">
+        <source>Ver free tours</source>
+        <target>Free Tours ansehen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">152,154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.cat.historia" datatype="html">
+        <source>Historia</source>
+        <target>Geschichte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">233</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.cat.arte" datatype="html">
+        <source>Arte</source>
+        <target>Kunst</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">234</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.cat.gastronomia" datatype="html">
+        <source>Gastronomía</source>
+        <target>Gastronomie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">235</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.cat.naturaleza" datatype="html">
+        <source>Naturaleza</source>
+        <target>Natur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">236</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.cat.familia" datatype="html">
+        <source>Familia</source>
+        <target>Familie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">237</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.cat.noche" datatype="html">
+        <source>Noche</source>
+        <target>Nacht</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">238</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.pay.bizum.conNumero" datatype="html">
+        <source>Al número <x id="PH" equiv-text="this.pago.bizum"/></source>
+        <target>An die Nummer <x id="PH" equiv-text="this.pago.bizum"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">247</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.pay.bizum.sinNumero" datatype="html">
+        <source>Rápido y sin comisiones (configura tu número).</source>
+        <target>Schnell und ohne Gebühren (konfiguriere deine Nummer).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">248</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.pay.paypal.conLink" datatype="html">
+        <source>Pago seguro; te enviamos el enlace al confirmar.</source>
+        <target>Sichere Zahlung; wir senden dir den Link bei der Bestätigung.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">253</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.pay.paypal.sinLink" datatype="html">
+        <source>Configura tu enlace de PayPal.</source>
+        <target>Konfiguriere deinen PayPal-Link.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">254</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="vertical.vacio" datatype="html">
+        <source> Todavía no hay ofertas publicadas en esta sección. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>Vuelve a la portada<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> mientras seguimos ampliando el catálogo. </source>
+        <target> Es sind noch keine Angebote in diesem Bereich veröffentlicht. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>Zurück zur Startseite<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, während wir den Katalog weiter ausbauen. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/vertical/vertical-page.component.ts</context>
+          <context context-type="linenumber">40,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.mesAnterior" datatype="html">
+        <source>Mes anterior</source>
+        <target>Vorheriger Monat</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.mesSiguiente" datatype="html">
+        <source>Mes siguiente</source>
+        <target>Nächster Monat</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.leyenda.disponible" datatype="html">
+        <source>Disponible</source>
+        <target>Verfügbar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.leyenda.conTour" datatype="html">
+        <source>Con tour</source>
+        <target>Mit Tour</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.leyenda.ocupado" datatype="html">
+        <source>Ocupado</source>
+        <target>Belegt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.leyenda.noDisponible" datatype="html">
+        <source>No disponible</source>
+        <target>Nicht verfügbar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">68,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.sinHuecos" datatype="html">
+        <source> Este mes no tengo huecos libres. <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button type=&quot;button&quot; class=&quot;cal__link&quot; (click)=&quot;nextMes()&quot;&gt;"/>Mira el mes siguiente<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/> o <x id="START_LINK" ctype="x-a" equiv-text="&lt;a *ngIf=&quot;whatsapp&quot; [href]=&quot;&apos;https://wa.me/&apos; + whatsapp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>escríbeme por WhatsApp<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
+        <target> Diesen Monat habe ich keine freien Termine. <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button type=&quot;button&quot; class=&quot;cal__link&quot; (click)=&quot;nextMes()&quot;&gt;"/>Schau dir den nächsten Monat an<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/> oder <x id="START_LINK" ctype="x-a" equiv-text="&lt;a *ngIf=&quot;whatsapp&quot; [href]=&quot;&apos;https://wa.me/&apos; + whatsapp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>schreib mir auf WhatsApp<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">73,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.elegirFranja" datatype="html">
+        <source>Elige una franja para reservar:</source>
+        <target>Wähle eine Uhrzeit zum Reservieren:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">82,84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.reservarBtn" datatype="html">
+        <source>Reservar</source>
+        <target>Reservieren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">96,97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.configuraWhatsapp" datatype="html">
+        <source>Configura tu WhatsApp</source>
+        <target>Konfiguriere dein WhatsApp</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">97,99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.dow.lunes" datatype="html">
+        <source>L</source>
+        <target>M</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.dow.martes" datatype="html">
+        <source>M</source>
+        <target>D</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.dow.miercoles" datatype="html">
+        <source>X</source>
+        <target>M</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.dow.jueves" datatype="html">
+        <source>J</source>
+        <target>D</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.dow.viernes" datatype="html">
+        <source>V</source>
+        <target>F</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.dow.sabado" datatype="html">
+        <source>S</source>
+        <target>S</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.dow.domingo" datatype="html">
+        <source>D</source>
+        <target>S</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.estado.disponible" datatype="html">
+        <source>disponible</source>
+        <target>verfügbar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">274</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.estado.conTour" datatype="html">
+        <source>con tour</source>
+        <target>mit Tour</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">275</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.estado.ocupado" datatype="html">
+        <source>ocupado</source>
+        <target>belegt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">276</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.estado.noDisponible" datatype="html">
+        <source>no disponible</source>
+        <target>nicht verfügbar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">277</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.estado.sinTours" datatype="html">
+        <source>sin tours</source>
+        <target>keine Touren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">278</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calendario.estado.pasado" datatype="html">
+        <source>pasado</source>
+        <target>vergangen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
+          <context context-type="linenumber">279</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cookieBanner.ariaLabel" datatype="html">
+        <source>Consentimiento de cookies</source>
+        <target>Cookie-Einwilligung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/cookie-banner/cookie-banner.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cookieBanner.text" datatype="html">
+        <source> Usamos cookies propias y de terceros para analítica y afiliación. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/cookies&quot;&gt;"/>Más información<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
+        <target> Wir verwenden eigene Cookies und Cookies von Drittanbietern für Analyse und Affiliate-Marketing. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/cookies&quot;&gt;"/>Weitere Informationen<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/cookie-banner/cookie-banner.component.ts</context>
+          <context context-type="linenumber">23,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cookieBanner.rejectBtn" datatype="html">
+        <source>Solo esenciales</source>
+        <target>Nur essenzielle</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/cookie-banner/cookie-banner.component.ts</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cookieBanner.acceptBtn" datatype="html">
+        <source>Aceptar todas</source>
+        <target>Alle akzeptieren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/cookie-banner/cookie-banner.component.ts</context>
+          <context context-type="linenumber">28,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.tagline" datatype="html">
+        <source> Tu guía para descubrir Málaga: tours, coches, restaurantes y ocio, reservados con las mejores plataformas. </source>
+        <target> Dein Guide, um Málaga zu entdecken: Touren, Mietwagen, Restaurants und Freizeit, gebucht über die besten Plattformen. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.col.explora" datatype="html">
+        <source>Explora</source>
+        <target>Erkunden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.link.tours" datatype="html">
+        <source>Tours</source>
+        <target>Touren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.link.coches" datatype="html">
+        <source>Alquiler de coches</source>
+        <target>Mietwagen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.link.restaurantes" datatype="html">
+        <source>Restaurantes</source>
+        <target>Restaurants</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.link.ocio" datatype="html">
+        <source>Ocio</source>
+        <target>Freizeit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.col.legal" datatype="html">
+        <source>Legal</source>
+        <target>Rechtliches</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.link.avisoLegal" datatype="html">
+        <source>Aviso legal</source>
+        <target>Rechtlicher Hinweis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.link.privacidad" datatype="html">
+        <source>Privacidad</source>
+        <target>Datenschutz</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.link.cookies" datatype="html">
+        <source>Cookies</source>
+        <target>Cookies</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.link.afiliados" datatype="html">
+        <source>Aviso de afiliados</source>
+        <target>Affiliate-Hinweis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">36,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.disclosure" datatype="html">
+        <source> Meet Málaga participa en programas de afiliación. Cuando reservas a través de nuestros enlaces podemos recibir una comisión sin coste adicional para ti. Los precios son orientativos; el precio final lo fija cada plataforma en el momento de la reserva. </source>
+        <target> Meet Málaga nimmt an Affiliate-Programmen teil. Wenn du über unsere Links buchst, können wir eine Provision erhalten, ohne zusätzliche Kosten für dich. Die Preise sind Richtwerte; den Endpreis legt jede Plattform zum Zeitpunkt der Buchung fest. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">41,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.copyright" datatype="html">
+        <source>© <x id="INTERPOLATION" equiv-text="{{ year }}"/> Meet Málaga. Hecho en Málaga.</source>
+        <target>© <x id="INTERPOLATION" equiv-text="{{ year }}"/> Meet Málaga. Gemacht in Málaga.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="guiaBio.eyebrow" datatype="html">
+        <source>Quién te enseña Málaga</source>
+        <target>Wer dir Málaga zeigt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/guia-bio/guia-bio.component.ts</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="guiaBio.text" datatype="html">
+        <source> Soy Samuel. Nací en Málaga y viví seis años en Inglaterra, así que sé bien lo que es llegar a una ciudad sin conocer a nadie ni saber por dónde empezar. Volví para estudiar Turismo y dedicarme a esto: enseñar mi ciudad como me habría gustado que me la enseñaran a mí. Preparo cada ruta a mano, sin prisa, contando lo que de verdad merece la pena y callándome lo que no. Que te vayas sintiendo que conociste Málaga, no que la viste desde fuera. </source>
+        <target> Ich bin Samuel. Ich bin in Málaga geboren und habe sechs Jahre in England gelebt, also weiß ich genau, wie es ist, in einer Stadt anzukommen, ohne jemanden zu kennen oder zu wissen, wo man anfangen soll. Ich kam zurück, um Tourismus zu studieren und mich genau dem zu widmen: meine Stadt so zu zeigen, wie ich es mir selbst gewünscht hätte. Ich bereite jede Tour von Hand vor, ohne Eile, erzähle, was sich wirklich lohnt, und verschweige, was nicht dazugehört. Damit du am Ende das Gefühl hast, Málaga wirklich kennengelernt zu haben, und nicht nur von außen gesehen zu haben. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/guia-bio/guia-bio.component.ts</context>
+          <context context-type="linenumber">15,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="guiaBio.tag.malagueno" datatype="html">
+        <source>Malagueño</source>
+        <target>Aus Málaga</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/guia-bio/guia-bio.component.ts</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="guiaBio.tag.reinoUnido" datatype="html">
+        <source>6 años en Reino Unido</source>
+        <target>6 Jahre im Vereinigten Königreich</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/guia-bio/guia-bio.component.ts</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="guiaBio.tag.turismo" datatype="html">
+        <source>Titulado en Turismo</source>
+        <target>Abschluss in Tourismus</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/guia-bio/guia-bio.component.ts</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="guiaBio.tag.idiomas" datatype="html">
+        <source>Español · Inglés</source>
+        <target>Spanisch · Englisch</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/guia-bio/guia-bio.component.ts</context>
+          <context context-type="linenumber">27,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.openMenu" datatype="html">
+        <source>Abrir menú</source>
+        <target>Menü öffnen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.ts</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.nav.freeTours" datatype="html">
+        <source>Free tours</source>
+        <target>Free Tours</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.ts</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.nav.rutas" datatype="html">
+        <source>Rutas privadas</source>
+        <target>Private Touren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.ts</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.nav.tours" datatype="html">
+        <source>Tours</source>
+        <target>Touren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.ts</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.nav.coches" datatype="html">
+        <source>Alquiler de coches</source>
+        <target>Mietwagen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.ts</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.nav.restaurantes" datatype="html">
+        <source>Restaurantes</source>
+        <target>Restaurants</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.ts</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.nav.ocio" datatype="html">
+        <source>Ocio</source>
+        <target>Freizeit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.nav.hoteles" datatype="html">
+        <source>Hoteles</source>
+        <target>Hotels</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.ts</context>
+          <context context-type="linenumber">33,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offerCard.desde" datatype="html">
+        <source>desde</source>
+        <target>ab</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/offer-card/offer-card.component.ts</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offerCard.verOferta" datatype="html">
+        <source>Ver oferta</source>
+        <target>Angebot ansehen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/offer-card/offer-card.component.ts</context>
+          <context context-type="linenumber">48,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offerCard.reserveAriaLabel" datatype="html">
+        <source>Reservar: <x id="PH" equiv-text="title"/></source>
+        <target>Reservieren: <x id="PH" equiv-text="title"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/offer-card/offer-card.component.ts</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.lang.label" datatype="html">
+        <source>Idioma</source>
+        <target>Sprache</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

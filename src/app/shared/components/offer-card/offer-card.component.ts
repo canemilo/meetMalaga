@@ -14,12 +14,12 @@ import { AffiliateService } from '../../../core/services/affiliate.service';
   template: `
     <article class="card">
       <a
-        class="card__media"
+        class="card__media corte"
         [href]="link"
         target="_blank"
         rel="sponsored noopener"
         (click)="onClick()"
-        [attr.aria-label]="'Reservar: ' + offer.title"
+        [attr.aria-label]="reservarAriaLabel(offer.title)"
       >
         <img [src]="offer.imageUrl" [alt]="offer.imageAlt" loading="lazy" />
         <span class="card__provider">{{ providerLabel }}</span>
@@ -36,7 +36,7 @@ import { AffiliateService } from '../../../core/services/affiliate.service';
 
         <div class="card__footer">
           <span class="card__price" *ngIf="offer.priceFrom as p">
-            <small>desde</small> {{ p }}&nbsp;€
+            <small i18n="@@offerCard.desde">desde</small> {{ p }}&nbsp;€
           </span>
           <a
             class="btn btn--sol"
@@ -44,6 +44,7 @@ import { AffiliateService } from '../../../core/services/affiliate.service';
             target="_blank"
             rel="sponsored noopener"
             (click)="onClick()"
+            i18n="@@offerCard.verOferta"
           >Ver oferta</a>
         </div>
       </div>
@@ -59,8 +60,10 @@ import { AffiliateService } from '../../../core/services/affiliate.service';
       overflow: hidden;
       transition: transform .18s ease, box-shadow .18s ease;
     }
-    .card:hover { transform: translateY(-4px); box-shadow: var(--sombra); }
+    .card:hover { transform: translateY(-4px); box-shadow: var(--sombra-sol); }
+    .card:has(a:focus-visible) { box-shadow: var(--sombra-sol); }
 
+    /* Media con la firma de marca: esquina de azulejo cortada (.corte) */
     .card__media { position: relative; display: block; aspect-ratio: 4 / 3; overflow: hidden; }
     .card__media img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
     .card:hover .card__media img { transform: scale(1.05); }
@@ -114,6 +117,10 @@ export class OfferCardComponent {
       directo: '',
     };
     return map[this.offer.provider] ?? '';
+  }
+
+  reservarAriaLabel(title: string): string {
+    return $localize`:@@offerCard.reserveAriaLabel:Reservar: ${title}`;
   }
 
   onClick(): void {

@@ -7,20 +7,20 @@ import { SeoService } from '../../core/services/seo.service';
   standalone: true,
   imports: [LegalLayoutComponent],
   template: `
-    <app-legal-layout title="Política de cookies">
-      <p>
+    <app-legal-layout title="Política de cookies" i18n-title="@@legal.cookies.title">
+      <p i18n="@@legal.cookies.intro">
         Una cookie es un pequeño archivo que se guarda en tu dispositivo al visitar
         una web. Usamos cookies para que el sitio funcione y para entender cómo se
         utiliza.
       </p>
-      <h2>Tipos de cookies que usamos</h2>
+      <h2 i18n="@@legal.cookies.tipos.title">Tipos de cookies que usamos</h2>
       <ul>
-        <li><strong>Técnicas:</strong> necesarias para el funcionamiento del sitio.</li>
-        <li><strong>Analíticas:</strong> nos ayudan a medir visitas (p. ej. Google Analytics). Requieren tu consentimiento.</li>
-        <li><strong>De afiliación:</strong> algunos proveedores instalan cookies al pulsar sus enlaces para atribuir la reserva.</li>
+        <li i18n="@@legal.cookies.tipos.tecnicas"><strong>Técnicas:</strong> necesarias para el funcionamiento del sitio.</li>
+        <li i18n="@@legal.cookies.tipos.analiticas"><strong>Analíticas:</strong> nos ayudan a medir visitas (p. ej. Google Analytics). Requieren tu consentimiento.</li>
+        <li i18n="@@legal.cookies.tipos.afiliacion"><strong>De afiliación:</strong> algunos proveedores instalan cookies al pulsar sus enlaces para atribuir la reserva.</li>
       </ul>
-      <h2>Gestión</h2>
-      <p>
+      <h2 i18n="@@legal.cookies.gestion.title">Gestión</h2>
+      <p i18n="@@legal.cookies.gestion.text">
         Puedes aceptar o rechazar las cookies no esenciales desde el banner de cookies
         y cambiar tu elección en cualquier momento. También puedes eliminarlas desde
         la configuración de tu navegador.

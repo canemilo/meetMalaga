@@ -17,9 +17,9 @@ import { SeoService } from '../../core/services/seo.service';
   template: `
     <section class="hero-mini">
       <div class="container">
-        <p class="eyebrow">Tours gratuitos con guía local</p>
-        <h1>Free tours por Málaga</h1>
-        <p class="hero-mini__sub">
+        <p class="eyebrow" i18n="@@freeTours.hero.eyebrow">Tours gratuitos con guía local</p>
+        <h1 i18n="@@freeTours.hero.title">Free tours por Málaga</h1>
+        <p class="hero-mini__sub" i18n="@@freeTours.hero.sub">
           Reserva gratis y paga al final lo que consideres, según lo que hayas
           disfrutado. La mejor forma de conocer Málaga y mi manera de hacerlo.
         </p>
@@ -29,26 +29,26 @@ import { SeoService } from '../../core/services/seo.service';
     <!-- Cómo funciona -->
     <section class="container info">
       <div class="info__item">
-        <h3>Reservas gratis</h3>
-        <p>Eliges plaza en Freetour o GuruWalk sin pagar nada por adelantado.</p>
+        <h3 i18n="@@freeTours.paso1.title">Reservas gratis</h3>
+        <p i18n="@@freeTours.paso1.text">Eliges plaza en Freetour o GuruWalk sin pagar nada por adelantado.</p>
       </div>
       <div class="info__item">
-        <h3>Disfrutas el tour</h3>
-        <p>Nos vemos en el punto de encuentro a la hora indicada.</p>
+        <h3 i18n="@@freeTours.paso2.title">Disfrutas el tour</h3>
+        <p i18n="@@freeTours.paso2.text">Nos vemos en el punto de encuentro a la hora indicada.</p>
       </div>
       <div class="info__item">
-        <h3>Pagas lo que quieras</h3>
-        <p>Al terminar, aportas lo que creas justo. Sin precio fijo.</p>
+        <h3 i18n="@@freeTours.paso3.title">Pagas lo que quieras</h3>
+        <p i18n="@@freeTours.paso3.text">Al terminar, aportas lo que creas justo. Sin precio fijo.</p>
       </div>
     </section>
 
     <!-- Free tours -->
     <section class="container grid-wrap">
-      <div class="grid">
+      <div class="grid" *ngIf="tours.length; else sinTours">
         <article class="ft" *ngFor="let t of tours">
           <div class="ft__media">
             <img [src]="t.imageUrl" [alt]="t.imageAlt" loading="lazy" />
-            <span class="ft__free">Gratis · propina voluntaria</span>
+            <span class="ft__free" i18n="@@freeTours.badgeGratis">Gratis · propina voluntaria</span>
           </div>
           <div class="ft__body">
             <h2 class="ft__title">{{ t.title }}</h2>
@@ -60,10 +60,10 @@ import { SeoService } from '../../core/services/seo.service';
             </ul>
 
             <dl class="ft__facts">
-              <div><dt>Duración</dt><dd>{{ t.duration }}</dd></div>
-              <div><dt>Horario</dt><dd>{{ t.schedule }}</dd></div>
-              <div><dt>Punto de encuentro</dt><dd>{{ t.meetingPoint }}</dd></div>
-              <div><dt>Idiomas</dt><dd>{{ t.languages.join(', ') }}</dd></div>
+              <div><dt i18n="@@freeTours.facts.duracion">Duración</dt><dd>{{ t.duration }}</dd></div>
+              <div><dt i18n="@@freeTours.facts.horario">Horario</dt><dd>{{ t.schedule }}</dd></div>
+              <div><dt i18n="@@freeTours.facts.puntoEncuentro">Punto de encuentro</dt><dd>{{ t.meetingPoint }}</dd></div>
+              <div><dt i18n="@@freeTours.facts.idiomas">Idiomas</dt><dd>{{ t.languages.join(', ') }}</dd></div>
             </dl>
 
             <div class="ft__book">
@@ -73,6 +73,7 @@ import { SeoService } from '../../core/services/seo.service';
                 [href]="t.freetourUrl"
                 target="_blank"
                 rel="noopener"
+                i18n="@@freeTours.reservarFreetour"
               >Reservar en Freetour</a>
               <a
                 *ngIf="t.guruwalkUrl"
@@ -80,24 +81,31 @@ import { SeoService } from '../../core/services/seo.service';
                 [href]="t.guruwalkUrl"
                 target="_blank"
                 rel="noopener"
+                i18n="@@freeTours.reservarGuruwalk"
               >Reservar en GuruWalk</a>
             </div>
           </div>
         </article>
       </div>
+      <ng-template #sinTours>
+        <p class="empty" i18n="@@freeTours.vacio">
+          Todavía no hay free tours publicados.
+          <a routerLink="/rutas">Mira las rutas privadas</a> mientras tanto.
+        </p>
+      </ng-template>
     </section>
 
     <!-- Embudo hacia rutas privadas -->
     <section class="container upsell">
       <div class="upsell__box">
         <div>
-          <h2>¿Quieres algo más a medida?</h2>
-          <p>
+          <h2 i18n="@@freeTours.upsell.title">¿Quieres algo más a medida?</h2>
+          <p i18n="@@freeTours.upsell.text">
             Si prefieres un tour privado, con tu grupo y a tu ritmo, echa un
             vistazo a mis rutas. Reserva directa, sin intermediarios.
           </p>
         </div>
-        <a routerLink="/rutas" class="btn btn--sol">Ver rutas privadas</a>
+        <a routerLink="/rutas" class="btn btn--sol" i18n="@@freeTours.upsell.cta">Ver rutas privadas</a>
       </div>
     </section>
   `,
@@ -112,7 +120,7 @@ import { SeoService } from '../../core/services/seo.service';
     .info__item p { margin: 0; font-size: var(--step--1); color: var(--tinta-60); }
     @media (max-width: 760px) { .info { grid-template-columns: 1fr; } }
 
-    .grid-wrap { padding-top: 2.5rem; }
+    .grid-wrap { padding-top: var(--space-section); }
     .grid { display: grid; gap: 1.8rem; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
 
     .ft { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--linea); border-radius: var(--radio); overflow: hidden; }
@@ -140,7 +148,7 @@ import { SeoService } from '../../core/services/seo.service';
     .btn--gw { background: transparent; color: var(--tinta); border: 1.5px solid var(--tinta); }
     .btn--gw:hover { background: var(--cal-hueso); }
 
-    .upsell { margin-top: 3.5rem; }
+    .upsell { margin-top: var(--space-section); }
     .upsell__box { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; padding: 1.8rem 2rem; background: var(--mar); color: var(--cal); border-radius: var(--radio); }
     .upsell__box h2 { font-size: var(--step-2); margin: 0 0 .3rem; color: var(--cal); }
     .upsell__box p { margin: 0; color: rgba(245,246,244,.85); max-width: 52ch; }

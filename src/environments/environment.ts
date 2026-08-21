@@ -32,10 +32,9 @@ export const environment = {
   // Ejemplo España: 34600112233. Déjalo vacío hasta que lo tengas.
   contacto: {
     whatsapp: '',                 // p.ej. '34600112233'
-    // Formas de cobro (rellena las que uses):
-    stripePaymentLink: '',        // enlace de Stripe Payment Link (https://buy.stripe.com/...)
+    // Formas de cobro (rellena las que uses). El efectivo no necesita config:
+    // siempre se ofrece como opción de pago en persona.
     paypalLink: '',               // https://paypal.me/tuusuario
     bizum: '',                    // teléfono o alias de Bizum, p.ej. '600112233'
-    iban: '',                     // para transferencia, si la ofreces
   },
 };

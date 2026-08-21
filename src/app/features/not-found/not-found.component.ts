@@ -7,10 +7,10 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <section class="nf container">
-      <p class="eyebrow">Error 404</p>
-      <h1>Esta página se fue de tapas.</h1>
-      <p class="nf__lead">No encontramos lo que buscabas, pero Málaga tiene mucho que ofrecer.</p>
-      <a routerLink="/" class="btn btn--sol">Volver al inicio</a>
+      <p class="eyebrow" i18n="@@notFound.eyebrow">Error 404</p>
+      <h1 i18n="@@notFound.title">Esta página se fue de tapas.</h1>
+      <p class="nf__lead" i18n="@@notFound.lead">No encontramos lo que buscabas, pero Málaga tiene mucho que ofrecer.</p>
+      <a routerLink="/" class="btn btn--sol" i18n="@@notFound.cta">Volver al inicio</a>
     </section>
   `,
   styles: [`

@@ -22,9 +22,7 @@ export const environment = {
 
   contacto: {
     whatsapp: '',
-    stripePaymentLink: '',
     paypalLink: '',
     bizum: '',
-    iban: '',
   },
 };

@@ -14,37 +14,37 @@ import { RouterLink } from '@angular/router';
               <span class="brand__mark">◐</span>
               <span class="brand__name">Meet&nbsp;Málaga</span>
             </a>
-            <p class="tagline">
+            <p class="tagline" i18n="@@footer.tagline">
               Tu guía para descubrir Málaga: tours, coches, restaurantes y ocio,
               reservados con las mejores plataformas.
             </p>
           </div>
 
           <nav class="cols">
-            <h4>Explora</h4>
-            <a routerLink="/tours">Tours</a>
-            <a routerLink="/coches">Alquiler de coches</a>
-            <a routerLink="/restaurantes">Restaurantes</a>
-            <a routerLink="/ocio">Ocio</a>
+            <h4 i18n="@@footer.col.explora">Explora</h4>
+            <a routerLink="/tours" i18n="@@footer.link.tours">Tours</a>
+            <a routerLink="/coches" i18n="@@footer.link.coches">Alquiler de coches</a>
+            <a routerLink="/restaurantes" i18n="@@footer.link.restaurantes">Restaurantes</a>
+            <a routerLink="/ocio" i18n="@@footer.link.ocio">Ocio</a>
           </nav>
 
           <nav class="cols">
-            <h4>Legal</h4>
-            <a routerLink="/aviso-legal">Aviso legal</a>
-            <a routerLink="/privacidad">Privacidad</a>
-            <a routerLink="/cookies">Cookies</a>
-            <a routerLink="/afiliados">Aviso de afiliados</a>
+            <h4 i18n="@@footer.col.legal">Legal</h4>
+            <a routerLink="/aviso-legal" i18n="@@footer.link.avisoLegal">Aviso legal</a>
+            <a routerLink="/privacidad" i18n="@@footer.link.privacidad">Privacidad</a>
+            <a routerLink="/cookies" i18n="@@footer.link.cookies">Cookies</a>
+            <a routerLink="/afiliados" i18n="@@footer.link.afiliados">Aviso de afiliados</a>
           </nav>
         </div>
 
-        <p class="disclosure">
+        <p class="disclosure" i18n="@@footer.disclosure">
           Meet Málaga participa en programas de afiliación. Cuando reservas a
           través de nuestros enlaces podemos recibir una comisión sin coste
           adicional para ti. Los precios son orientativos; el precio final lo
           fija cada plataforma en el momento de la reserva.
         </p>
 
-        <p class="copy">© {{ year }} Meet Málaga. Hecho en Málaga.</p>
+        <p class="copy" i18n="@@footer.copyright">© {{ year }} Meet Málaga. Hecho en Málaga.</p>
       </div>
     </footer>
   `,

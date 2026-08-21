@@ -28,9 +28,9 @@ export const routes: Routes = [
     data: {
       config: {
         vertical: 'tours',
-        eyebrow: 'Experiencias',
-        title: 'Tours y visitas guiadas en Málaga',
-        subtitle: 'Desde la Alcazaba hasta el Caminito del Rey, reserva las mejores experiencias con guías locales.',
+        eyebrow: $localize`:@@routes.tours.eyebrow:Experiencias`,
+        title: $localize`:@@routes.tours.title:Tours y visitas guiadas en Málaga`,
+        subtitle: $localize`:@@routes.tours.subtitle:Desde la Alcazaba hasta el Caminito del Rey, reserva las mejores experiencias con guías locales.`,
       },
     },
   },
@@ -41,9 +41,9 @@ export const routes: Routes = [
     data: {
       config: {
         vertical: 'coches',
-        eyebrow: 'Movilidad',
-        title: 'Alquiler de coches en Málaga',
-        subtitle: 'Compara compañías con recogida en el aeropuerto o en el centro. Cancelación gratuita y sin sorpresas.',
+        eyebrow: $localize`:@@routes.coches.eyebrow:Movilidad`,
+        title: $localize`:@@routes.coches.title:Alquiler de coches en Málaga`,
+        subtitle: $localize`:@@routes.coches.subtitle:Compara compañías con recogida en el aeropuerto o en el centro. Cancelación gratuita y sin sorpresas.`,
       },
     },
   },
@@ -54,9 +54,9 @@ export const routes: Routes = [
     data: {
       config: {
         vertical: 'restaurantes',
-        eyebrow: 'Gastronomía',
-        title: 'Los mejores restaurantes de Málaga',
-        subtitle: 'Del pescaíto frito a la estrella Michelin. Reserva mesa en los sitios que de verdad merecen la pena.',
+        eyebrow: $localize`:@@routes.restaurantes.eyebrow:Gastronomía`,
+        title: $localize`:@@routes.restaurantes.title:Los mejores restaurantes de Málaga`,
+        subtitle: $localize`:@@routes.restaurantes.subtitle:Del pescaíto frito a la estrella Michelin. Reserva mesa en los sitios que de verdad merecen la pena.`,
       },
     },
   },
@@ -67,9 +67,9 @@ export const routes: Routes = [
     data: {
       config: {
         vertical: 'ocio',
-        eyebrow: 'Planes',
-        title: 'Ocio y actividades en Málaga',
-        subtitle: 'Flamenco, baños árabes, kayak y planes para todos los gustos. Llena tus días de experiencias.',
+        eyebrow: $localize`:@@routes.ocio.eyebrow:Planes`,
+        title: $localize`:@@routes.ocio.title:Ocio y actividades en Málaga`,
+        subtitle: $localize`:@@routes.ocio.subtitle:Flamenco, baños árabes, kayak y planes para todos los gustos. Llena tus días de experiencias.`,
       },
     },
   },
@@ -81,9 +81,9 @@ export const routes: Routes = [
     data: {
       config: {
         vertical: 'hoteles',
-        eyebrow: 'Alojamiento',
-        title: 'Hoteles en Málaga',
-        subtitle: 'Del centro histórico a la playa: compara y reserva tu alojamiento con Trip.com, con cancelación gratuita en la mayoría.',
+        eyebrow: $localize`:@@routes.hoteles.eyebrow:Alojamiento`,
+        title: $localize`:@@routes.hoteles.title:Hoteles en Málaga`,
+        subtitle: $localize`:@@routes.hoteles.subtitle:Del centro histórico a la playa: compara y reserva tu alojamiento con Trip.com, con cancelación gratuita en la mayoría.`,
       },
     },
   },

@@ -80,7 +80,7 @@ El negocio tiene tres cosas distintas; no las mezcles:
    La reserva se hace en la plataforma externa: solo enlazamos (`freetourUrl`,
    `guruwalkUrl`). No hay cobro ni afiliación.
 2. **Rutas privadas** (`/rutas`): tours privados que guía el dueño. Modelo `Ruta`.
-   Reserva propia por WhatsApp; cobro por Stripe/PayPal o Bizum/transferencia.
+   Reserva propia por WhatsApp; cobro por Bizum, PayPal o efectivo.
    Incluye un **calendario de disponibilidad** (`shared/components/calendario`)
    que deriva el estado de cada día de `core/data/disponibilidad.data.ts`
    (reglas semanales evergreen + excepciones por fecha). Es `ngSkipHydration`

@@ -23,8 +23,8 @@ export interface Ruta {
   highlights: string[];
   /** Duración legible: "3 horas", "Día completo". */
   duration: string;
-  /** Precio por persona, en euros. */
-  pricePerPerson: number;
+  /** Precio por persona, en euros. Si no está definido, se muestra "Precio a consultar". */
+  pricePerPerson?: number;
   /** Punto de encuentro reconocible. */
   meetingPoint: string;
   /** Tamaño máximo del grupo, si aplica. */
@@ -36,4 +36,6 @@ export interface Ruta {
   featured?: boolean;
   /** Rutas que requieren organización previa (transporte, entradas, etc.). */
   onRequest?: boolean;
+  /** Ruta en preparación: no reservable todavía. */
+  comingSoon?: boolean;
 }

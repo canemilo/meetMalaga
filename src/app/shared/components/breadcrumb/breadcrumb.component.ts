@@ -13,7 +13,7 @@ export interface BreadcrumbItem {
   standalone: true,
   imports: [CommonModule, RouterLink],
   template: `
-    <nav class="breadcrumb" aria-label="Migas de pan">
+    <nav class="breadcrumb" aria-label="Migas de pan" i18n-aria-label="@@breadcrumb.ariaLabel">
       <ol>
         <li *ngFor="let item of items; let last = last">
           <a *ngIf="item.path && !last" [routerLink]="item.path">{{ item.label }}</a>

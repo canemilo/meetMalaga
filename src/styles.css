@@ -21,16 +21,28 @@
   --body: 'Inter', system-ui, -apple-system, sans-serif;
   --mono: 'Space Mono', ui-monospace, monospace;
 
-  /* Escala */
+  /* Escala tipográfica: contraste brutal reservado al h1 del hero (--step-5) */
   --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
   --step-0:  clamp(1rem, 0.96rem + 0.2vw, 1.12rem);
   --step-1:  clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
   --step-2:  clamp(1.6rem, 1.4rem + 1vw, 2.1rem);
   --step-3:  clamp(2.2rem, 1.8rem + 2vw, 3.2rem);
   --step-4:  clamp(3rem, 2.2rem + 4vw, 5.5rem);
+  --step-5:  clamp(3.4rem, 2rem + 7vw, 7rem);
 
   --radio: 14px;
+  /* Firma: esquina de azulejo cortada — reservada a media de tarjeta y hero */
+  --corte: 26px;
   --sombra: 0 1px 2px rgba(16,34,43,.04), 0 12px 30px -12px rgba(16,34,43,.18);
+  /* Sombra cálida (glow de sol), no gris neutro genérico: para hover interactivo */
+  --sombra-sol: 0 1px 2px rgba(16,34,43,.03), 0 20px 44px -16px rgba(244,183,64,.45);
+  /* Glass funcional, reservado al header sticky */
+  --glass-bg: rgba(245,246,244,.78);
+  --glass-blur: saturate(180%) blur(16px);
+
+  /* Ritmo vertical entre secciones, en vez de márgenes sueltos */
+  --space-section: clamp(3.5rem, 8vw, 7rem);
+
   --maxw: 1180px;
 }
 
@@ -82,10 +94,22 @@ img { display: block; max-width: 100%; }
   text-decoration: none;
   transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
 }
+.btn:active { transform: translateY(0); box-shadow: none; }
 .btn--primary { background: var(--tinta); color: var(--cal); }
 .btn--primary:hover { transform: translateY(-2px); box-shadow: var(--sombra); }
 .btn--sol { background: var(--sol); color: var(--tinta); }
 .btn--sol:hover { transform: translateY(-2px); box-shadow: var(--sombra); }
+
+/* Estado vacío: una invitación a actuar, no un hueco en la página.
+   Compartido por vertical, free-tours, rutas y home. */
+.empty {
+  padding: 2.4rem;
+  text-align: center;
+  color: var(--tinta-60);
+  border: 1px dashed var(--linea);
+  border-radius: var(--radio);
+}
+.empty a { color: var(--mar); font-weight: 600; }
 
 /* Eyebrow / etiqueta de sección */
 .eyebrow {
@@ -95,6 +119,17 @@ img { display: block; max-width: 100%; }
   text-transform: uppercase;
   color: var(--mar-claro);
   margin: 0 0 .6rem;
+}
+
+/* Firma de marca: esquina de azulejo cortada.
+   Referencia real: el borde mellado de un azulejo antiguo en una fachada
+   del centro de Málaga. Se aplica solo a media de tarjeta y hero — en
+   ningún otro sitio, para que siga siendo reconocible y no decoración. */
+.corte {
+  clip-path: polygon(
+    0 0, 100% 0, 100% calc(100% - var(--corte)),
+    calc(100% - var(--corte)) 100%, 0 100%
+  );
 }
 
 /* Accesibilidad: foco visible y respeto a reduce-motion */
