@@ -1618,22 +1618,6 @@
           <context context-type="linenumber">17,18</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="home.hero.title" datatype="html">
-        <source> Vive <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Málaga<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>sin perderte nada. </source>
-      <target> Vis <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Málaga<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>sans rien manquer. </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">19,21</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.hero.lead" datatype="html">
-        <source> Reserva los mejores tours, alquila tu coche, encuentra dónde comer y llena tus días de ocio. Todo en un sitio, con las plataformas de confianza. </source>
-      <target> Réserve les meilleurs tours, loue ta voiture, trouve où manger et remplis tes journées de loisirs. Tout au même endroit, avec des plateformes de confiance. </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">22,24</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="home.hero.ctaFreeTours" datatype="html">
         <source>Free tours por Málaga</source>
       <target>Free tours à Málaga</target>
@@ -1656,14 +1640,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
           <context context-type="linenumber">36,37</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.guia.title" datatype="html">
-        <source>Vive Málaga con un guía de aquí</source>
-      <target>Vis Málaga avec un guide du coin</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">37,38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.guia.freeTours.tag" datatype="html">
@@ -1746,28 +1722,12 @@
           <context context-type="linenumber">60,61</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="home.vertical.tours.text" datatype="html">
-        <source>Alcazaba, Caminito del Rey, catamarán y mucho más.</source>
-      <target>Alcazaba, Caminito del Rey, catamaran et bien plus.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">61,63</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="home.vertical.coches.title" datatype="html">
         <source>Alquiler de coches</source>
       <target>Location de voitures</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
           <context context-type="linenumber">65,66</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.vertical.coches.text" datatype="html">
-        <source>Compara precios con recogida en aeropuerto o centro.</source>
-      <target>Compare les prix avec prise en charge à l'aéroport ou en centre-ville.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">66,68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.vertical.restaurantes.title" datatype="html">
@@ -1778,14 +1738,6 @@
           <context context-type="linenumber">70,71</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="home.vertical.restaurantes.text" datatype="html">
-        <source>Del pescaíto a la estrella Michelin, reserva mesa.</source>
-      <target>Du pescaíto à l'étoile Michelin, réserve une table.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">71,73</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="home.vertical.ocio.title" datatype="html">
         <source>Ocio y planes</source>
       <target>Loisirs et sorties</target>
@@ -1794,52 +1746,12 @@
           <context context-type="linenumber">75,76</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="home.vertical.ocio.text" datatype="html">
-        <source>Flamenco, baños árabes, kayak y actividades.</source>
-      <target>Flamenco, bains arabes, kayak et activités.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">76,78</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="home.vertical.hoteles.title" datatype="html">
         <source>Hoteles</source>
       <target>Hôtels</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
           <context context-type="linenumber">80,81</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.vertical.hoteles.text" datatype="html">
-        <source>Del centro a la playa, compara y reserva con Trip.com.</source>
-      <target>Du centre à la plage, compare et réserve avec Trip.com.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">81,85</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.destacados.eyebrow" datatype="html">
-        <source>Lo más reservado</source>
-      <target>Les plus réservés</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">88,89</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.destacados.title" datatype="html">
-        <source>Destacados de la semana</source>
-      <target>Sélection de la semaine</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">89,91</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.destacados.vacio" datatype="html">
-        <source> Todavía no hay destacados esta semana. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/tours&quot;&gt;"/>Mira los tours disponibles<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
-      <target> Il n'y a pas encore de sélection cette semaine. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/tours&quot;&gt;"/>Regarde les tours disponibles<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">96,99</context>
         </context-group>
       </trans-unit>
       <trans-unit id="legal.afiliados.title" datatype="html">
@@ -3049,6 +2961,66 @@
           <context context-type="sourcefile">src/app/shared/components/header/header.component.ts</context>
           <context context-type="linenumber">36</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="header.nav.catalogo" datatype="html">
+        <source>Catálogo</source>
+        <target>Catalogue</target>
+      </trans-unit>
+      <trans-unit id="home.guia.title2" datatype="html">
+        <source>Dos formas de recorrer Málaga conmigo</source>
+        <target>Deux façons de découvrir Málaga avec moi</target>
+      </trans-unit>
+      <trans-unit id="home.hero.lead2" datatype="html">
+        <source> Empieza con un free tour por el centro o resérvame una ruta privada a tu ritmo. Si quieres completar el viaje, también comparo tours, coches, restaurantes, ocio y hoteles de confianza. </source>
+        <target> Commence par un free tour du centre, ou réserve-moi pour un circuit privé à ton rythme. Si tu veux compléter ton séjour, je compare aussi des tours, locations de voiture, restaurants, activités et hôtels de confiance. </target>
+      </trans-unit>
+      <trans-unit id="home.hero.title2" datatype="html">
+        <source> Un guía de aquí<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>para <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Málaga<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. </source>
+        <target> Un guide d’ici<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>pour <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Málaga<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. </target>
+      </trans-unit>
+      <trans-unit id="home.historia.eyebrow" datatype="html">
+        <source>Antes de la ruta</source>
+        <target>Avant la visite</target>
+      </trans-unit>
+      <trans-unit id="home.historia.title" datatype="html">
+        <source>Una ciudad fenicia, romana y andalusí antes de ser turística</source>
+        <target>Une ville phénicienne, romaine et andalouse avant d'être touristique</target>
+      </trans-unit>
+      <trans-unit id="home.historia.p1" datatype="html">
+        <source> Los fenicios fundaron Malaka en el siglo VIII antes de Cristo, junto a la desembocadura del Guadalmedina, como puesto comercial en la ruta del Mediterráneo. El nombre apenas ha cambiado en más de 2.700 años. </source>
+        <target> Les Phéniciens ont fondé Malaka au VIIIe siècle avant J.-C., près de l'embouchure du Guadalmedina, comme comptoir commercial sur la route méditerranéenne. Le nom a à peine changé en plus de 2 700 ans. </target>
+      </trans-unit>
+      <trans-unit id="home.historia.p2" datatype="html">
+        <source> Con los romanos, la ciudad ganó estatus de municipio y un teatro que hoy sigue asomando a los pies de la Alcazaba. Restos de aquella época continúan apareciendo bajo el centro cada vez que se abre una zanja. </source>
+        <target> Sous les Romains, la ville a obtenu le statut de municipe et un théâtre qui se dresse encore aujourd'hui au pied de l'Alcazaba. Des vestiges de cette époque continuent d'apparaître sous le centre-ville à chaque tranchée creusée. </target>
+      </trans-unit>
+      <trans-unit id="home.historia.p3" datatype="html">
+        <source> Durante casi 800 años formó parte de al-Ándalus. La Alcazaba, construida en el siglo XI, y el trazado estrecho del casco antiguo son la huella más visible de esa etapa, que terminó con la conquista de los Reyes Católicos en 1487. </source>
+        <target> Pendant près de 800 ans, elle a fait partie d'al-Andalus. L'Alcazaba, construite au XIe siècle, et le tracé étroit de la vieille ville sont la trace la plus visible de cette période, qui s'est achevée avec la conquête des Rois Catholiques en 1487. </target>
+      </trans-unit>
+      <trans-unit id="home.historia.p4" datatype="html">
+        <source> En el siglo XIX vivió una revolución industrial impulsada por el comercio del vino y la industria del hierro. La nueva burguesía abrió la Calle Larios en 1891 como su gran bulevar, y en ese mismo ambiente nació Pablo Picasso en 1881, en una casa de la Plaza de la Merced. </source>
+        <target> Au XIXe siècle, elle a connu une révolution industrielle portée par le commerce du vin et l'industrie du fer. La nouvelle bourgeoisie a ouvert la Calle Larios en 1891 comme son grand boulevard, et c'est dans ce même contexte que Pablo Picasso est né en 1881, dans une maison de la Plaza de la Merced. </target>
+      </trans-unit>
+      <trans-unit id="home.historia.p5" datatype="html">
+        <source> Aquella Málaga industrial dio paso, ya en el siglo XX, a la que recibe hoy a millones de visitantes: puerta de la Costa del Sol, con un puerto renovado y un casco histórico que se recorre en una tarde. Es el resultado de todas las etapas anteriores, no solo de la última. </source>
+        <target> Cette Málaga industrielle a laissé place, dès le XXe siècle, à celle qui accueille aujourd'hui des millions de visiteurs : porte d'entrée de la Costa del Sol, avec un port rénové et un centre historique qui se parcourt en une après-midi. C'est le résultat de toutes les étapes précédentes, pas seulement de la dernière. </target>
+      </trans-unit>
+      <trans-unit id="home.historia.ctaLead" datatype="html">
+        <source>Esta es la Málaga que recorremos juntos, a pie y con guía local.</source>
+        <target>Voici la Málaga que nous parcourons ensemble, à pied et avec un guide local.</target>
+      </trans-unit>
+      <trans-unit id="home.historia.foto1.imgAlt" datatype="html">
+        <source>Vista de Málaga desde el mirador de Gibralfaro al atardecer</source>
+        <target>Vue de Málaga depuis le mirador de Gibralfaro au coucher du soleil</target>
+      </trans-unit>
+      <trans-unit id="home.historia.foto2.imgAlt" datatype="html">
+        <source>Bahía y puerto de Málaga desde el mar</source>
+        <target>Baie et port de Málaga vus depuis la mer</target>
+      </trans-unit>
+      <trans-unit id="home.historia.foto3.imgAlt" datatype="html">
+        <source>Skyline de Málaga con la Catedral y el Mediterráneo al fondo</source>
+        <target>Silhouette de Málaga avec la Cathédrale et la Méditerranée en arrière-plan</target>
       </trans-unit>
     </body>
   </file>
