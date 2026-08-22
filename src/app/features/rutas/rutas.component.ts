@@ -7,34 +7,45 @@ import { RUTAS } from '../../core/data/rutas.data';
 import { SeoService } from '../../core/services/seo.service';
 import { CalendarioComponent } from '../../shared/components/calendario/calendario.component';
 import { GuiaBioComponent } from '../../shared/components/guia-bio/guia-bio.component';
+import { RevealDirective } from '../../shared/directives/reveal.directive';
+import { TiltDirective } from '../../shared/directives/tilt.directive';
 
 /**
  * "Nuestras rutas": el producto PROPIO. No usa afiliación. La reserva se hace
  * por WhatsApp (número en environment.contacto) y el cobro se cierra por
  * Stripe/PayPal o Bizum/transferencia. Si el WhatsApp está vacío, el botón
  * muestra un aviso en lugar de un enlace roto.
+ *
+ * Registro editorial (mismo lenguaje que la home y /free-tours): hero a dos
+ * columnas con la firma ".corte" en la foto de la ruta destacada, pasos
+ * numerados como índice real y entrada en cascada de las tarjetas.
  */
 @Component({
   selector: 'app-rutas',
   standalone: true,
-  imports: [CommonModule, RouterLink, CalendarioComponent, GuiaBioComponent],
+  imports: [CommonModule, RouterLink, CalendarioComponent, GuiaBioComponent, RevealDirective, TiltDirective],
   template: `
     <section class="hero-mini">
-      <div class="container">
-        <p class="eyebrow" i18n="@@rutas.hero.eyebrow">Rutas guiadas por nosotros</p>
-        <h1 i18n="@@rutas.hero.title">Nuestras rutas por Málaga</h1>
-        <p class="hero-mini__sub" i18n="@@rutas.hero.sub">
-          Estas son las rutas que guío personalmente: a tu ritmo si vienes solo
-          o en pareja, o con tu grupo si preferís ir juntos. Escríbeme por
-          WhatsApp, cerramos fecha y precio, y nos vemos en el punto de encuentro.
-        </p>
+      <div class="container hero-mini__inner">
+        <div class="hero-mini__copy" appReveal="right">
+          <p class="eyebrow" i18n="@@rutas.hero.eyebrow">Rutas guiadas por nosotros</p>
+          <h1 i18n="@@rutas.hero.title">Nuestras rutas por Málaga</h1>
+          <p class="hero-mini__lead" i18n="@@rutas.hero.sub">
+            Estas son las rutas que guío personalmente: a tu ritmo si vienes solo
+            o en pareja, o con tu grupo si preferís ir juntos. Escríbeme por
+            WhatsApp, cerramos fecha y precio, y nos vemos en el punto de encuentro.
+          </p>
+        </div>
+        <figure class="hero-mini__media corte" *ngIf="destacada as r" appReveal="left" [appRevealDelay]="0.12">
+          <img [src]="r.imageUrl" [alt]="r.imageAlt" fetchpriority="high" width="700" height="875" />
+        </figure>
       </div>
     </section>
 
     <app-guia-bio />
 
     <!-- Calendario de disponibilidad -->
-    <section class="container cal-wrap">
+    <section class="container cal-wrap" appReveal="up">
       <div class="cal-head">
         <p class="eyebrow" i18n="@@rutas.cal.eyebrow">Disponibilidad</p>
         <h2 i18n="@@rutas.cal.title">Calendario de mis tours</h2>
@@ -47,26 +58,30 @@ import { GuiaBioComponent } from '../../shared/components/guia-bio/guia-bio.comp
     </section>
 
     <!-- Cómo reservar -->
-    <section class="container steps">
-      <div class="step">
-        <span class="step__n">1</span>
-        <div><h3 i18n="@@rutas.paso1.title">Elige tu ruta</h3><p i18n="@@rutas.paso1.text">Mira las opciones y su punto de encuentro.</p></div>
-      </div>
-      <div class="step">
-        <span class="step__n">2</span>
-        <div><h3 i18n="@@rutas.paso2.title">Escríbeme por WhatsApp</h3><p i18n="@@rutas.paso2.text">Acordamos día, hora y número de personas.</p></div>
-      </div>
-      <div class="step">
-        <span class="step__n">3</span>
-        <div><h3 i18n="@@rutas.paso3.title">Confirma el pago</h3><p i18n="@@rutas.paso3.text">Con tarjeta (Stripe/PayPal) o por Bizum/transferencia.</p></div>
+    <section class="container steps" aria-labelledby="steps-eyebrow">
+      <p id="steps-eyebrow" class="eyebrow section-eyebrow" i18n="@@rutas.pasos.eyebrow">Cómo reservar</p>
+      <div class="steps__grid">
+        <div class="step" appReveal="up">
+          <span class="step__n">01</span>
+          <div><h3 i18n="@@rutas.paso1.title">Elige tu ruta</h3><p i18n="@@rutas.paso1.text">Mira las opciones y su punto de encuentro.</p></div>
+        </div>
+        <div class="step" appReveal="up" [appRevealDelay]="0.08">
+          <span class="step__n">02</span>
+          <div><h3 i18n="@@rutas.paso2.title">Escríbeme por WhatsApp</h3><p i18n="@@rutas.paso2.text">Acordamos día, hora y número de personas.</p></div>
+        </div>
+        <div class="step" appReveal="up" [appRevealDelay]="0.16">
+          <span class="step__n">03</span>
+          <div><h3 i18n="@@rutas.paso3.title">Confirma el pago</h3><p i18n="@@rutas.paso3.text">Con tarjeta (Stripe/PayPal) o por Bizum/transferencia.</p></div>
+        </div>
       </div>
     </section>
 
     <!-- Rutas -->
     <section class="container grid-wrap">
+      <p class="eyebrow section-eyebrow" i18n="@@rutas.grid.eyebrow">Todas las rutas</p>
       <div class="grid" *ngIf="rutas.length; else sinRutas">
-        <article class="ruta" *ngFor="let r of rutas">
-          <div class="ruta__media">
+        <article class="ruta" *ngFor="let r of rutas; let i = index" appReveal="up" [appRevealDelay]="i * 0.08" appTilt [appTiltMax]="6">
+          <div class="ruta__media corte">
             <img [src]="r.imageUrl" [alt]="r.imageAlt" loading="lazy" />
             <span class="ruta__cat">{{ catLabel[r.category] }}</span>
             <span class="ruta__soon" *ngIf="r.comingSoon" i18n="@@rutas.badge.proximamente">Próximamente</span>
@@ -117,7 +132,8 @@ import { GuiaBioComponent } from '../../shared/components/guia-bio/guia-bio.comp
     </section>
 
     <!-- Formas de pago -->
-    <section class="container pay">
+    <section class="container pay" appReveal="up">
+      <p class="eyebrow section-eyebrow" i18n="@@rutas.pay.eyebrow">Al confirmar</p>
       <h2 i18n="@@rutas.pay.title">Cómo se paga</h2>
       <p class="pay__intro" i18n="@@rutas.pay.intro">
         Una vez acordada la fecha por WhatsApp, confirmas tu plaza con cualquiera de
@@ -141,7 +157,7 @@ import { GuiaBioComponent } from '../../shared/components/guia-bio/guia-bio.comp
 
     <!-- Cruce inverso hacia free tours -->
     <section class="container cross">
-      <div class="cross__box">
+      <div class="cross__box" appReveal="up">
         <div>
           <h2 i18n="@@rutas.cross.title">¿Todavía no me conoces?</h2>
           <p i18n="@@rutas.cross.text">
@@ -154,30 +170,49 @@ import { GuiaBioComponent } from '../../shared/components/guia-bio/guia-bio.comp
     </section>
   `,
   styles: [`
-    .hero-mini { padding: 3.5rem 0 1rem; }
-    .hero-mini h1 { font-size: var(--step-3); max-width: 18ch; }
-    .hero-mini__sub { color: var(--tinta-60); max-width: 56ch; font-size: var(--step-1); }
+    /* HERO — mismo lenguaje que la home y /free-tours: texto primero, foto
+       de apoyo con la firma .corte en columna aparte. */
+    .hero-mini { padding: clamp(2.8rem, 6vw, 4.5rem) 0 clamp(1.6rem, 4vw, 2.6rem); }
+    .hero-mini__inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(200px, 340px);
+      gap: clamp(1.8rem, 5vw, 3rem);
+      align-items: center;
+    }
+    .hero-mini__copy { max-width: 44rem; }
+    .hero-mini h1 { font-size: var(--step-3); margin: .3rem 0 1rem; max-width: 18ch; }
+    .hero-mini__lead { color: var(--tinta-60); max-width: 52ch; font-size: var(--step-1); margin: 0; }
+    .hero-mini__media { aspect-ratio: 4 / 5; overflow: hidden; box-shadow: var(--sombra); margin: 0; }
+    .hero-mini__media img { width: 100%; height: 100%; object-fit: cover; }
+    @media (max-width: 720px) {
+      .hero-mini__inner { grid-template-columns: 1fr; }
+      .hero-mini__media { order: 2; aspect-ratio: 4 / 3; max-width: 24rem; margin-inline: auto; }
+    }
 
     .cal-wrap { margin-top: var(--space-section); }
     .cal-head { margin-bottom: 1.2rem; }
     .cal-head h2 { font-size: var(--step-2); margin: 0 0 .3rem; }
     .cal-sub { margin: 0; color: var(--tinta-60); max-width: 56ch; }
 
-    /* pasos */
-    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 2rem; }
+    /* pasos: índice real de 3 pasos, no decorativo */
+    .steps { margin-top: var(--space-section); }
+    .section-eyebrow { margin-bottom: 1.2rem; }
+    .steps__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
     .step { display: flex; gap: .9rem; align-items: flex-start; padding: 1.1rem 1.2rem; background: #fff; border: 1px solid var(--linea); border-radius: var(--radio); }
-    .step__n { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--mar); color: var(--cal); font-family: var(--mono); font-weight: 700; display: grid; place-items: center; }
+    .step__n { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--mar); color: var(--cal); font-family: var(--mono); font-weight: 700; font-size: .78rem; display: grid; place-items: center; }
     .step h3 { font-size: var(--step-0); margin: .1rem 0 .2rem; }
     .step p { margin: 0; font-size: var(--step--1); color: var(--tinta-60); }
-    @media (max-width: 760px) { .steps { grid-template-columns: 1fr; } }
+    @media (max-width: 760px) { .steps__grid { grid-template-columns: 1fr; } }
 
     /* grid rutas */
     .grid-wrap { padding-top: var(--space-section); }
     .grid { display: grid; gap: 1.8rem; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
 
-    .ruta { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--linea); border-radius: var(--radio); overflow: hidden; }
+    .ruta { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--linea); border-radius: var(--radio); overflow: hidden; transition: box-shadow .18s ease; }
+    .ruta:hover, .ruta:focus-within { box-shadow: var(--sombra); }
     .ruta__media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; }
-    .ruta__media img { width: 100%; height: 100%; object-fit: cover; }
+    .ruta__media img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+    .ruta:hover .ruta__media img, .ruta:focus-within .ruta__media img { transform: scale(1.04); }
     .ruta__cat { position: absolute; top: .8rem; left: .8rem; font-family: var(--mono); font-size: .66rem; letter-spacing: .05em; text-transform: uppercase; background: rgba(16,34,43,.85); color: var(--cal); padding: .28rem .7rem; border-radius: 999px; }
     .ruta__req { position: absolute; top: .8rem; right: .8rem; font-family: var(--mono); font-size: .66rem; text-transform: uppercase; background: var(--sol); color: var(--tinta); padding: .28rem .7rem; border-radius: 999px; }
     .ruta__soon { position: absolute; top: .8rem; right: .8rem; font-family: var(--mono); font-size: .66rem; text-transform: uppercase; background: var(--cal); color: var(--tinta-60); border: 1px solid var(--linea); padding: .28rem .7rem; border-radius: 999px; }
@@ -226,6 +261,8 @@ export class RutasComponent implements OnInit {
   private readonly locale = inject(LOCALE_ID);
 
   rutas: Ruta[] = RUTAS;
+  /** Foto de apoyo del hero: la ruta marcada como destacada, o la primera. */
+  destacada: Ruta | undefined = this.rutas.find((r) => r.featured) ?? this.rutas[0];
   pago = environment.contacto;
   whatsapp = environment.contacto.whatsapp;
 

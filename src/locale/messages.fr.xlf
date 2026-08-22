@@ -2130,14 +2130,6 @@
           <context context-type="linenumber">11,12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="notFound.lead" datatype="html">
-        <source>No encontramos lo que buscabas, pero Málaga tiene mucho que ofrecer.</source>
-      <target>Nous n'avons pas trouvé ce que tu cherchais, mais Málaga a beaucoup à offrir.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">12,13</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="notFound.cta" datatype="html">
         <source>Volver al inicio</source>
       <target>Retour à l'accueil</target>
@@ -3013,6 +3005,70 @@
       <trans-unit id="home.hero.imgAlt" datatype="html">
         <source>Mural de arte urbano del Soho de Málaga fundiéndose con la Alcazaba y la Catedral al fondo, luz dorada de atardecer y gente paseando junto al mar</source>
         <target>Fresque d'art urbain du Soho de Málaga se fondant avec l'Alcazaba et la Cathédrale en arrière-plan, lumière dorée du coucher de soleil et promeneurs au bord de la mer</target>
+      </trans-unit>
+      <trans-unit id="home.hero.mapCaption" datatype="html">
+        <source>Mapa del centro histórico de Málaga con la Alcazaba, la Catedral y el puerto</source>
+        <target>Carte du centre historique de Málaga avec l'Alcazaba, la Cathédrale et le port</target>
+      </trans-unit>
+      <trans-unit id="freeTours.grid.eyebrow" datatype="html">
+        <source>Elige tu free tour</source>
+        <target>Choisissez votre free tour</target>
+      </trans-unit>
+      <trans-unit id="freeTours.info.eyebrow" datatype="html">
+        <source>Cómo funciona</source>
+        <target>Comment ça marche</target>
+      </trans-unit>
+      <trans-unit id="header.brand.ariaLabel" datatype="html">
+        <source>Meet Málaga — inicio</source>
+        <target>Meet Málaga — accueil</target>
+      </trans-unit>
+      <trans-unit id="notFound.subtitle" datatype="html">
+        <source> El enlace no existe o se ha movido. Vuelve al inicio o mira los free tours de hoy. </source>
+        <target> Ce lien n'existe pas ou a été déplacé. Retournez à l'accueil ou consultez les free tours du jour. </target>
+      </trans-unit>
+      <trans-unit id="rutas.grid.eyebrow" datatype="html">
+        <source>Todas las rutas</source>
+        <target>Tous les circuits</target>
+      </trans-unit>
+      <trans-unit id="rutas.pasos.eyebrow" datatype="html">
+        <source>Cómo reservar</source>
+        <target>Comment réserver</target>
+      </trans-unit>
+      <trans-unit id="rutas.pay.eyebrow" datatype="html">
+        <source>Al confirmar</source>
+        <target>Une fois confirmé</target>
+      </trans-unit>
+      <trans-unit id="vertical.count" datatype="html">
+        <source>{VAR_PLURAL, plural, =1 {1 oferta disponible} other {<x id="INTERPOLATION"/> ofertas disponibles}}</source>
+        <target>{VAR_PLURAL, plural, =1 {1 offre disponible} other {<x id="INTERPOLATION"/> offres disponibles}}</target>
+      </trans-unit>
+      <trans-unit id="vertical.nav.ariaLabel" datatype="html">
+        <source>Otras categorías del catálogo</source>
+        <target>Autres catégories du catalogue</target>
+      </trans-unit>
+      <trans-unit id="vertical.nav.coches" datatype="html">
+        <source>Alquiler de coches</source>
+        <target>Location de voitures</target>
+      </trans-unit>
+      <trans-unit id="vertical.nav.hoteles" datatype="html">
+        <source>Hoteles</source>
+        <target>Hôtels</target>
+      </trans-unit>
+      <trans-unit id="vertical.nav.ocio" datatype="html">
+        <source>Ocio y planes</source>
+        <target>Loisirs et activités</target>
+      </trans-unit>
+      <trans-unit id="vertical.nav.restaurantes" datatype="html">
+        <source>Restaurantes</source>
+        <target>Restaurants</target>
+      </trans-unit>
+      <trans-unit id="vertical.nav.tours" datatype="html">
+        <source>Tours y experiencias</source>
+        <target>Tours et expériences</target>
+      </trans-unit>
+      <trans-unit id="vertical.vacio.otras" datatype="html">
+        <source>Otras categorías</source>
+        <target>Autres catégories</target>
       </trans-unit>
     </body>
   </file>

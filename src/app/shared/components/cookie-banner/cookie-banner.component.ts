@@ -34,21 +34,22 @@ const STORAGE_KEY = 'mm_cookie_consent';
       position: fixed; left: 1rem; right: 1rem; bottom: 1rem; z-index: 100;
       max-width: 720px; margin-inline: auto;
       display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-      gap: 1rem; padding: 1rem 1.2rem;
+      gap: 1.1rem; padding: 1.1rem 1.3rem;
       background: var(--tinta); color: var(--cal);
+      border: 1px solid color-mix(in srgb, var(--cal) 12%, transparent);
       border-radius: var(--radio); box-shadow: var(--sombra);
-      animation: cookie-in .3s ease;
+      animation: cookie-in .45s cubic-bezier(.16,1,.3,1);
     }
     @keyframes cookie-in {
-      from { opacity: 0; transform: translateY(12px); }
+      from { opacity: 0; transform: translateY(16px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    .cookie__text { margin: 0; font-size: var(--step--1); }
+    .cookie__text { margin: 0; font-size: var(--step--1); line-height: 1.6; }
     .cookie__text a { color: var(--sol); }
     .cookie__actions { display: flex; gap: .6rem; }
-    .btn--ghost { background: transparent; color: var(--cal); border: 1px solid rgba(245,246,244,.4); }
-    .btn--ghost:hover { background: rgba(245,246,244,.1); }
-    .btn--ghost:active { background: rgba(245,246,244,.18); }
+    .btn--ghost { background: transparent; color: var(--cal); border: 1px solid color-mix(in srgb, var(--cal) 40%, transparent); }
+    .btn--ghost:hover { background: color-mix(in srgb, var(--cal) 10%, transparent); }
+    .btn--ghost:active { background: color-mix(in srgb, var(--cal) 18%, transparent); }
   `],
 })
 export class CookieBannerComponent implements OnInit {

@@ -1,5 +1,5 @@
-import { Component, signal, inject, LOCALE_ID, ViewChild, ElementRef, HostListener } from '@angular/core';
-import { CommonModule, Location } from '@angular/common';
+import { Component, signal, inject, LOCALE_ID, PLATFORM_ID, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { CommonModule, Location, isPlatformBrowser } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 // Mismos locales y prefijos que angular.json (i18n.locales), SeoService y
@@ -14,9 +14,9 @@ const LABEL: Record<Locale, string> = { es: 'ES', en: 'EN', fr: 'FR', de: 'DE' }
   standalone: true,
   imports: [CommonModule, RouterLink, RouterLinkActive],
   template: `
-    <header class="site-header">
+    <header class="site-header" [class.site-header--scrolled]="scrolled()">
       <div class="container site-header__inner">
-        <a routerLink="/" class="brand" (click)="close()">
+        <a routerLink="/" class="brand" (click)="close()" aria-label="Meet Málaga — inicio" i18n-aria-label="@@header.brand.ariaLabel">
           <span class="brand__mark">◐</span>
           <span class="brand__name">Meet&nbsp;Málaga</span>
         </a>
@@ -72,12 +72,20 @@ const LABEL: Record<Locale, string> = { es: 'ES', en: 'EN', fr: 'FR', de: 'DE' }
       backdrop-filter: var(--glass-blur);
       -webkit-backdrop-filter: var(--glass-blur);
       border-bottom: 1px solid var(--linea);
+      transition: box-shadow .3s ease;
     }
+    /* Al bajar en la página, el header gana algo de profundidad: la misma
+       sombra que ya usan las tarjetas, no un color nuevo. */
+    .site-header--scrolled { box-shadow: var(--sombra); }
     .site-header__inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
 
     .brand { display: flex; align-items: center; gap: .5rem; text-decoration: none; font-weight: 700; }
-    .brand__mark { color: var(--sol); font-size: 1.4rem; transform: rotate(-20deg); }
-    .brand__name { font-family: var(--display); font-weight: 900; font-size: 1.3rem; letter-spacing: -.02em; }
+    .brand__mark {
+      color: var(--sol); font-size: 1.4rem; display: inline-block;
+      transform: rotate(-20deg); transition: transform .4s ease;
+    }
+    .brand:hover .brand__mark, .brand:focus-visible .brand__mark { transform: rotate(160deg); }
+    .brand__name { font-family: var(--display); font-weight: 900; font-size: var(--step-0); letter-spacing: -.02em; }
 
     .nav { display: flex; align-items: center; gap: 1.6rem; }
     .nav a {
@@ -88,12 +96,20 @@ const LABEL: Record<Locale, string> = { es: 'ES', en: 'EN', fr: 'FR', de: 'DE' }
 
     /* Free tours / Rutas privadas: lo principal del negocio. Sin relleno de
        color (queda para los CTA del hero) — aquí se marcan por peso y color
-       de texto, como el resto del nav pero más firmes. */
+       de texto, como el resto del nav pero más firmes. Un subrayado que
+       crece al pasar el ratón es la única microinteracción de énfasis: se
+       reserva a estos dos enlaces porque son los que de verdad monetizan. */
     .nav__primary { display: flex; gap: 1.4rem; }
     .nav__primary-link {
       font-weight: 700; color: var(--tinta);
     }
     .nav__primary-link:hover, .nav__primary-link.active { color: var(--mar); }
+    .nav__primary-link::before {
+      content: ''; position: absolute; left: 0; right: 0; bottom: -2px;
+      height: 2px; background: var(--mar); border-radius: 2px;
+      transform: scaleX(0); transform-origin: left; transition: transform .25s ease;
+    }
+    .nav__primary-link:hover::before, .nav__primary-link:focus-visible::before { transform: scaleX(1); }
     .nav__primary a.active::after {
       content: ''; position: absolute; left: 50%; bottom: -7px;
       width: 5px; height: 5px; border-radius: 50%;
@@ -126,12 +142,20 @@ const LABEL: Record<Locale, string> = { es: 'ES', en: 'EN', fr: 'FR', de: 'DE' }
       border-radius: var(--radio); box-shadow: var(--sombra); padding: .4rem;
       display: flex; flex-direction: column;
     }
+    /* Entrada discreta del desplegable: solo opacidad, para no interferir con
+       el transform de centrado (desktop) ni con el layout estático (móvil). */
+    .nav__catalog[open] .nav__catalog-panel { animation: catalog-in .18s ease; }
+    @keyframes catalog-in {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
     .nav__catalog-panel a {
       display: flex; align-items: baseline; gap: .6rem;
       padding: .6rem .7rem; border-radius: calc(var(--radio) - 8px);
       color: var(--tinta); font-size: var(--step--1);
+      transition: background .15s ease, padding-left .15s ease;
     }
-    .nav__catalog-panel a:hover, .nav__catalog-panel a:focus-visible { background: var(--cal-hueso); }
+    .nav__catalog-panel a:hover, .nav__catalog-panel a:focus-visible { background: var(--cal-hueso); padding-left: .95rem; }
     .nav__catalog-panel a.active { color: var(--mar); }
     .nav__idx {
       font-family: var(--mono); font-size: .74rem; font-weight: 700;
@@ -188,11 +212,14 @@ const LABEL: Record<Locale, string> = { es: 'ES', en: 'EN', fr: 'FR', de: 'DE' }
 })
 export class HeaderComponent {
   open = signal(false);
+  /** Solo estético: el header sticky gana una sombra sutil al bajar en la página. */
+  scrolled = signal(false);
 
   @ViewChild('catalogo') private readonly catalogo?: ElementRef<HTMLDetailsElement>;
 
   private readonly location = inject(Location);
   private readonly rawLocale = inject(LOCALE_ID);
+  private readonly platformId = inject(PLATFORM_ID);
 
   readonly locales = LOCALES;
   readonly label = LABEL;
@@ -213,6 +240,13 @@ export class HeaderComponent {
     const el = this.catalogo?.nativeElement;
     if (!el || !el.open) return;
     if (!el.contains(event.target as Node)) el.open = false;
+  }
+
+  /** No hace nada en SSR: el listener solo se registra en el navegador. */
+  @HostListener('window:scroll')
+  onScroll(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+    this.scrolled.set(window.scrollY > 8);
   }
 
   /** URL absoluta de la página actual en otro idioma (misma ruta, otro prefijo). */

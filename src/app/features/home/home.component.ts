@@ -1,21 +1,40 @@
-import { Component, OnInit, inject } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnDestroy,
+  OnInit,
+  PLATFORM_ID,
+  QueryList,
+  ViewChild,
+  ViewChildren,
+  inject,
+} from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SeoService } from '../../core/services/seo.service';
 import { RevealDirective } from '../../shared/directives/reveal.directive';
+import { TiltDirective } from '../../shared/directives/tilt.directive';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, RevealDirective],
+  imports: [RouterLink, RouterLinkActive, RevealDirective, TiltDirective],
   template: `
-    <!-- HERO: columna de texto (mensaje + CTA, lo que manda) y una única
-         foto con la firma .corte (lo que ya anticipaba el comentario de esa
-         clase en styles.css) como apoyo, no protagonista. Sin foto de postal
-         genérica: el seed/alt describen la composición real que debe ir aquí
-         — Soho urbano fundiéndose con Alcazaba/Catedral, luz de atardecer,
-         gente en la calle — a la espera de que Samuel ponga su propia foto,
-         igual que el resto del catálogo y de "historia". -->
-    <section class="hero">
+    <!-- HERO-SCROLL: columna de texto (mensaje + CTA, lo que manda, se
+         mantiene fija mientras dura el efecto) y una única pieza visual con
+         la firma .corte que, a medida que se baja, se disuelve de la foto
+         actual (placeholder, a la espera de que Samuel ponga la suya) al
+         mapa ilustrado en line-art del centro histórico. Sobre el mapa solo
+         hay dos marcadores — free tours y rutas privadas, el mismo peso
+         visual entre ambos — ninguno para el catálogo de afiliación, que
+         sigue secundario y más abajo. Sin JS o con "reduc(e) movimiento" el
+         estado final es igual de legible: la foto se sustituye por el mapa
+         ya trazado, sin depender de que la animación llegue a completarse
+         (ver reglas en :root y el bloque de estilos de esta sección). -->
+    <section class="hero" #heroSection>
       <div class="container hero__inner">
         <div class="hero__copy">
           <p class="eyebrow" i18n="@@home.hero.eyebrow">Costa del Sol · Andalucía</p>
@@ -32,13 +51,52 @@ import { RevealDirective } from '../../shared/directives/reveal.directive';
           </div>
           <p class="hero__trust" i18n="@@home.hero.trust">Guía local · titulado en Turismo</p>
         </div>
-        <div class="hero__media corte">
+
+        <figure class="hero__media corte">
           <img
+            class="hero__photo"
             src="https://picsum.photos/seed/malaga-soho-alcazaba-luz-dorada/900/1125"
             alt="Mural de arte urbano del Soho de Málaga fundiéndose con la Alcazaba y la Catedral al fondo, luz dorada de atardecer y gente paseando junto al mar"
             i18n-alt="@@home.hero.imgAlt"
             fetchpriority="high" width="900" height="1125" />
-        </div>
+
+          <svg class="hero__map" viewBox="0 0 400 500" aria-hidden="true" focusable="false">
+            <line #mapPath class="hero__mapLine hero__mapLine--ground" x1="20" y1="430" x2="380" y2="430" />
+            <path #mapPath class="hero__mapLine hero__mapLine--route"
+              d="M110,414 C160,400 200,404 240,406 C280,408 300,404 345,412" />
+            <path #mapPath class="hero__mapLine hero__mapLine--building"
+              d="M50,430 L50,382 L62,382 L62,370 L74,370 L74,382 L86,382 L86,368 L98,368 L98,382 L110,382
+                 L110,344 L124,344 L124,330 L138,330 L138,344 L152,344 L152,382 L164,382 L164,370 L176,370
+                 L176,382 L188,382 L188,430 Z" />
+            <path #mapPath class="hero__mapLine hero__mapLine--building"
+              d="M205,430 L205,398 L226,398 L226,430
+                 M226,430 L226,412 L246,412 L246,430
+                 M270,430 L270,318 L280,318 L280,300 L288,300 L288,318 L296,318 L296,430" />
+            <path #mapPath class="hero__mapLine hero__mapLine--building"
+              d="M330,430 L330,352 L346,352 L346,430
+                 M330,352 L338,332 L346,352
+                 M338,332 L338,322
+                 M300,444 Q310,437 320,444 Q330,451 340,444
+                 M355,438 L372,438 L367,424 L360,424 Z
+                 M350,440 L378,440 L372,448 L356,448 Z" />
+          </svg>
+
+          <div class="hero__markers">
+            <a routerLink="/free-tours" class="hero__marker hero__marker--free" #markerFree
+              style="left: 33%; top: 60%">
+              <span class="hero__markerDot" aria-hidden="true"></span>
+              <span class="hero__markerLabel" i18n="@@home.guia.freeTours.title">Free tours</span>
+            </a>
+            <a routerLink="/rutas" class="hero__marker hero__marker--rutas" #markerRutas
+              style="left: 84.5%; top: 60%">
+              <span class="hero__markerDot" aria-hidden="true"></span>
+              <span class="hero__markerLabel" i18n="@@home.guia.rutas.title">Rutas privadas</span>
+            </a>
+          </div>
+          <figcaption class="visually-hidden" i18n="@@home.hero.mapCaption">
+            Mapa del centro histórico de Málaga con la Alcazaba, la Catedral y el puerto
+          </figcaption>
+        </figure>
       </div>
       <div class="hero__glow" aria-hidden="true"></div>
     </section>
@@ -48,13 +106,13 @@ import { RevealDirective } from '../../shared/directives/reveal.directive';
       <p class="eyebrow" i18n="@@home.guia.eyebrow">Conmigo, guía local</p>
       <h2 class="guia__title" i18n="@@home.guia.title2">Dos formas de recorrer Málaga conmigo</h2>
       <div class="guia__cards">
-        <a routerLink="/free-tours" class="guia__card guia__card--free corte" appReveal="up">
+        <a routerLink="/free-tours" class="guia__card guia__card--free corte" appReveal="up" appTilt [appTiltMax]="6">
           <span class="guia__tag" i18n="@@home.guia.freeTours.tag">Empieza por aquí</span>
           <h3 i18n="@@home.guia.freeTours.title">Free tours</h3>
           <p i18n="@@home.guia.freeTours.text">Reserva gratis y paga al final lo que quieras. La mejor forma de conocerme y de descubrir la ciudad.</p>
           <span class="guia__link" i18n="@@home.guia.freeTours.link">Ver free tours</span>
         </a>
-        <a routerLink="/rutas" class="guia__card guia__card--priv corte" appReveal="up" [appRevealDelay]="0.12">
+        <a routerLink="/rutas" class="guia__card guia__card--priv corte" appReveal="up" [appRevealDelay]="0.12" appTilt [appTiltMax]="6">
           <span class="guia__tag" i18n="@@home.guia.rutas.tag">A tu medida</span>
           <h3 i18n="@@home.guia.rutas.title">Rutas privadas</h3>
           <p i18n="@@home.guia.rutas.text">Tu grupo, tu ritmo y una experiencia personalizada. Reserva directa, sin intermediarios.</p>
@@ -107,7 +165,7 @@ import { RevealDirective } from '../../shared/directives/reveal.directive';
           </p>
         </div>
 
-        <div class="historia__galeria" appReveal="left">
+        <div class="historia__galeria" appReveal="left" appTilt [appTiltMax]="4">
           <img
             class="historia__img"
             src="https://picsum.photos/seed/malaga-gibralfaro-atardecer/800/600"
@@ -154,11 +212,8 @@ import { RevealDirective } from '../../shared/directives/reveal.directive';
     </section>
   `,
   styles: [`
-    /* HERO — la audacia tipográfica se gasta aquí y solo aquí. Dos columnas:
-       el texto manda (ratio mayor, siempre primero en el DOM y en móvil);
-       la foto es apoyo, con la misma firma .corte que las tarjetas — no una
-       foto de fondo a sangre con degradado, que es la solución de plantilla
-       que cualquier web turística ya usa. */
+    /* HERO — audacia tipográfica reservada a esta sección. El texto manda
+       (siempre primero en el DOM y en móvil); la foto/mapa es apoyo. */
     .hero { position: relative; overflow: hidden; padding: clamp(3rem, 8vw, 6rem) 0 clamp(2.5rem, 6vw, 4rem); }
     .hero__inner {
       position: relative; z-index: 2;
@@ -172,9 +227,7 @@ import { RevealDirective } from '../../shared/directives/reveal.directive';
     .hero__title em { font-style: normal; color: var(--mar); }
     .hero__lead { font-size: var(--step-1); color: var(--tinta-60); max-width: 44ch; }
     .hero__cta { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.8rem; }
-    /* Elemento de confianza: dato real (ver GuiaBioComponent), no un sello
-       inventado de "guías oficiales". El trazo usa la buganvilla — el
-       acento vibrante que ya tiene el sistema, sin sumar un color nuevo. */
+    /* Dato real (ver GuiaBioComponent), trazo en buganvilla, sin color nuevo. */
     .hero__trust {
       display: flex; align-items: center; gap: .6rem;
       margin: 1.3rem 0 0;
@@ -182,8 +235,10 @@ import { RevealDirective } from '../../shared/directives/reveal.directive';
       text-transform: uppercase; color: var(--tinta-60);
     }
     .hero__trust::before { content: ''; width: 1.4rem; height: 2px; background: var(--buganvilla); flex: none; }
-    .hero__media { align-self: stretch; aspect-ratio: 4 / 5; overflow: hidden; box-shadow: var(--sombra); }
-    .hero__media img { width: 100%; height: 100%; object-fit: cover; }
+    .hero__media {
+      position: relative; align-self: stretch; aspect-ratio: 4 / 5;
+      overflow: hidden; box-shadow: var(--sombra); margin: 0;
+    }
     .hero__glow {
       position: absolute; z-index: 1; top: -30%; left: -12%;
       width: 46vw; height: 46vw; max-width: 560px; max-height: 560px;
@@ -191,11 +246,47 @@ import { RevealDirective } from '../../shared/directives/reveal.directive';
       pointer-events: none;
     }
 
-    /* Entrada orquestada, una sola vez: la columna de texto se revela en
-       cascada y la foto la sigue. Nada de scroll-reveal disperso en el
-       resto de la página — la audacia de movimiento se gasta aquí.
-       prefers-reduced-motion ya se resuelve de forma global en styles.css
-       (acorta la duración a ~0, sin dejar nada oculto). */
+    /* Foto y mapa apilados en la misma caja. Sin JS se ve la foto: el mapa
+       entra en juego cuando ngAfterViewInit liga su opacidad y el trazado
+       de sus líneas al scroll (sin dasharray inline pinta la línea entera). */
+    .hero__photo, .hero__map, .hero__markers { position: absolute; inset: 0; }
+    .hero__photo, .hero__map { width: 100%; height: 100%; }
+    .hero__photo { object-fit: cover; }
+    .hero__map { opacity: 0; }
+    .hero__mapLine { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .hero__mapLine--building { stroke: var(--mar); stroke-width: 3; }
+    .hero__mapLine--route { stroke: var(--sol); stroke-width: 2.5; }
+    .hero__mapLine--ground { stroke: var(--linea); stroke-width: 2; }
+
+    /* Free tours y rutas privadas: mismo trato y misma altura sobre el
+       mapa, sin un tercer marcador para el catálogo de afiliación. */
+    .hero__marker {
+      position: absolute; transform: translate(-50%, -50%) scale(.7);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: .35rem; min-height: 44px;
+      text-decoration: none; color: var(--tinta); opacity: 0; visibility: hidden;
+    }
+    .hero__markerDot {
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--sol); border: 2px solid var(--cal);
+      box-shadow: var(--sombra); transition: transform .2s ease;
+    }
+    .hero__marker:is(:hover, :focus-visible) .hero__markerDot { transform: scale(1.2); }
+    .hero__markerLabel {
+      font: .66rem var(--mono); letter-spacing: .06em; text-transform: uppercase;
+      white-space: nowrap; background: var(--cal); color: var(--tinta);
+      padding: .25rem .55rem; border-radius: 999px;
+    }
+
+    /* Sin animación (sin JS o reduce-motion): estado final legible ya. */
+    @media (prefers-reduced-motion: reduce) {
+      .hero__photo { opacity: 0; }
+      .hero__map { opacity: 1; }
+      .hero__marker { opacity: 1; visibility: visible; transform: translate(-50%, -50%) scale(1); }
+    }
+
+    /* Entrada en cascada, una sola vez; reduce-motion ya se resuelve en
+       styles.css (duración ~0, sin dejar nada oculto). */
     @keyframes hero-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
     .hero__copy > * { opacity: 0; animation: hero-in .6s ease forwards; }
     .hero__copy > .eyebrow { animation-delay: .05s; }
@@ -245,8 +336,14 @@ import { RevealDirective } from '../../shared/directives/reveal.directive';
     .guia { margin-top: var(--space-section); }
     .guia__title { font-size: var(--step-2); margin: 0 0 1.4rem; }
     .guia__cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
-    .guia__card { display: flex; flex-direction: column; gap: .5rem; padding: 1.8rem 1.8rem 2.2rem; text-decoration: none; color: var(--tinta); background: #fff; border: 1px solid var(--linea); transition: transform .18s ease, box-shadow .18s ease; }
-    .guia__card:hover, .guia__card:focus-visible { transform: translateY(-4px); box-shadow: var(--sombra-sol); }
+    .guia__card {
+      display: flex; flex-direction: column; gap: .5rem; padding: 1.8rem 1.8rem 2.2rem;
+      text-decoration: none; color: var(--tinta); background: #fff; border: 1px solid var(--linea);
+      transition: box-shadow .18s ease;
+      /* La rotación 3D la aporta [appTilt] (perspective+rotateX/rotateY inline);
+         aquí solo se resuelve el realce de sombra al hover. */
+    }
+    .guia__card:hover, .guia__card:focus-visible { box-shadow: var(--sombra-sol); }
     .guia__tag { font-family: var(--mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--mar-claro); }
     .guia__card h3 { font-size: var(--step-2); margin: .1rem 0 .1rem; }
     .guia__card p { margin: 0; font-size: var(--step--1); flex: 1; }
@@ -269,15 +366,23 @@ import { RevealDirective } from '../../shared/directives/reveal.directive';
     }
     .historia__texto { display: flex; flex-direction: column; gap: 1.1rem; max-width: 62ch; }
     .historia__texto p { margin: 0; color: var(--tinta-60); font-size: var(--step-0); }
-    .historia__galeria { display: flex; flex-direction: column; gap: 1.4rem; }
+    /* Fotos apiladas en el espacio (profundidad 3D fija) + appTilt añade una
+       leve inclinación de grupo que sigue al puntero. */
+    .historia__galeria { display: flex; flex-direction: column; gap: 1.4rem; perspective: 1400px; }
     .historia__img {
       width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
       border-radius: var(--radio);
       box-shadow: var(--sombra);
       transition: transform .35s ease;
+      transform: rotateY(-3deg) translateZ(0);
     }
-    .historia__img:hover { transform: scale(1.02); }
-    .historia__img--offset { margin-inline-start: clamp(1rem, 6vw, 3rem); }
+    .historia__img:hover { transform: rotateY(-3deg) translateZ(0) scale(1.02); }
+    .historia__img--offset {
+      margin-inline-start: clamp(1rem, 6vw, 3rem);
+      transform: rotateY(3deg) translateZ(36px) scale(1.04);
+      box-shadow: var(--sombra-sol);
+    }
+    .historia__img--offset:hover { transform: rotateY(3deg) translateZ(36px) scale(1.07); }
 
     .historia__cta {
       margin-top: var(--space-section);
@@ -303,8 +408,16 @@ import { RevealDirective } from '../../shared/directives/reveal.directive';
     }
   `],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
   private readonly seo = inject(SeoService);
+  private readonly platformId = inject(PLATFORM_ID);
+
+  @ViewChild('heroSection') private heroSection?: ElementRef<HTMLElement>;
+  @ViewChildren('mapPath') private mapPaths?: QueryList<ElementRef<SVGGeometryElement>>;
+  @ViewChild('markerFree') private markerFree?: ElementRef<HTMLElement>;
+  @ViewChild('markerRutas') private markerRutas?: ElementRef<HTMLElement>;
+
+  private heroScrollTrigger?: ScrollTrigger;
 
   ngOnInit(): void {
     this.seo.update({
@@ -314,5 +427,58 @@ export class HomeComponent implements OnInit {
       path: '/',
       image: 'https://picsum.photos/seed/malaga-soho-alcazaba-luz-dorada/900/1125',
     });
+  }
+
+  ngAfterViewInit(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+    // Con "reduce motion" el estado final ya lo resuelve la media query en
+    // los estilos de este componente — no hace falta orquestar nada por JS.
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const heroEl = this.heroSection?.nativeElement;
+    const paths = this.mapPaths?.toArray().map((ref) => ref.nativeElement) ?? [];
+    const markerFreeEl = this.markerFree?.nativeElement;
+    const markerRutasEl = this.markerRutas?.nativeElement;
+    const [ground, route, alcazaba, catedral, farola] = paths;
+    if (!heroEl || paths.length < 5 || !markerFreeEl || !markerRutasEl) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Técnica estándar de "dibujado" sin DrawSVGPlugin: se oculta cada línea
+    // tras su propia longitud (stroke-dasharray/-dashoffset) y se anima el
+    // offset a 0. Sin esto, el navegador ya pinta la línea completa (así
+    // degrada sin JS, ver media query prefers-reduced-motion).
+    for (const path of paths) {
+      const length = path.getTotalLength();
+      gsap.set(path, { strokeDasharray: length, strokeDashoffset: length });
+    }
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: heroEl,
+        // 68px: alto fijo de .site-header (sticky), para que no tape el
+        // hero pineado mientras dura el efecto.
+        start: 'top 68px',
+        end: '+=100%',
+        scrub: 0.5,
+        pin: true,
+      },
+    });
+
+    tl.to(heroEl.querySelector('.hero__photo'), { opacity: 0, ease: 'none' }, 0)
+      .to(heroEl.querySelector('.hero__map'), { opacity: 1, ease: 'none' }, 0)
+      .to(ground, { strokeDashoffset: 0, duration: 0.15, ease: 'none' }, 0)
+      .to(route, { strokeDashoffset: 0, duration: 0.35, ease: 'none' }, 0.1)
+      .to(alcazaba, { strokeDashoffset: 0, duration: 0.25, ease: 'none' }, 0.35)
+      .to(catedral, { strokeDashoffset: 0, duration: 0.25, ease: 'none' }, 0.5)
+      .to(farola, { strokeDashoffset: 0, duration: 0.25, ease: 'none' }, 0.65)
+      .fromTo(markerFreeEl, { autoAlpha: 0, scale: 0.7 }, { autoAlpha: 1, scale: 1, duration: 0.15, ease: 'none' }, 0.8)
+      .fromTo(markerRutasEl, { autoAlpha: 0, scale: 0.7 }, { autoAlpha: 1, scale: 1, duration: 0.15, ease: 'none' }, 0.88);
+
+    this.heroScrollTrigger = tl.scrollTrigger;
+  }
+
+  ngOnDestroy(): void {
+    this.heroScrollTrigger?.kill();
   }
 }

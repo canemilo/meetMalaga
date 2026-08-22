@@ -2,6 +2,7 @@ import { Component, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Offer } from '../../../core/models/offer.model';
 import { AffiliateService } from '../../../core/services/affiliate.service';
+import { TiltDirective } from '../../directives/tilt.directive';
 
 /**
  * Tarjeta única para CUALQUIER vertical. Recibe una Offer y pinta imagen,
@@ -10,9 +11,9 @@ import { AffiliateService } from '../../../core/services/affiliate.service';
 @Component({
   selector: 'app-offer-card',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TiltDirective],
   template: `
-    <article class="card">
+    <article class="card" appTilt [appTiltMax]="4">
       <a
         class="card__media corte"
         [href]="link"
@@ -58,9 +59,12 @@ import { AffiliateService } from '../../../core/services/affiliate.service';
       border: 1px solid var(--linea);
       border-radius: var(--radio);
       overflow: hidden;
-      transition: transform .18s ease, box-shadow .18s ease;
+      transition: box-shadow .18s ease, border-color .18s ease;
+      /* La inclinación 3D la aporta appTilt (perspective+rotateX/rotateY
+         inline, más sutil aquí que en free tours/rutas: la afiliación es la
+         capa secundaria del negocio, no debe competir en protagonismo). */
     }
-    .card:hover { transform: translateY(-4px); box-shadow: var(--sombra-sol); }
+    .card:hover { box-shadow: var(--sombra-sol); border-color: var(--mar-claro); }
     .card:has(a:focus-visible) { box-shadow: var(--sombra-sol); }
 
     /* Media con la firma de marca: esquina de azulejo cortada (.corte) */
@@ -72,7 +76,8 @@ import { AffiliateService } from '../../../core/services/affiliate.service';
       position: absolute; top: .7rem; left: .7rem;
       font-family: var(--mono); font-size: .68rem; letter-spacing: .05em;
       text-transform: uppercase;
-      background: rgba(16,34,43,.85); color: var(--cal);
+      background: color-mix(in srgb, var(--tinta) 85%, transparent);
+      color: var(--cal);
       padding: .25rem .6rem; border-radius: 999px;
     }
 
@@ -84,7 +89,13 @@ import { AffiliateService } from '../../../core/services/affiliate.service';
     }
     .card__rating { color: var(--sol); font-weight: 700; }
 
-    .card__title { font-size: var(--step-1); margin: 0; }
+    /* Título en tipografía de cuerpo, no en la display serif del h1/h2: la
+       audacia tipográfica se reserva al hero de home (ver styles.css), no se
+       repite en cada una de N tarjetas de un catálogo escaneable. */
+    .card__title {
+      font-family: var(--body); font-weight: 700; letter-spacing: normal;
+      font-size: var(--step-1); line-height: 1.25; margin: 0; color: var(--tinta);
+    }
     .card__summary { margin: 0; color: var(--tinta-60); font-size: var(--step--1); flex: 1; }
 
     .card__footer {

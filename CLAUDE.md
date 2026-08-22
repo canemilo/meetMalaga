@@ -58,6 +58,23 @@ Piezas clave:
   hoteles; su copy llega desde `data.config` en `app.routes.ts` (envuelto en `$localize`).
 - **GuiaBioComponent** (`shared/components/guia-bio`): bio de Samuel (el guía), hoy
   solo se usa en `/rutas`.
+- **Animación y "3D" del sitio** (`shared/directives`): dos directivas standalone,
+  SSR-safe (`isPlatformBrowser`, incluido en `ngOnDestroy` — un `cancelAnimationFrame`
+  sin ese guard rompe el prerender porque no existe en Node) y que respetan
+  `prefers-reduced-motion`. Son la base reutilizable de motion de todo el sitio, no
+  añadas una alternativa competidora sin revisar si una de estas ya sirve:
+  - `RevealDirective` (`appReveal="up|left|right"` + `[appRevealDelay]`): entrada al
+    cruzar el viewport (fade + desplazamiento, `IntersectionObserver`).
+  - `TiltDirective` (`appTilt` + `[appTiltMax]`): inclinación 3D que sigue al puntero
+    (`perspective`+`rotateX`/`rotateY` inline, sombra dinámica, sin librerías). Se
+    desactiva en táctil y con reduce-motion. Usada en las tarjetas de "guía local" y
+    la galería de "historia" en home (`appTiltMax` 4–6), en las tarjetas de
+    `/free-tours` y `/rutas` (6) y en `OfferCardComponent` (4 — más sutil a propósito:
+    la afiliación es la capa secundaria del negocio, no debe competir en
+    protagonismo con free tours/rutas, ver "Tres capas de producto"). Si usas
+    `appTilt` en un elemento con transform en su regla `:hover` de CSS, quita ese
+    `transform` del `:hover` (el inline style de la directiva lo pisaría igualmente)
+    y deja el `:hover` solo para `box-shadow`/color.
 - **HeaderComponent**: nav en dos niveles a propósito. `.nav__primary` (Free tours,
   Rutas privadas) usa `.nav__primary-link` — texto en negrita, **sin fondo de color**
   (se probó con `.btn.btn--sol`/`.btn.btn--primary`, el dueño lo quitó explícitamente:
@@ -81,19 +98,48 @@ Piezas clave:
 - Las dos tarjetas de "guía local" (Free tours / Rutas privadas) usan **el mismo
   tratamiento visual** (fondo blanco, mismo borde/hover) — no le devuelvas a la de
   Free tours un fondo de color aparte sin que te lo pidan, fue un cambio explícito.
-- **Hero de la home**: layout editorial a dos columnas (texto siempre primero, foto
-  4:5 con `.corte` como apoyo, no protagonista; en móvil la foto pasa a 4:3 igual que
-  "historia"). H1 "Un guía *de aquí*, no una guía turística." (juega con guía-persona
-  vs. guía-objeto) — evita a propósito "descubre"/"vive"/"los mejores" aunque un
-  brief los sugiera, sigue siendo la norma de copy del sitio. Los CTA del hero
-  reutilizan los mismos ids que "guia"/"historia" (`home.guia.freeTours.link` /
-  `home.guia.rutas.link`) — un mismo destino, un mismo texto de botón en todo el
-  sitio, no lo dupliques con textos distintos. Bajo el CTA hay un elemento de
-  confianza real y verificable ("Guía local · titulado en Turismo", del propio
-  `GuiaBioComponent`) — no pongas "guías oficiales" ni ninguna certificación que no
-  se haya confirmado. El acento vibrante que pedía un brief anterior ya existe:
-  `--buganvilla`; no añadas un color de acento nuevo sin comprobar primero si ese
-  token ya cumple la función.
+- **Hero de la home (hero-scroll)**: layout editorial a dos columnas (texto siempre
+  primero y fijo durante el efecto; foto/mapa 4:5 con `.corte` como apoyo, no
+  protagonista; en móvil pasa a 4:3 igual que "historia"). H1 "Un guía *de aquí*, no
+  una guía turística." (juega con guía-persona vs. guía-objeto) — evita a propósito
+  "descubre"/"vive"/"los mejores" aunque un brief los sugiera, sigue siendo la norma
+  de copy del sitio. Los CTA del hero reutilizan los mismos ids que "guia"/"historia"
+  (`home.guia.freeTours.link` / `home.guia.rutas.link`) — un mismo destino, un mismo
+  texto de botón en todo el sitio, no lo dupliques con textos distintos. Bajo el CTA
+  hay un elemento de confianza real y verificable ("Guía local · titulado en
+  Turismo", del propio `GuiaBioComponent`) — no pongas "guías oficiales" ni ninguna
+  certificación que no se haya confirmado. El acento vibrante que pedía un brief
+  anterior ya existe: `--buganvilla`; no añadas un color de acento nuevo sin
+  comprobar primero si ese token ya cumple la función.
+  La foto (placeholder, a la espera de que Samuel ponga la suya) se disuelve al
+  bajar en un mapa ilustrado en line-art del centro histórico (Alcazaba, Catedral,
+  puerto/farola, SVG inline en `home.component.ts`), con dos marcadores del mismo
+  peso — Free tours y Rutas privadas, reutilizando `home.guia.freeTours.title` /
+  `home.guia.rutas.title` como etiqueta — **nunca** un tercer marcador para el
+  catálogo de afiliación (ver "Tres capas de producto"). Técnica: GSAP
+  `ScrollTrigger` con `pin: true` y `scrub` sobre `.hero` (registrado y ejecutado
+  solo en `ngAfterViewInit` tras `isPlatformBrowser`, nunca en SSR); el "dibujado"
+  de cada línea del SVG usa la técnica estándar `stroke-dasharray`/`-dashoffset`
+  calculada con `getTotalLength()` — no hay licencia de `DrawSVGPlugin`, no la uses.
+  Degrada sin JS o con `prefers-reduced-motion: reduce` **solo por CSS** (sin lógica
+  JS adicional): por defecto se ve la foto y el mapa/marcadores están en `opacity:0`
+  (una línea SVG sin `dasharray` inline ya se pinta completa); la media query de
+  `reduce-motion` en los estilos del propio componente invierte eso (mapa visible,
+  foto oculta, marcadores visibles) sin animación. Si tocas este bloque, mantén el
+  offset `top 68px` del `ScrollTrigger` (alto fijo de `.site-header`, que es
+  sticky) o el header tapará el hero mientras está pineado.
+- **Resto del sitio, mismo registro editorial "Mediterráneo"** (papel cálido
+  `--cal`, `--mar`/`--sol`/`--buganvilla`/`--tinta` sin cambios): `/free-tours` y
+  `/rutas` llevan un hero-mini a dos columnas con `.corte` en la foto del tour/ruta
+  destacado (`featured` o el primero del catálogo) y pasos de reserva numerados como
+  índice real (01/02/03, texto plano no traducible, mismo patrón que el índice de
+  catálogo). `VerticalPageComponent` suma un `.vertical-nav` con las 5 verticales
+  numeradas para saltar entre ellas sin volver al header. `HeaderComponent` gana una
+  sombra sutil al hacer scroll (`scrolled` signal vía `HostListener('window:scroll')`
+  guardado con `isPlatformBrowser`). Las páginas legales (`legal-layout.component.ts`)
+  numeran sus `<h2>` con un contador CSS real, no reescribas el contenido legal en
+  sí. La 404 reutiliza el id `home.guia.freeTours.link` para su enlace secundario en
+  vez de crear uno nuevo.
 
 ## Convenciones
 

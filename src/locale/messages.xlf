@@ -1273,380 +1273,413 @@
         <source>Tours gratuitos con guía local</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">20,21</context>
+          <context context-type="linenumber">26,27</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.hero.title" datatype="html">
         <source>Free tours por Málaga</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">21,22</context>
+          <context context-type="linenumber">27,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.hero.sub" datatype="html">
         <source> Reserva gratis y paga al final lo que consideres, según lo que hayas disfrutado. La mejor forma de conocer Málaga y mi manera de hacerlo. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">23,26</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.info.eyebrow" datatype="html">
+        <source>Cómo funciona</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">41,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.paso1.title" datatype="html">
         <source>Reservas gratis</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">32,33</context>
+          <context context-type="linenumber">46,47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.paso1.text" datatype="html">
         <source>Eliges plaza en Freetour o GuruWalk sin pagar nada por adelantado.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">33,35</context>
+          <context context-type="linenumber">47,49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.paso2.title" datatype="html">
         <source>Disfrutas el tour</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">36,37</context>
+          <context context-type="linenumber">53,54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.paso2.text" datatype="html">
         <source>Nos vemos en el punto de encuentro a la hora indicada.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">37,39</context>
+          <context context-type="linenumber">54,56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.paso3.title" datatype="html">
         <source>Pagas lo que quieras</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">40,41</context>
+          <context context-type="linenumber">60,61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.paso3.text" datatype="html">
         <source>Al terminar, aportas lo que creas justo. Sin precio fijo.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">41,45</context>
+          <context context-type="linenumber">61,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="freeTours.grid.eyebrow" datatype="html">
+        <source>Elige tu free tour</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
+          <context context-type="linenumber">69,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.badgeGratis" datatype="html">
         <source>Gratis · propina voluntaria</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">51,53</context>
+          <context context-type="linenumber">74,76</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.facts.duracion" datatype="html">
         <source>Duración</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">63,64</context>
+          <context context-type="linenumber">86,87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.facts.horario" datatype="html">
         <source>Horario</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">64,65</context>
+          <context context-type="linenumber">87,88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.facts.puntoEncuentro" datatype="html">
         <source>Punto de encuentro</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">65,66</context>
+          <context context-type="linenumber">88,89</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.facts.idiomas" datatype="html">
         <source>Idiomas</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="linenumber">89</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.reservarFreetour" datatype="html">
         <source>Reservar en Freetour</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">77,79</context>
+          <context context-type="linenumber">100,102</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.reservarGuruwalk" datatype="html">
         <source>Reservar en GuruWalk</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">85,88</context>
+          <context context-type="linenumber">108,111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.vacio" datatype="html">
         <source> Todavía no hay free tours publicados. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/rutas&quot;&gt;"/>Mira las rutas privadas<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> mientras tanto. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">92,95</context>
+          <context context-type="linenumber">115,118</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.upsell.title" datatype="html">
         <source>¿Quieres algo más a medida?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">102,103</context>
+          <context context-type="linenumber">125,126</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.upsell.text" datatype="html">
         <source> Si prefieres un tour privado, con tu grupo y a tu ritmo, echa un vistazo a mis rutas. Reserva directa, sin intermediarios. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">104,106</context>
+          <context context-type="linenumber">127,129</context>
         </context-group>
       </trans-unit>
       <trans-unit id="freeTours.upsell.cta" datatype="html">
         <source>Ver rutas privadas</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/free-tours/free-tours.component.ts</context>
-          <context context-type="linenumber">108,111</context>
+          <context context-type="linenumber">131,134</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.eyebrow" datatype="html">
         <source>Costa del Sol · Andalucía</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">20,21</context>
+          <context context-type="linenumber">40,41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.title2" datatype="html">
         <source> Un guía <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>de aquí<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>,<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>no una guía turística. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">22,23</context>
+          <context context-type="linenumber">42,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.lead2" datatype="html">
         <source> Empieza gratis con un free tour por el centro o reserva una ruta privada a tu ritmo. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">25,27</context>
+          <context context-type="linenumber">45,47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.guia.freeTours.link" datatype="html">
         <source>Ver free tours</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">29,30</context>
+          <context context-type="linenumber">49,50</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">54,56</context>
+          <context context-type="linenumber">113,115</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">134,135</context>
+          <context context-type="linenumber">193,194</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">18,22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.guia.rutas.link" datatype="html">
         <source>Ver rutas privadas</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">30,32</context>
+          <context context-type="linenumber">50,52</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">60,63</context>
+          <context context-type="linenumber">119,122</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">135,138</context>
+          <context context-type="linenumber">194,197</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.trust" datatype="html">
         <source>Guía local · titulado en Turismo</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">32,34</context>
+          <context context-type="linenumber">52,55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.imgAlt" datatype="html">
         <source>Mural de arte urbano del Soho de Málaga fundiéndose con la Alcazaba y la Catedral al fondo, luz dorada de atardecer y gente paseando junto al mar</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">37,38</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.guia.eyebrow" datatype="html">
-        <source>Conmigo, guía local</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">47,48</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.guia.title2" datatype="html">
-        <source>Dos formas de recorrer Málaga conmigo</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">48,49</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.guia.freeTours.tag" datatype="html">
-        <source>Empieza por aquí</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">51,52</context>
+          <context context-type="linenumber">59,60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.guia.freeTours.title" datatype="html">
         <source>Free tours</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">52,53</context>
+          <context context-type="linenumber">88,90</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="home.guia.freeTours.text" datatype="html">
-        <source>Reserva gratis y paga al final lo que quieras. La mejor forma de conocerme y de descubrir la ciudad.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">53,54</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.guia.rutas.tag" datatype="html">
-        <source>A tu medida</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">57,58</context>
+          <context context-type="linenumber">111,112</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.guia.rutas.title" datatype="html">
         <source>Rutas privadas</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">58,59</context>
+          <context context-type="linenumber">93,95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">117,118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.hero.mapCaption" datatype="html">
+        <source> Mapa del centro histórico de Málaga con la Alcazaba, la Catedral y el puerto </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">97,98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.eyebrow" datatype="html">
+        <source>Conmigo, guía local</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">106,107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.title2" datatype="html">
+        <source>Dos formas de recorrer Málaga conmigo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">107,108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.freeTours.tag" datatype="html">
+        <source>Empieza por aquí</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">110,111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.freeTours.text" datatype="html">
+        <source>Reserva gratis y paga al final lo que quieras. La mejor forma de conocerme y de descubrir la ciudad.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">112,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.guia.rutas.tag" datatype="html">
+        <source>A tu medida</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">116,117</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.guia.rutas.text" datatype="html">
         <source>Tu grupo, tu ritmo y una experiencia personalizada. Reserva directa, sin intermediarios.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">59,60</context>
+          <context context-type="linenumber">118,119</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.eyebrow" datatype="html">
         <source>Antes de la ruta</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">74,75</context>
+          <context context-type="linenumber">133,134</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.title" datatype="html">
         <source>Una ciudad fenicia, romana y andalusí antes de ser turística</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">75,77</context>
+          <context context-type="linenumber">134,136</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.p1" datatype="html">
         <source> Los fenicios fundaron Malaka en el siglo VIII antes de Cristo, junto a la desembocadura del Guadalmedina, como puesto comercial en la ruta del Mediterráneo. El nombre apenas ha cambiado en más de 2.700 años. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">80,82</context>
+          <context context-type="linenumber">139,141</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.p2" datatype="html">
         <source> Con los romanos, la ciudad ganó estatus de municipio y un teatro que hoy sigue asomando a los pies de la Alcazaba. Restos de aquella época continúan apareciendo bajo el centro cada vez que se abre una zanja. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">85,87</context>
+          <context context-type="linenumber">144,146</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.p3" datatype="html">
         <source> Durante casi 800 años formó parte de al-Ándalus. La Alcazaba, construida en el siglo XI, y el trazado estrecho del casco antiguo son la huella más visible de esa etapa, que terminó con la conquista de los Reyes Católicos en 1487. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">90,93</context>
+          <context context-type="linenumber">149,152</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.p4" datatype="html">
         <source> En el siglo XIX vivió una revolución industrial impulsada por el comercio del vino y la industria del hierro. La nueva burguesía abrió la Calle Larios en 1891 como su gran bulevar, y en ese mismo ambiente nació Pablo Picasso en 1881, en una casa de la Plaza de la Merced. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">96,99</context>
+          <context context-type="linenumber">155,158</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.p5" datatype="html">
         <source> Aquella Málaga industrial dio paso, ya en el siglo XX, a la que recibe hoy a millones de visitantes: puerta de la Costa del Sol, con un puerto renovado y un casco histórico que se recorre en una tarde. Es el resultado de todas las etapas anteriores, no solo de la última. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">102,105</context>
+          <context context-type="linenumber">161,164</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.foto1.imgAlt" datatype="html">
         <source>Vista de Málaga desde el mirador de Gibralfaro al atardecer</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">113,114</context>
+          <context context-type="linenumber">172,173</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.foto2.imgAlt" datatype="html">
         <source>Bahía y puerto de Málaga desde el mar</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">119,120</context>
+          <context context-type="linenumber">178,179</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.foto3.imgAlt" datatype="html">
         <source>Skyline de Málaga con la Catedral y el Mediterráneo al fondo</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">125,126</context>
+          <context context-type="linenumber">184,185</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.historia.ctaLead" datatype="html">
         <source>Esta es la Málaga que recorremos juntos, a pie y con guía local.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">132,133</context>
+          <context context-type="linenumber">191,192</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.verticals.eyebrow" datatype="html">
         <source>Para completar tu viaje</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">145,146</context>
+          <context context-type="linenumber">204,205</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.vertical.tours.title" datatype="html">
         <source>Tours y experiencias</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">147,148</context>
+          <context context-type="linenumber">206,207</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.vertical.coches.title" datatype="html">
         <source>Alquiler de coches</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">148,149</context>
+          <context context-type="linenumber">207,208</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.vertical.restaurantes.title" datatype="html">
         <source>Mejores restaurantes</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">149,150</context>
+          <context context-type="linenumber">208,209</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.vertical.ocio.title" datatype="html">
         <source>Ocio y planes</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">150,151</context>
+          <context context-type="linenumber">209,210</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.vertical.hoteles.title" datatype="html">
         <source>Hoteles</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
-          <context context-type="linenumber">151,153</context>
+          <context context-type="linenumber">210,212</context>
         </context-group>
       </trans-unit>
       <trans-unit id="legal.afiliados.title" datatype="html">
@@ -1870,14 +1903,14 @@
         <source>Información legal</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/legal/legal-layout.component.ts</context>
-          <context context-type="linenumber">12,13</context>
+          <context context-type="linenumber">13,14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="legal.nota" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Aviso.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Plantilla orientativa. Sustituye los datos entre corchetes por los tuyos y revísala con un profesional antes de publicar. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/legal/legal-layout.component.ts</context>
-          <context context-type="linenumber">18,21</context>
+          <context context-type="linenumber">20,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="legal.privacidad.title" datatype="html">
@@ -1982,322 +2015,399 @@
         <source>Error 404</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">10,11</context>
+          <context context-type="linenumber">11,12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="notFound.title" datatype="html">
         <source>Esta página se fue de tapas.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">11,12</context>
+          <context context-type="linenumber">12,13</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="notFound.lead" datatype="html">
-        <source>No encontramos lo que buscabas, pero Málaga tiene mucho que ofrecer.</source>
+      <trans-unit id="notFound.subtitle" datatype="html">
+        <source> El enlace no existe o se ha movido. Vuelve al inicio o mira los free tours de hoy. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">12,13</context>
+          <context context-type="linenumber">14,16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="notFound.cta" datatype="html">
         <source>Volver al inicio</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">13,16</context>
+          <context context-type="linenumber">17,18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.hero.eyebrow" datatype="html">
         <source>Rutas guiadas por nosotros</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">24,25</context>
+          <context context-type="linenumber">30,31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.hero.title" datatype="html">
         <source>Nuestras rutas por Málaga</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">25,26</context>
+          <context context-type="linenumber">31,32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.hero.sub" datatype="html">
         <source> Estas son las rutas que guío personalmente: a tu ritmo si vienes solo o en pareja, o con tu grupo si preferís ir juntos. Escríbeme por WhatsApp, cerramos fecha y precio, y nos vemos en el punto de encuentro. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">27,29</context>
+          <context context-type="linenumber">33,35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.cal.eyebrow" datatype="html">
         <source>Disponibilidad</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">39,40</context>
+          <context context-type="linenumber">49,50</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.cal.title" datatype="html">
         <source>Calendario de mis tours</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">40,41</context>
+          <context context-type="linenumber">50,51</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.cal.sub" datatype="html">
         <source> Consulta qué días tengo rutas disponibles y en qué franjas. Pulsa un día en amarillo y elige la hora para reservar tu plaza. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">42,44</context>
+          <context context-type="linenumber">52,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.pasos.eyebrow" datatype="html">
+        <source>Cómo reservar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">61,62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.paso1.title" datatype="html">
         <source>Elige tu ruta</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.paso1.text" datatype="html">
         <source>Mira las opciones y su punto de encuentro.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">53,55</context>
+          <context context-type="linenumber">65,67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.paso2.title" datatype="html">
         <source>Escríbeme por WhatsApp</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">57</context>
+          <context context-type="linenumber">69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.paso2.text" datatype="html">
         <source>Acordamos día, hora y número de personas.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">57,59</context>
+          <context context-type="linenumber">69,71</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.paso3.title" datatype="html">
         <source>Confirma el pago</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.paso3.text" datatype="html">
         <source>Con tarjeta (Stripe/PayPal) o por Bizum/transferencia.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">61,63</context>
+          <context context-type="linenumber">73,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.grid.eyebrow" datatype="html">
+        <source>Todas las rutas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">80,81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.badge.proximamente" datatype="html">
         <source>Próximamente</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">72,73</context>
+          <context context-type="linenumber">86,87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.badge.bajoPeticion" datatype="html">
         <source>Bajo petición</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">73,75</context>
+          <context context-type="linenumber">87,89</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.facts.duracion" datatype="html">
         <source>Duración</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">85</context>
+          <context context-type="linenumber">99</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.facts.puntoEncuentro" datatype="html">
         <source>Punto de encuentro</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">86,87</context>
+          <context context-type="linenumber">100,101</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.facts.grupoMax" datatype="html">
         <source>Grupo máx.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">87</context>
+          <context context-type="linenumber">101</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.facts.personas" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ r.maxGroup }}"/> personas</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">87,88</context>
+          <context context-type="linenumber">101,102</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.precio.porPersona" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ r.pricePerPerson }}"/> €<x id="START_SMALL_TEXT" ctype="x-small" equiv-text="&lt;small&gt;"/>por persona<x id="CLOSE_SMALL_TEXT" ctype="x-small" equiv-text="&lt;/small&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">91,92</context>
+          <context context-type="linenumber">105,106</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.precio.consultar" datatype="html">
         <source>Precio a consultar</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">92,94</context>
+          <context context-type="linenumber">106,108</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.reservarWhatsapp" datatype="html">
         <source>Reservar por WhatsApp</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">100,101</context>
+          <context context-type="linenumber">114,115</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.configuraWhatsapp" datatype="html">
         <source>Configura tu WhatsApp en environment.ts</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">102,104</context>
+          <context context-type="linenumber">116,118</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.noDisponibleReserva" datatype="html">
         <source>Todavía no está disponible para reservar.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">106,108</context>
+          <context context-type="linenumber">120,122</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.vacio" datatype="html">
         <source> Todavía no hay rutas publicadas. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/free-tours&quot;&gt;"/>Empieza por un free tour<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> mientras preparo nuevas fechas. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">113,116</context>
+          <context context-type="linenumber">127,130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rutas.pay.eyebrow" datatype="html">
+        <source>Al confirmar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
+          <context context-type="linenumber">135,136</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.pay.title" datatype="html">
         <source>Cómo se paga</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">121,122</context>
+          <context context-type="linenumber">136,137</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.pay.intro" datatype="html">
         <source> Una vez acordada la fecha por WhatsApp, confirmas tu plaza con cualquiera de estas opciones. El precio es el mismo en todas. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">123,126</context>
+          <context context-type="linenumber">138,141</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.pay.efectivo.title" datatype="html">
         <source>Efectivo</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">136,137</context>
+          <context context-type="linenumber">151,152</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.pay.efectivo.text" datatype="html">
         <source>Pagas en persona el día de la ruta, antes o después del recorrido.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">137,140</context>
+          <context context-type="linenumber">152,155</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.cross.title" datatype="html">
         <source>¿Todavía no me conoces?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">146,147</context>
+          <context context-type="linenumber">161,162</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.cross.text" datatype="html">
         <source> Empieza por un free tour: reservas gratis y pagas al final lo que quieras. Es la mejor forma de conocerme antes de una ruta privada. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">148,150</context>
+          <context context-type="linenumber">163,165</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.cross.cta" datatype="html">
         <source>Ver free tours</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">152,154</context>
+          <context context-type="linenumber">167,169</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.cat.historia" datatype="html">
         <source>Historia</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">233</context>
+          <context context-type="linenumber">269</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.cat.arte" datatype="html">
         <source>Arte</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">234</context>
+          <context context-type="linenumber">270</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.cat.gastronomia" datatype="html">
         <source>Gastronomía</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">235</context>
+          <context context-type="linenumber">271</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.cat.naturaleza" datatype="html">
         <source>Naturaleza</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">236</context>
+          <context context-type="linenumber">272</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.cat.familia" datatype="html">
         <source>Familia</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">237</context>
+          <context context-type="linenumber">273</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.cat.noche" datatype="html">
         <source>Noche</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">238</context>
+          <context context-type="linenumber">274</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.pay.bizum.conNumero" datatype="html">
         <source>Al número <x id="PH" equiv-text="this.pago.bizum"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">247</context>
+          <context context-type="linenumber">283</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.pay.bizum.sinNumero" datatype="html">
         <source>Rápido y sin comisiones (configura tu número).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">248</context>
+          <context context-type="linenumber">284</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.pay.paypal.conLink" datatype="html">
         <source>Pago seguro; te enviamos el enlace al confirmar.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">253</context>
+          <context context-type="linenumber">289</context>
         </context-group>
       </trans-unit>
       <trans-unit id="rutas.pay.paypal.sinLink" datatype="html">
         <source>Configura tu enlace de PayPal.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/rutas/rutas.component.ts</context>
-          <context context-type="linenumber">254</context>
+          <context context-type="linenumber">290</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="vertical.nav.tours" datatype="html">
+        <source>Tours y experiencias</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/vertical/vertical-page.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="vertical.nav.coches" datatype="html">
+        <source>Alquiler de coches</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/vertical/vertical-page.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="vertical.nav.restaurantes" datatype="html">
+        <source>Restaurantes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/vertical/vertical-page.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="vertical.nav.ocio" datatype="html">
+        <source>Ocio y planes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/vertical/vertical-page.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="vertical.nav.hoteles" datatype="html">
+        <source>Hoteles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/vertical/vertical-page.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="vertical.count" datatype="html">
+        <source>{VAR_PLURAL, plural, =1 {1 oferta disponible} other {<x id="INTERPOLATION"/> ofertas disponibles}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/vertical/vertical-page.component.ts</context>
+          <context context-type="linenumber">53,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="vertical.nav.ariaLabel" datatype="html">
+        <source>Otras categorías del catálogo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/vertical/vertical-page.component.ts</context>
+          <context context-type="linenumber">57,58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="vertical.vacio" datatype="html">
         <source> Todavía no hay ofertas publicadas en esta sección. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>Vuelve a la portada<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> mientras seguimos ampliando el catálogo. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/vertical/vertical-page.component.ts</context>
-          <context context-type="linenumber">40,43</context>
+          <context context-type="linenumber">83,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="vertical.vacio.otras" datatype="html">
+        <source>Otras categorías</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/vertical/vertical-page.component.ts</context>
+          <context context-type="linenumber">86,87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="calendario.mesAnterior" datatype="html">
@@ -2374,91 +2484,91 @@
         <source>L</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
-          <context context-type="linenumber">167</context>
+          <context context-type="linenumber">173</context>
         </context-group>
       </trans-unit>
       <trans-unit id="calendario.dow.martes" datatype="html">
         <source>M</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
-          <context context-type="linenumber">168</context>
+          <context context-type="linenumber">174</context>
         </context-group>
       </trans-unit>
       <trans-unit id="calendario.dow.miercoles" datatype="html">
         <source>X</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
-          <context context-type="linenumber">169</context>
+          <context context-type="linenumber">175</context>
         </context-group>
       </trans-unit>
       <trans-unit id="calendario.dow.jueves" datatype="html">
         <source>J</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
-          <context context-type="linenumber">170</context>
+          <context context-type="linenumber">176</context>
         </context-group>
       </trans-unit>
       <trans-unit id="calendario.dow.viernes" datatype="html">
         <source>V</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
-          <context context-type="linenumber">171</context>
+          <context context-type="linenumber">177</context>
         </context-group>
       </trans-unit>
       <trans-unit id="calendario.dow.sabado" datatype="html">
         <source>S</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
-          <context context-type="linenumber">172</context>
+          <context context-type="linenumber">178</context>
         </context-group>
       </trans-unit>
       <trans-unit id="calendario.dow.domingo" datatype="html">
         <source>D</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
-          <context context-type="linenumber">173</context>
+          <context context-type="linenumber">179</context>
         </context-group>
       </trans-unit>
       <trans-unit id="calendario.estado.disponible" datatype="html">
         <source>disponible</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
-          <context context-type="linenumber">274</context>
+          <context context-type="linenumber">280</context>
         </context-group>
       </trans-unit>
       <trans-unit id="calendario.estado.conTour" datatype="html">
         <source>con tour</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
-          <context context-type="linenumber">275</context>
+          <context context-type="linenumber">281</context>
         </context-group>
       </trans-unit>
       <trans-unit id="calendario.estado.ocupado" datatype="html">
         <source>ocupado</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
-          <context context-type="linenumber">276</context>
+          <context context-type="linenumber">282</context>
         </context-group>
       </trans-unit>
       <trans-unit id="calendario.estado.noDisponible" datatype="html">
         <source>no disponible</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
-          <context context-type="linenumber">277</context>
+          <context context-type="linenumber">283</context>
         </context-group>
       </trans-unit>
       <trans-unit id="calendario.estado.sinTours" datatype="html">
         <source>sin tours</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
-          <context context-type="linenumber">278</context>
+          <context context-type="linenumber">284</context>
         </context-group>
       </trans-unit>
       <trans-unit id="calendario.estado.pasado" datatype="html">
         <source>pasado</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/calendario/calendario.component.ts</context>
-          <context context-type="linenumber">279</context>
+          <context context-type="linenumber">285</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cookieBanner.ariaLabel" datatype="html">
@@ -2493,133 +2603,140 @@
         <source> Tu guía para descubrir Málaga: tours, coches, restaurantes y ocio, reservados con las mejores plataformas. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
-          <context context-type="linenumber">18,20</context>
+          <context context-type="linenumber">19,21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.col.explora" datatype="html">
         <source>Explora</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
-          <context context-type="linenumber">24,25</context>
+          <context context-type="linenumber">25,26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.link.tours" datatype="html">
         <source>Tours</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
-          <context context-type="linenumber">25,26</context>
+          <context context-type="linenumber">26,27</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.link.coches" datatype="html">
         <source>Alquiler de coches</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
-          <context context-type="linenumber">26,27</context>
+          <context context-type="linenumber">27,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.link.restaurantes" datatype="html">
         <source>Restaurantes</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
-          <context context-type="linenumber">27,28</context>
+          <context context-type="linenumber">28,29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.link.ocio" datatype="html">
         <source>Ocio</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
-          <context context-type="linenumber">29,31</context>
+          <context context-type="linenumber">29,32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.col.legal" datatype="html">
         <source>Legal</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
-          <context context-type="linenumber">32,33</context>
+          <context context-type="linenumber">33,34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.link.avisoLegal" datatype="html">
         <source>Aviso legal</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
-          <context context-type="linenumber">33,34</context>
+          <context context-type="linenumber">34,35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.link.privacidad" datatype="html">
         <source>Privacidad</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
-          <context context-type="linenumber">34,35</context>
+          <context context-type="linenumber">35,36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.link.cookies" datatype="html">
         <source>Cookies</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
-          <context context-type="linenumber">35,36</context>
+          <context context-type="linenumber">36,37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.link.afiliados" datatype="html">
         <source>Aviso de afiliados</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
-          <context context-type="linenumber">36,38</context>
+          <context context-type="linenumber">37,39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.disclosure" datatype="html">
         <source> Meet Málaga participa en programas de afiliación. Cuando reservas a través de nuestros enlaces podemos recibir una comisión sin coste adicional para ti. Los precios son orientativos; el precio final lo fija cada plataforma en el momento de la reserva. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
-          <context context-type="linenumber">41,44</context>
+          <context context-type="linenumber">42,45</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.copyright" datatype="html">
         <source>© <x id="INTERPOLATION" equiv-text="{{ year }}"/> Meet Málaga. Hecho en Málaga.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/footer/footer.component.ts</context>
-          <context context-type="linenumber">47,48</context>
+          <context context-type="linenumber">48,49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="guiaBio.eyebrow" datatype="html">
         <source>Quién te enseña Málaga</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/guia-bio/guia-bio.component.ts</context>
-          <context context-type="linenumber">12,13</context>
+          <context context-type="linenumber">20,21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="guiaBio.text" datatype="html">
         <source> Soy Samuel. Nací en Málaga y viví seis años en Inglaterra, así que sé bien lo que es llegar a una ciudad sin conocer a nadie ni saber por dónde empezar. Volví para estudiar Turismo y dedicarme a esto: enseñar mi ciudad como me habría gustado que me la enseñaran a mí. Preparo cada ruta a mano, sin prisa, contando lo que de verdad merece la pena y callándome lo que no. Que te vayas sintiendo que conociste Málaga, no que la viste desde fuera. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/guia-bio/guia-bio.component.ts</context>
-          <context context-type="linenumber">15,20</context>
+          <context context-type="linenumber">23,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="guiaBio.tag.malagueno" datatype="html">
         <source>Malagueño</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/guia-bio/guia-bio.component.ts</context>
-          <context context-type="linenumber">24,25</context>
+          <context context-type="linenumber">32,33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="guiaBio.tag.reinoUnido" datatype="html">
         <source>6 años en Reino Unido</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/guia-bio/guia-bio.component.ts</context>
-          <context context-type="linenumber">25,26</context>
+          <context context-type="linenumber">33,34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="guiaBio.tag.turismo" datatype="html">
         <source>Titulado en Turismo</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/guia-bio/guia-bio.component.ts</context>
-          <context context-type="linenumber">26,27</context>
+          <context context-type="linenumber">34,35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="guiaBio.tag.idiomas" datatype="html">
         <source>Español · Inglés</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/guia-bio/guia-bio.component.ts</context>
-          <context context-type="linenumber">27,30</context>
+          <context context-type="linenumber">35,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.brand.ariaLabel" datatype="html">
+        <source>Meet Málaga — inicio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.ts</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.openMenu" datatype="html">
@@ -2710,7 +2827,7 @@
         <source>Reservar: <x id="PH" equiv-text="title"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/offer-card/offer-card.component.ts</context>
-          <context context-type="linenumber">123</context>
+          <context context-type="linenumber">130</context>
         </context-group>
       </trans-unit>
     </body>

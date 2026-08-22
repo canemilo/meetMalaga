@@ -23,15 +23,20 @@ export interface BreadcrumbItem {
     </nav>
   `,
   styles: [`
+    /* Mono: el mismo rol de utilidad/dato que ya cumple en el eyebrow, el
+       índice del catálogo y el selector de idioma — una miga de pan es
+       información de posición, no prosa. */
     .breadcrumb ol {
-      display: flex; flex-wrap: wrap; gap: .4rem;
-      list-style: none; padding: 0; margin: 0 0 1rem;
-      font-size: var(--step--1); color: var(--tinta-60);
+      display: flex; flex-wrap: wrap; align-items: baseline; gap: .5rem;
+      list-style: none; padding: 0; margin: 0 0 1.4rem;
+      font-family: var(--mono); font-size: .74rem; letter-spacing: .02em;
+      color: var(--tinta-60);
     }
-    .breadcrumb li:not(:last-child)::after { content: '/'; margin-left: .4rem; }
-    .breadcrumb a { color: var(--tinta-60); text-decoration: none; }
-    .breadcrumb a:hover { color: var(--mar); text-decoration: underline; }
-    .breadcrumb span[aria-current] { color: var(--tinta); }
+    .breadcrumb li { display: flex; align-items: baseline; gap: .5rem; }
+    .breadcrumb li:not(:last-child)::after { content: '·'; color: var(--linea); }
+    .breadcrumb a { color: var(--tinta-60); text-decoration: none; transition: color .15s ease; }
+    .breadcrumb a:hover, .breadcrumb a:focus-visible { color: var(--mar); text-decoration: underline; }
+    .breadcrumb span[aria-current] { color: var(--tinta); font-weight: 700; }
   `],
 })
 export class BreadcrumbComponent {

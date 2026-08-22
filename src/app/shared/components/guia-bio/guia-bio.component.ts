@@ -1,14 +1,22 @@
 import { Component } from '@angular/core';
+import { RevealDirective } from '../../directives/reveal.directive';
 
+/**
+ * Bio de Samuel, el guía. Sin foto real todavía: el "avatar" es una inicial
+ * sobre un cuadrado de mar (no un círculo de banco de imágenes), a la espera
+ * de que el dueño ponga su foto. No lleva la firma .corte a propósito: esa
+ * firma se reserva a fotografías reales recortadas, y esto no lo es.
+ */
 @Component({
   selector: 'app-guia-bio',
   standalone: true,
+  imports: [RevealDirective],
   template: `
     <section class="container guia-bio">
-      <div class="guia-bio__photo" aria-hidden="true">
+      <div class="guia-bio__photo" aria-hidden="true" appReveal="right">
         <span>S</span>
       </div>
-      <div class="guia-bio__body">
+      <div class="guia-bio__body" appReveal="left" [appRevealDelay]="0.1">
         <p class="eyebrow" i18n="@@guiaBio.eyebrow">Quién te enseña Málaga</p>
         <h2 class="guia-bio__name">Samuel</h2>
         <p class="guia-bio__text" i18n="@@guiaBio.text">
@@ -33,15 +41,17 @@ import { Component } from '@angular/core';
     .guia-bio {
       display: flex;
       align-items: flex-start;
-      gap: clamp(1.6rem, 4vw, 3rem);
-      padding: clamp(2.2rem, 5vw, 3.5rem) 0;
+      gap: clamp(1.8rem, 4vw, 3.2rem);
+      padding: clamp(2.4rem, 5vw, 3.8rem) 0;
+      border-top: 1px solid var(--linea);
+      border-bottom: 1px solid var(--linea);
     }
     .guia-bio__photo {
       flex: none;
       width: clamp(96px, 14vw, 148px);
       height: clamp(96px, 14vw, 148px);
-      border-radius: 50%;
       background: var(--mar);
+      box-shadow: var(--sombra);
       display: grid;
       place-items: center;
     }
