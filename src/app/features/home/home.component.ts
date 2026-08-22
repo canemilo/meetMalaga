@@ -1,11 +1,12 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { SeoService } from '../../core/services/seo.service';
+import { RevealDirective } from '../../shared/directives/reveal.directive';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, RevealDirective],
   template: `
     <!-- HERO: columna de texto (mensaje + CTA, lo que manda) y una única
          foto con la firma .corte (lo que ya anticipaba el comentario de esa
@@ -47,13 +48,13 @@ import { SeoService } from '../../core/services/seo.service';
       <p class="eyebrow" i18n="@@home.guia.eyebrow">Conmigo, guía local</p>
       <h2 class="guia__title" i18n="@@home.guia.title2">Dos formas de recorrer Málaga conmigo</h2>
       <div class="guia__cards">
-        <a routerLink="/free-tours" class="guia__card guia__card--free corte">
+        <a routerLink="/free-tours" class="guia__card guia__card--free corte" appReveal="up">
           <span class="guia__tag" i18n="@@home.guia.freeTours.tag">Empieza por aquí</span>
           <h3 i18n="@@home.guia.freeTours.title">Free tours</h3>
           <p i18n="@@home.guia.freeTours.text">Reserva gratis y paga al final lo que quieras. La mejor forma de conocerme y de descubrir la ciudad.</p>
           <span class="guia__link" i18n="@@home.guia.freeTours.link">Ver free tours</span>
         </a>
-        <a routerLink="/rutas" class="guia__card guia__card--priv corte">
+        <a routerLink="/rutas" class="guia__card guia__card--priv corte" appReveal="up" [appRevealDelay]="0.12">
           <span class="guia__tag" i18n="@@home.guia.rutas.tag">A tu medida</span>
           <h3 i18n="@@home.guia.rutas.title">Rutas privadas</h3>
           <p i18n="@@home.guia.rutas.text">Tu grupo, tu ritmo y una experiencia personalizada. Reserva directa, sin intermediarios.</p>
@@ -75,7 +76,7 @@ import { SeoService } from '../../core/services/seo.service';
       <h2 class="historia__title" i18n="@@home.historia.title">Una ciudad fenicia, romana y andalusí antes de ser turística</h2>
 
       <div class="historia__grid">
-        <div class="historia__texto">
+        <div class="historia__texto" appReveal="right">
           <p i18n="@@home.historia.p1">
             Los fenicios fundaron Malaka en el siglo VIII antes de Cristo, junto a la
             desembocadura del Guadalmedina, como puesto comercial en la ruta del
@@ -106,7 +107,7 @@ import { SeoService } from '../../core/services/seo.service';
           </p>
         </div>
 
-        <div class="historia__galeria">
+        <div class="historia__galeria" appReveal="left">
           <img
             class="historia__img"
             src="https://picsum.photos/seed/malaga-gibralfaro-atardecer/800/600"
